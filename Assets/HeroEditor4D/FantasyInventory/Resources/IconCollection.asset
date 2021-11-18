@@ -1,0 +1,3292 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 650133c44dc1224489eed33fcd27316e, type: 3}
+  m_Name: IconCollection
+  m_EditorClassIdentifier: 
+  Backgrounds:
+  - {fileID: 21300000, guid: a7a9761b8498fc3469b31675a4250f17, type: 3}
+  - {fileID: 21300000, guid: 407123b69c6ad85469da2466fe776a87, type: 3}
+  - {fileID: 21300000, guid: bd113ac01de518d43abfd2afc18e75f5, type: 3}
+  - {fileID: 21300000, guid: c49e3554a0acc074595cbdacdf2a4eca, type: 3}
+  - {fileID: 21300000, guid: bd0d835805a0c5846978e1b2c3ded5d6, type: 3}
+  - {fileID: 21300000, guid: 9df088df15c9f2347bd8c55d54b50b84, type: 3}
+  Id: FantasyHeroes
+  ScanFolder: {fileID: 102900000, guid: e83d7194474b77a4ba0807088ede75d3, type: 3}
+  Icons:
+  - Name: Acorn
+    Path: Equipment/Supplies/Other/Acorn
+    Sprite: {fileID: 21300000, guid: 6247fb8a8e060e645acfc418adbd0490, type: 3}
+  - Name: Adamantine
+    Path: Equipment/Supplies/Mineral/Adamantine
+    Sprite: {fileID: 21300000, guid: be2cd235377de6146b80c7eec5ef3456, type: 3}
+  - Name: AdvancedBandage
+    Path: Equipment/Supplies/Other/AdvancedBandage
+    Sprite: {fileID: 21300000, guid: ac3fb5b43e17af340a7a87e95ec907e9, type: 3}
+  - Name: AdvancedShortDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/AdvancedShortDagger
+    Sprite: {fileID: 21300000, guid: d23c93ce187376249a12833543d4b146, type: 3}
+  - Name: AdvancedShortSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/AdvancedShortSword
+    Sprite: {fileID: 21300000, guid: 75812cbf9ac75d644bf1d527c792f75d, type: 3}
+  - Name: AdvancedWizardRobe
+    Path: Equipment/Armor/Basic/AdvancedWizardRobe
+    Sprite: {fileID: 21300000, guid: 71945b7d3fd3995408e99443f5a8df07, type: 3}
+  - Name: AdvancedWizardRobe.Helmet
+    Path: Equipment/Helmet/Basic/AdvancedWizardRobe.Helmet
+    Sprite: {fileID: 21300000, guid: f89f29c08363ae740a003bb4635d27cc, type: 3}
+  - Name: AdvancedWoodenShield
+    Path: Equipment/Shield/Basic/AdvancedWoodenShield
+    Sprite: {fileID: 21300000, guid: f0a5dc3cfe90c0646883732a7ddf6b0b, type: 3}
+  - Name: AlchemistClothes
+    Path: Equipment/Armor/Basic/AlchemistClothes
+    Sprite: {fileID: 21300000, guid: a7d00f4193999e34caa7daa21382fef5, type: 3}
+  - Name: AlchemistClothes.Helmet
+    Path: Equipment/Helmet/Basic/AlchemistClothes.Helmet
+    Sprite: {fileID: 21300000, guid: 487d2833cad14624e9589ba13782bd7d, type: 3}
+  - Name: AmanitaMushroom
+    Path: Equipment/Supplies/Food/AmanitaMushroom
+    Sprite: {fileID: 21300000, guid: 79f43a0ab9c88df4f8122c5abfa656eb, type: 3}
+  - Name: AngelFigurine
+    Path: Equipment/Supplies/Other/AngelFigurine
+    Sprite: {fileID: 21300000, guid: 9056ccb932eb69744b5c8899a93b4562, type: 3}
+  - Name: Angry
+    Path: BodyParts/Eyes/Goblin/Angry
+    Sprite: {fileID: 21300000, guid: 4954a12d8da1b0740a546519ffa8a109, type: 3}
+  - Name: AngryEyebrowns
+    Path: BodyParts/Eyebrows/Emoji/AngryEyebrowns
+    Sprite: {fileID: 21300000, guid: cc4d1858007ead646be0aa3c2179edd4, type: 3}
+  - Name: AngryEyes1
+    Path: BodyParts/Eyes/Emoji/AngryEyes1
+    Sprite: {fileID: 21300000, guid: 66ee90b635f23514abfc72a74bc7b5fd, type: 3}
+  - Name: AngryEyes2
+    Path: BodyParts/Eyes/Emoji/AngryEyes2
+    Sprite: {fileID: 21300000, guid: 20792e28409e8f044a6faf0dcbee7ffd, type: 3}
+  - Name: AngryEyes3
+    Path: BodyParts/Eyes/Emoji/AngryEyes3
+    Sprite: {fileID: 21300000, guid: 6910055de0732b045bab310ac1405500, type: 3}
+  - Name: AngryMouth1
+    Path: BodyParts/Mouth/Emoji/AngryMouth1
+    Sprite: {fileID: 21300000, guid: 026c3ca6637f7984db0578e25d5abc2a, type: 3}
+  - Name: AngryMouth2
+    Path: BodyParts/Mouth/Emoji/AngryMouth2
+    Sprite: {fileID: 21300000, guid: 8488856453c21984ca2c2a71dce48f8d, type: 3}
+  - Name: AngryMouth3
+    Path: BodyParts/Mouth/Emoji/AngryMouth3
+    Sprite: {fileID: 21300000, guid: cfbedc84cbb57674ca3e24717bc889e6, type: 3}
+  - Name: AntidoteS
+    Path: Equipment/Supplies/Potion/AntidoteS
+    Sprite: {fileID: 21300000, guid: 72c8e41598514aa45980ba6d51ffbb6c, type: 3}
+  - Name: AntiqueHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/AntiqueHammer
+    Sprite: {fileID: 21300000, guid: 8c53a00109fc97341823dbac4f6d3d99, type: 3}
+  - Name: AquiaLance
+    Path: Equipment/MeleeWeapon2H/Basic/Lance/AquiaLance
+    Sprite: {fileID: 21300000, guid: b2463151853064845863d8f1a81742ba, type: 3}
+  - Name: ArcherTunic [ShowEars]
+    Path: Equipment/Armor/Basic/ArcherTunic [ShowEars]
+    Sprite: {fileID: 21300000, guid: fdfcde2a30b5aa7438385951fb53a215, type: 3}
+  - Name: ArcherTunic [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/ArcherTunic [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: c5fa5e19cfac1ce489668bc0b6f72a5d, type: 3}
+  - Name: Armor
+    Path: Equipment/Supplies/Recipe/Armor
+    Sprite: {fileID: 21300000, guid: f823a181648ca2b4981aead4e0ac3f98, type: 3}
+  - Name: Ash
+    Path: Equipment/Supplies/Material/Ash
+    Sprite: {fileID: 21300000, guid: 4e5d53dd7a042c54a9782a11afcb663a, type: 3}
+  - Name: Asian
+    Path: BodyParts/Eyes/Basic/Asian
+    Sprite: {fileID: 21300000, guid: fadc9e31261b9fc4cbf57c7ad46a7070, type: 3}
+  - Name: AspenStake
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/AspenStake
+    Sprite: {fileID: 21300000, guid: 990ad845b4cc24f438dc4fef319a79fc, type: 3}
+  - Name: AssaultLance
+    Path: Equipment/MeleeWeapon2H/Basic/Lance/AssaultLance
+    Sprite: {fileID: 21300000, guid: 163d77c0deef11640b68e2601af37d0c, type: 3}
+  - Name: AssaultSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/AssaultSword
+    Sprite: {fileID: 21300000, guid: 743e88e44af01fb4f89a104a84958a4f, type: 3}
+  - Name: Axe
+    Path: Equipment/Supplies/Recipe/Axe
+    Sprite: {fileID: 21300000, guid: 1d539719dfa1f744785b11ea54252154, type: 3}
+  - Name: Backpack
+    Path: Equipment/Supplies/Recipe/Backpack
+    Sprite: {fileID: 21300000, guid: 40020180ae77acb428e46aefcd1f7906, type: 3}
+  - Name: BackpackA
+    Path: Equipment/Supplies/Backpack/BackpackA
+    Sprite: {fileID: 21300000, guid: aaa691cbf18759f4fb89657127995d36, type: 3}
+  - Name: BackpackB
+    Path: Equipment/Supplies/Backpack/BackpackB
+    Sprite: {fileID: 21300000, guid: ded526c0fc1305a46bb342f9d2e99d5d, type: 3}
+  - Name: BackpackC
+    Path: Equipment/Supplies/Backpack/BackpackC
+    Sprite: {fileID: 21300000, guid: 8008ba59dd119c74f824dff1cb9cf4c6, type: 3}
+  - Name: BackpackD
+    Path: Equipment/Supplies/Backpack/BackpackD
+    Sprite: {fileID: 21300000, guid: b2903719a60508642aade344c27dd972, type: 3}
+  - Name: BackpackE
+    Path: Equipment/Supplies/Backpack/BackpackE
+    Sprite: {fileID: 21300000, guid: fbfc095c1b5af1b45aaa07551465d47b, type: 3}
+  - Name: BackpackF
+    Path: Equipment/Supplies/Backpack/BackpackF
+    Sprite: {fileID: 21300000, guid: 6adb17f89fb39634bb3a5be839051602, type: 3}
+  - Name: BackpackG
+    Path: Equipment/Supplies/Backpack/BackpackG
+    Sprite: {fileID: 21300000, guid: 8211c95169dbae542956faa0458b235d, type: 3}
+  - Name: Bagpipes
+    Path: Equipment/Shield/Basic/Bagpipes
+    Sprite: {fileID: 21300000, guid: 904649fe8048a1042a55746258ca2bef, type: 3}
+  - Name: BalancedAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/BalancedAxe
+    Sprite: {fileID: 21300000, guid: 85fd4550d6594da4dbb133aafadc7619, type: 3}
+  - Name: BambooStick
+    Path: Equipment/MeleeWeapon1H/Basic/Spear/BambooStick
+    Sprite: {fileID: 21300000, guid: 2eec4819ef78a264c9dcef09f2765e98, type: 3}
+  - Name: Banana
+    Path: Equipment/Supplies/Food/Banana
+    Sprite: {fileID: 21300000, guid: e203c01d79f048d48812e08c211829bc, type: 3}
+  - Name: Bandage
+    Path: Equipment/Supplies/Other/Bandage
+    Sprite: {fileID: 21300000, guid: ce582b2b04b46864b85fcb30727a254a, type: 3}
+  - Name: BanditArmor
+    Path: Equipment/Armor/Basic/BanditArmor
+    Sprite: {fileID: 21300000, guid: 5ea24b47854f1aa4abe817e9a3403043, type: 3}
+  - Name: BanditArmor.Helmet
+    Path: Equipment/Helmet/Basic/BanditArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 9ad7ed5d163a0764287b0362ec787af8, type: 3}
+  - Name: BanditArmor1 [FullHair]
+    Path: Equipment/Armor/Basic/BanditArmor1 [FullHair]
+    Sprite: {fileID: 21300000, guid: eb6a5ebe95f75ce4aab6ada0a3766201, type: 3}
+  - Name: BanditArmor1 [FullHair].Helmet
+    Path: Equipment/Helmet/Basic/BanditArmor1 [FullHair].Helmet
+    Sprite: {fileID: 21300000, guid: 5308302822a1b5e40a8167d98bfdddb8, type: 3}
+  - Name: BanditArmor2
+    Path: Equipment/Armor/Basic/BanditArmor2
+    Sprite: {fileID: 21300000, guid: 2b0d3d242427cc94687d92b6950d3973, type: 3}
+  - Name: BanditArmor2.Helmet
+    Path: Equipment/Helmet/Basic/BanditArmor2.Helmet
+    Sprite: {fileID: 21300000, guid: 7b52f6b026028344eb2b9af85d8d1823, type: 3}
+  - Name: BanditCaptain
+    Path: Equipment/Armor/Basic/BanditCaptain
+    Sprite: {fileID: 21300000, guid: a4af534e50de93d4098aa879a1043c33, type: 3}
+  - Name: BanditCaptain.Helmet
+    Path: Equipment/Helmet/Basic/BanditCaptain.Helmet
+    Sprite: {fileID: 21300000, guid: da2e9d276582a714d828fdc3193a8142, type: 3}
+  - Name: BanditLightArmor
+    Path: Equipment/Armor/Basic/BanditLightArmor
+    Sprite: {fileID: 21300000, guid: 8dd8b66c79164ea428db1b1c9bb5ffb4, type: 3}
+  - Name: BanditLightArmor.Helmet
+    Path: Equipment/Helmet/Basic/BanditLightArmor.Helmet
+    Sprite: {fileID: 21300000, guid: f7e31d5c11128ea42a3459e63ab5af3e, type: 3}
+  - Name: BardOutfit [ShowEars]
+    Path: Equipment/Armor/Basic/BardOutfit [ShowEars]
+    Sprite: {fileID: 21300000, guid: 626551ee45a459445816a7b4bb53db3c, type: 3}
+  - Name: BardOutfit [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/BardOutfit [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 9dabda477f3c1d846887140214ac2ba5, type: 3}
+  - Name: BastardSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/BastardSword
+    Sprite: {fileID: 21300000, guid: f66eb7429aa73fd4296b525d5e21de37, type: 3}
+  - Name: BattleAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/BattleAxe
+    Sprite: {fileID: 21300000, guid: 56e6866ee6df96b40b65d57086143e5a, type: 3}
+  - Name: BattleBow
+    Path: Equipment/Bow/Basic/BattleBow
+    Sprite: {fileID: 21300000, guid: fb5a6235b2f1e9c40a13def1d0e23505, type: 3}
+  - Name: BattleBow.Arrow
+    Path: Equipment/Arrow/Basic/BattleBow.Arrow
+    Sprite: {fileID: 21300000, guid: df00776e719bc874cbd13cc50fa61ebb, type: 3}
+  - Name: BattleBow.Quiver
+    Path: Equipment/Quiver/Basic/BattleBow.Quiver
+    Sprite: {fileID: 21300000, guid: f1bd4fdd2fae8dc4f8bee6d6642936ab, type: 3}
+  - Name: BattleLance
+    Path: Equipment/MeleeWeapon2H/Basic/Lance/BattleLance
+    Sprite: {fileID: 21300000, guid: 48e8a1f234200864192bfc6310d946af, type: 3}
+  - Name: BattleSpear
+    Path: Equipment/MeleeWeapon1H/Basic/Spear/BattleSpear
+    Sprite: {fileID: 21300000, guid: 6b3ebc3418b302f4b8feda843bca4aed, type: 3}
+  - Name: BearSkin
+    Path: Equipment/Supplies/Material/BearSkin
+    Sprite: {fileID: 21300000, guid: bd96547b17406e94bbcf8a1cd185ab53, type: 3}
+  - Name: Beet
+    Path: Equipment/Supplies/Food/Beet
+    Sprite: {fileID: 21300000, guid: 5f0e21f08374657419a73f82e1b3af6e, type: 3}
+  - Name: Bell
+    Path: Equipment/Supplies/Other/Bell
+    Sprite: {fileID: 21300000, guid: d77b69dce819be844b5888b9cc81b009, type: 3}
+  - Name: BerserkerBlade
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/BerserkerBlade
+    Sprite: {fileID: 21300000, guid: 118af876e4419764d9af58685d83d8c2, type: 3}
+  - Name: BigPoleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/BigPoleaxe
+    Sprite: {fileID: 21300000, guid: 2d089d79c1c4e644ca91acb34b2899e7, type: 3}
+  - Name: Bilbo
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Bilbo
+    Sprite: {fileID: 21300000, guid: 44e32661b1a66394290ca3a8355c38be, type: 3}
+  - Name: BizarreSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/BizarreSword
+    Sprite: {fileID: 21300000, guid: b3e3d15f5e4626342ba53f07ef3a6070, type: 3}
+  - Name: BlackBearSkin
+    Path: Equipment/Supplies/Material/BlackBearSkin
+    Sprite: {fileID: 21300000, guid: c55ef0fc7bc0fd54ab8fe61aca943598, type: 3}
+  - Name: BlackBoarSkin
+    Path: Equipment/Supplies/Material/BlackBoarSkin
+    Sprite: {fileID: 21300000, guid: 450d6909b93cc8b4ca6ec8fed9e2391f, type: 3}
+  - Name: BlackHammer
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/BlackHammer
+    Sprite: {fileID: 21300000, guid: eeb8d7685e6213741ba956be07b56773, type: 3}
+  - Name: BlackMushroom
+    Path: Equipment/Supplies/Food/BlackMushroom
+    Sprite: {fileID: 21300000, guid: 3c96882364655f74e9bacf2da21e17af, type: 3}
+  - Name: BlackOak
+    Path: Equipment/Supplies/Material/BlackOak
+    Sprite: {fileID: 21300000, guid: de93bdb774780f241a1123760ac2d91d, type: 3}
+  - Name: BlacksmithHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/BlacksmithHammer
+    Sprite: {fileID: 21300000, guid: eb4f0e07266818f469f6d299b4a3a37d, type: 3}
+  - Name: BlackSteelAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/BlackSteelAxe
+    Sprite: {fileID: 21300000, guid: ab3b67d564226b0428dfcbcac8c40cbe, type: 3}
+  - Name: BlackSteelHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/BlackSteelHammer
+    Sprite: {fileID: 21300000, guid: 6d738b2d297685247bfac30ec0e27183, type: 3}
+  - Name: BlackStick
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/BlackStick
+    Sprite: {fileID: 21300000, guid: 26118ab77b6feea44a5fc8e184c21e75, type: 3}
+  - Name: BlessedMace
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/BlessedMace
+    Sprite: {fileID: 21300000, guid: dbff5e59f649ae041912329d2bb8c7a1, type: 3}
+  - Name: Bloodmoon
+    Path: Equipment/Shield/Basic/Bloodmoon
+    Sprite: {fileID: 21300000, guid: ffaef790e8dd40d48a586855fc3f79bb, type: 3}
+  - Name: BloodMoonDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/BloodMoonDagger
+    Sprite: {fileID: 21300000, guid: 163c461908f2b624bb9b07bbabf6cec4, type: 3}
+  - Name: BloodyKatana
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/BloodyKatana
+    Sprite: {fileID: 21300000, guid: a53441491721f1b4c8e6a4f0b3c6e350, type: 3}
+  - Name: BlueGemstone
+    Path: Equipment/Supplies/Currency/BlueGemstone
+    Sprite: {fileID: 21300000, guid: 47f1bedb0ac2d6c43bf7c120ae9ec2bf, type: 3}
+  - Name: BluePotionM
+    Path: Equipment/Supplies/Potion/BluePotionM
+    Sprite: {fileID: 21300000, guid: 6a5228817ab10814faa67f3f787826c6, type: 3}
+  - Name: BluePotionS
+    Path: Equipment/Supplies/Potion/BluePotionS
+    Sprite: {fileID: 21300000, guid: 81e9193ef4aec9b498b4d0bac3f571eb, type: 3}
+  - Name: BlueShield
+    Path: Equipment/Shield/Basic/BlueShield
+    Sprite: {fileID: 21300000, guid: e8b3a0fffd376644ba4f9392d89d5016, type: 3}
+  - Name: BlueSteelGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/BlueSteelGreataxe
+    Sprite: {fileID: 21300000, guid: 4521e5ae5f0f8ea47abef6fd839737eb, type: 3}
+  - Name: BlueWolfAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/BlueWolfAxe
+    Sprite: {fileID: 21300000, guid: a3a010e7055eea943b6a1bc2d626d0f4, type: 3}
+  - Name: BoarFang
+    Path: Equipment/Supplies/Material/BoarFang
+    Sprite: {fileID: 21300000, guid: 82671d964914c9e4582b26db0867ce15, type: 3}
+  - Name: BoarSkin
+    Path: Equipment/Supplies/Material/BoarSkin
+    Sprite: {fileID: 21300000, guid: d19664ee93e9b2e44b12128cb2ea5578, type: 3}
+  - Name: Bomb
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/Bomb
+    Sprite: {fileID: 21300000, guid: e51c68dffc1c3ae4bae6769bf3b4e0d3, type: 3}
+  - Name: Bomb
+    Path: Equipment/MeleeWeapon1H/Basic/Throwable/Bomb
+    Sprite: {fileID: 21300000, guid: 6139e4a2e62dea344b857a12d7d66df8, type: 3}
+  - Name: Bomb
+    Path: Equipment/Supplies/Recipe/Bomb
+    Sprite: {fileID: 21300000, guid: 1cab13c15dcac19488a59c51cfd81d4b, type: 3}
+  - Name: Bone
+    Path: Equipment/Supplies/Material/Bone
+    Sprite: {fileID: 21300000, guid: 0a06eb7fec3b09c4282e0c6120a9969a, type: 3}
+  - Name: BoneBow
+    Path: Equipment/Bow/Skeleton/BoneBow
+    Sprite: {fileID: 21300000, guid: eab5df660f4fe9743adbce042fd951c2, type: 3}
+  - Name: BoneBow.Arrow
+    Path: Equipment/Arrow/Skeleton/BoneBow.Arrow
+    Sprite: {fileID: 21300000, guid: 8f141b4bff693a649ad9c3613cb480e0, type: 3}
+  - Name: BoneBow.Quiver
+    Path: Equipment/Quiver/Skeleton/BoneBow.Quiver
+    Sprite: {fileID: 21300000, guid: eb35731322cb60a47b70fc439cc5c2fd, type: 3}
+  - Name: BoneClub
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/BoneClub
+    Sprite: {fileID: 21300000, guid: 1dfa149f2aa415a42a5f323fb31bf9fc, type: 3}
+  - Name: BoneDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/BoneDagger
+    Sprite: {fileID: 21300000, guid: 19df138f3c50ada46adbf0473386af86, type: 3}
+  - Name: BonePickaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/BonePickaxe
+    Sprite: {fileID: 21300000, guid: 1f64aadd894afd44da2480cdb5e8f3bf, type: 3}
+  - Name: BookA
+    Path: Equipment/Supplies/Book/BookA
+    Sprite: {fileID: 21300000, guid: dc27c27833a642a418a0ca181e90692a, type: 3}
+  - Name: BookB
+    Path: Equipment/Supplies/Book/BookB
+    Sprite: {fileID: 21300000, guid: 4c15b6615f16c3745a4a39016f53b225, type: 3}
+  - Name: BookC
+    Path: Equipment/Supplies/Book/BookC
+    Sprite: {fileID: 21300000, guid: f84cf012196add14fb69c8a69b3b0d86, type: 3}
+  - Name: Bow
+    Path: Equipment/Supplies/Recipe/Bow
+    Sprite: {fileID: 21300000, guid: ad4419ccd203fc64cbe0f776a857a8eb, type: 3}
+  - Name: BowmanVest [ShowEars]
+    Path: Equipment/Armor/Basic/BowmanVest [ShowEars]
+    Sprite: {fileID: 21300000, guid: 6330c397ed64dd94fa8f61340957925c, type: 3}
+  - Name: BowmanVest [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/BowmanVest [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 10a9874278167e6468242399d5205565, type: 3}
+  - Name: Boy
+    Path: BodyParts/Eyes/Basic/Boy
+    Sprite: {fileID: 21300000, guid: 32db12b81dc40af49b61d37c1153fb7a, type: 3}
+  - Name: Boy01
+    Path: BodyParts/Eyes/Basic/Boy01
+    Sprite: {fileID: 21300000, guid: be65faa5da192304eb6b93cdef5ed2da, type: 3}
+  - Name: Boy02
+    Path: BodyParts/Eyes/Basic/Boy02
+    Sprite: {fileID: 21300000, guid: 093efe72d5f44444e8c2027b6c03a457, type: 3}
+  - Name: Brass
+    Path: Equipment/Supplies/Mineral/Brass
+    Sprite: {fileID: 21300000, guid: 555b70100503a4b469f8affafe9a9f4c, type: 3}
+  - Name: BrassPickaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/BrassPickaxe
+    Sprite: {fileID: 21300000, guid: b302fd52dc858a144b1eb66211cf5de3, type: 3}
+  - Name: BrassPoleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/BrassPoleaxe
+    Sprite: {fileID: 21300000, guid: 368a636efa4fdb54da75eaf7ff8f186d, type: 3}
+  - Name: Bread
+    Path: Equipment/Supplies/Food/Bread
+    Sprite: {fileID: 21300000, guid: a454f4b4c47088743a3346da0671c65b, type: 3}
+  - Name: BroFlow
+    Path: BodyParts/Hair/Basic/BroFlow
+    Sprite: {fileID: 21300000, guid: d9980949825d48240adb7c0863536795, type: 3}
+  - Name: BrokenRustySword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/BrokenRustySword
+    Sprite: {fileID: 21300000, guid: 60a87bdc10825304981406cd405bc875, type: 3}
+  - Name: Bronze
+    Path: Equipment/Supplies/Mineral/Bronze
+    Sprite: {fileID: 21300000, guid: 611f0a195cea6494aa74699e60ecca61, type: 3}
+  - Name: BronzeBow
+    Path: Equipment/Bow/Basic/BronzeBow
+    Sprite: {fileID: 21300000, guid: c8195daaade4c7e4aaae3a36e292a39d, type: 3}
+  - Name: BronzeBow.Arrow
+    Path: Equipment/Arrow/Basic/BronzeBow.Arrow
+    Sprite: {fileID: 21300000, guid: 8556534c782542e44b5f054cbac7e47c, type: 3}
+  - Name: BronzeBow.Quiver
+    Path: Equipment/Quiver/Basic/BronzeBow.Quiver
+    Sprite: {fileID: 21300000, guid: 77c711138bd9b644bab3cd8e942401fe, type: 3}
+  - Name: BronzeDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/BronzeDagger
+    Sprite: {fileID: 21300000, guid: e6243e0b8d7ccf04bbba335ac058091e, type: 3}
+  - Name: BronzeHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/BronzeHammer
+    Sprite: {fileID: 21300000, guid: ad145798095872e46a1cc5dad8720880, type: 3}
+  - Name: BronzePickaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/BronzePickaxe
+    Sprite: {fileID: 21300000, guid: 05f44082f9c857c43af53f07e7dfabb1, type: 3}
+  - Name: BronzeRing
+    Path: Equipment/Supplies/Other/BronzeRing
+    Sprite: {fileID: 21300000, guid: 4c5f319ab93b6be468cff8fff593c35e, type: 3}
+  - Name: BronzeShortSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/BronzeShortSword
+    Sprite: {fileID: 21300000, guid: d0cf9981fbd22744da20f13edb10e246, type: 3}
+  - Name: BullHead
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/BullHead
+    Sprite: {fileID: 21300000, guid: a80795aa53f1b914c94d363a7e5312e5, type: 3}
+  - Name: Bullion
+    Path: Equipment/Supplies/Recipe/Bullion
+    Sprite: {fileID: 21300000, guid: bc8c938553b396b4d9de16c510569d37, type: 3}
+  - Name: Burger
+    Path: Equipment/Supplies/Food/Burger
+    Sprite: {fileID: 21300000, guid: 8b5ec9dbfa23e5648a46ea5fa1af5f97, type: 3}
+  - Name: ButcherKnife
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/ButcherKnife
+    Sprite: {fileID: 21300000, guid: bd40d5116bc017f4aa7fdb19528edc40, type: 3}
+  - Name: BuzzCut
+    Path: BodyParts/Hair/Basic/BuzzCut
+    Sprite: {fileID: 21300000, guid: 516ee3149a9f5b740a69d315a7defc48, type: 3}
+  - Name: Cabbage
+    Path: Equipment/Supplies/Food/Cabbage
+    Sprite: {fileID: 21300000, guid: 596731161f29b1446a8ea03d87d0c31f, type: 3}
+  - Name: Cake
+    Path: Equipment/Supplies/Food/Cake
+    Sprite: {fileID: 21300000, guid: 8b6bd394e43dbc94cb92abd3c98e9a22, type: 3}
+  - Name: Candle
+    Path: Equipment/Supplies/Other/Candle
+    Sprite: {fileID: 21300000, guid: 1de1079edcdb5714ba839c9f9de5ea14, type: 3}
+  - Name: Candy
+    Path: Equipment/Supplies/Food/Candy
+    Sprite: {fileID: 21300000, guid: 633022817552b5e49a13bfd09a507c4b, type: 3}
+  - Name: CandyCannon
+    Path: Equipment/Firearm1H/Basic/CandyCannon
+    Sprite: {fileID: 21300000, guid: 05b048b57835f8c4abbc8f122d4e1453, type: 3}
+  - Name: CandyHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/CandyHammer
+    Sprite: {fileID: 21300000, guid: aeaf40567ebb9074b841d0229768fbe0, type: 3}
+  - Name: CaramelShield
+    Path: Equipment/Shield/Basic/CaramelShield
+    Sprite: {fileID: 21300000, guid: e5a873f7b037b724cbe9fcaa9b6cef42, type: 3}
+  - Name: Carrot
+    Path: Equipment/Supplies/Food/Carrot
+    Sprite: {fileID: 21300000, guid: a420af498e2402342aa3baeef374467e, type: 3}
+  - Name: CasualBoy1 [ShowEars]
+    Path: Equipment/Armor/Basic/CasualBoy1 [ShowEars]
+    Sprite: {fileID: 21300000, guid: fa95ca64274488a4d97c2851073eebf0, type: 3}
+  - Name: CasualBoy1 [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/CasualBoy1 [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 2b6fbb9b0ab77b945927b00df3560870, type: 3}
+  - Name: CasualBoy2 [ShowEars]
+    Path: Equipment/Armor/Basic/CasualBoy2 [ShowEars]
+    Sprite: {fileID: 21300000, guid: 3830d76b7353b1d40818e04236729bd3, type: 3}
+  - Name: CasualBoy2 [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/CasualBoy2 [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 5fc7caae47d12514696bdf216867f2d8, type: 3}
+  - Name: CasualBoy3 [ShowEars]
+    Path: Equipment/Armor/Basic/CasualBoy3 [ShowEars]
+    Sprite: {fileID: 21300000, guid: 465ad7aad0f8cbc46a77be2e45ed18b4, type: 3}
+  - Name: CasualBoy3 [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/CasualBoy3 [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 9d105f9fa5f240a4f86b79665548b264, type: 3}
+  - Name: CasualGirl1 [ShowEars] [FullHair]
+    Path: Equipment/Armor/Basic/CasualGirl1 [ShowEars] [FullHair]
+    Sprite: {fileID: 21300000, guid: 05d5e4a46e59b5e449c8304370b4d7f4, type: 3}
+  - Name: CasualGirl1 [ShowEars] [FullHair].Helmet
+    Path: Equipment/Helmet/Basic/CasualGirl1 [ShowEars] [FullHair].Helmet
+    Sprite: {fileID: 21300000, guid: c6dd0191686f0c543a5a2a784fac339c, type: 3}
+  - Name: CasualGirl2 [ShowEars] [FullHair]
+    Path: Equipment/Armor/Basic/CasualGirl2 [ShowEars] [FullHair]
+    Sprite: {fileID: 21300000, guid: f2201fc5a1ebea54ca96011434ba219d, type: 3}
+  - Name: CasualGirl2 [ShowEars] [FullHair].Helmet
+    Path: Equipment/Helmet/Basic/CasualGirl2 [ShowEars] [FullHair].Helmet
+    Sprite: {fileID: 21300000, guid: afad145cfcde4ae4fabf55fb2d343b05, type: 3}
+  - Name: CasualGirl3 [ShowEars] [FullHair]
+    Path: Equipment/Armor/Basic/CasualGirl3 [ShowEars] [FullHair]
+    Sprite: {fileID: 21300000, guid: 9a023d114e8e06b49b9b3a4e95ba79e9, type: 3}
+  - Name: CasualGirl3 [ShowEars] [FullHair].Helmet
+    Path: Equipment/Helmet/Basic/CasualGirl3 [ShowEars] [FullHair].Helmet
+    Sprite: {fileID: 21300000, guid: 6ecbc36b9bbf8574db8d875b55eb0e6d, type: 3}
+  - Name: CasualMessy
+    Path: BodyParts/Hair/Basic/CasualMessy
+    Sprite: {fileID: 21300000, guid: 6c7db5464ed04df488751de760b9d078, type: 3}
+  - Name: CataphractArmor
+    Path: Equipment/Armor/Basic/CataphractArmor
+    Sprite: {fileID: 21300000, guid: f85aad0ec40f6264e87c77bce2c3e5c8, type: 3}
+  - Name: CataphractArmor.Helmet
+    Path: Equipment/Helmet/Basic/CataphractArmor.Helmet
+    Sprite: {fileID: 21300000, guid: cf707c7b7c214c844a5570eb47840966, type: 3}
+  - Name: CataphractLance
+    Path: Equipment/MeleeWeapon2H/Basic/Lance/CataphractLance
+    Sprite: {fileID: 21300000, guid: 6a88277f9b3d8da44b7d7da9b6ebbfe6, type: 3}
+  - Name: CaveRatSkin
+    Path: Equipment/Supplies/Material/CaveRatSkin
+    Sprite: {fileID: 21300000, guid: ebd608e62be3d834788689a0fe706f63, type: 3}
+  - Name: ChainmailLightArmor
+    Path: Equipment/Armor/Basic/ChainmailLightArmor
+    Sprite: {fileID: 21300000, guid: c12e18b055b09a84cb4baea646a40256, type: 3}
+  - Name: ChainmailLightArmor.Helmet
+    Path: Equipment/Helmet/Basic/ChainmailLightArmor.Helmet
+    Sprite: {fileID: 21300000, guid: df430d452daa6d74a9b43f496f02bd8c, type: 3}
+  - Name: ChampionArmor
+    Path: Equipment/Armor/Basic/ChampionArmor
+    Sprite: {fileID: 21300000, guid: 7579f9825a3b83741adb3c3df054cb0e, type: 3}
+  - Name: ChampionArmor.Helmet
+    Path: Equipment/Helmet/Basic/ChampionArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 65291c4e47576a94698d155f4164abe1, type: 3}
+  - Name: ChampionBattlehammer
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/ChampionBattlehammer
+    Sprite: {fileID: 21300000, guid: 9d8741ba149ea8947a2efc4e2ab10fe8, type: 3}
+  - Name: Cheese
+    Path: Equipment/Supplies/Food/Cheese
+    Sprite: {fileID: 21300000, guid: e755852bd0f76ab4897468100dc7412c, type: 3}
+  - Name: ChevalierArmor
+    Path: Equipment/Armor/Basic/ChevalierArmor
+    Sprite: {fileID: 21300000, guid: 72c34f7c0fb8c024a90a4947e930df1e, type: 3}
+  - Name: ChevalierArmor.Helmet
+    Path: Equipment/Helmet/Basic/ChevalierArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 33734d0ea112c0a4d9c6065c749b7664, type: 3}
+  - Name: ChiliPepper
+    Path: Equipment/Supplies/Food/ChiliPepper
+    Sprite: {fileID: 21300000, guid: 876332c41cf8a1448a3a09477b898a21, type: 3}
+  - Name: ChiliPepperBomb
+    Path: Equipment/Supplies/Bomb/ChiliPepperBomb
+    Sprite: {fileID: 21300000, guid: ad4152a90427d424ab4c6b45c43c193f, type: 3}
+  - Name: ChiliPepperBombTypeB
+    Path: Equipment/Supplies/Bomb/ChiliPepperBombTypeB
+    Sprite: {fileID: 21300000, guid: 8bffe8523af8a8240b5bf31fd9379eaf, type: 3}
+  - Name: ChiliPepperBombTypeC
+    Path: Equipment/Supplies/Bomb/ChiliPepperBombTypeC
+    Sprite: {fileID: 21300000, guid: c44077b930040474db8e5593dde2f5d4, type: 3}
+  - Name: ChristmasBell
+    Path: Equipment/Supplies/Other/ChristmasBell
+    Sprite: {fileID: 21300000, guid: c8cea33253f87a941956c6a7ff06ac17, type: 3}
+  - Name: ChristmasCandy
+    Path: Equipment/Supplies/Food/ChristmasCandy
+    Sprite: {fileID: 21300000, guid: c18569926c5c3524caa01b907d66b335, type: 3}
+  - Name: ChristmasPresent
+    Path: Equipment/Supplies/Other/ChristmasPresent
+    Sprite: {fileID: 21300000, guid: 68347f566833e9746a4950b4d0c9f699, type: 3}
+  - Name: ChristmasStocking
+    Path: Equipment/Supplies/Other/ChristmasStocking
+    Sprite: {fileID: 21300000, guid: 12968d980ee4ae741b6f6fbdbc530585, type: 3}
+  - Name: ChristmasTreeToy
+    Path: Equipment/Supplies/Other/ChristmasTreeToy
+    Sprite: {fileID: 21300000, guid: 2eccb788974043942b6552e4f77d0d0e, type: 3}
+  - Name: ChristmasTurkey
+    Path: Equipment/Supplies/Food/ChristmasTurkey
+    Sprite: {fileID: 21300000, guid: 8cc6bba574244ab46866289b30408195, type: 3}
+  - Name: ChristmasWreath
+    Path: Equipment/Supplies/Other/ChristmasWreath
+    Sprite: {fileID: 21300000, guid: f5bff09d4c2de72449e8d812c469d37f, type: 3}
+  - Name: ChronoPoleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/ChronoPoleaxe
+    Sprite: {fileID: 21300000, guid: 5a0eb10bbd0a4434cbe9978f5f409cce, type: 3}
+  - Name: Cider
+    Path: Equipment/Supplies/Potion/Cider
+    Sprite: {fileID: 21300000, guid: 4890c6f943fe7544d8ef93926dc989e1, type: 3}
+  - Name: Cleaver
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Cleaver
+    Sprite: {fileID: 21300000, guid: e0d084da1503b5b49a5f780b42f1e6ff, type: 3}
+  - Name: ClericRobe
+    Path: Equipment/Armor/Basic/ClericRobe
+    Sprite: {fileID: 21300000, guid: 22bb3e1b0563b8b46bbd0a6e78e59cf6, type: 3}
+  - Name: ClericRobe.Helmet
+    Path: Equipment/Helmet/Basic/ClericRobe.Helmet
+    Sprite: {fileID: 21300000, guid: 85c6cba0b1e47a144afa9e5c79f139ad, type: 3}
+  - Name: ClericWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/ClericWand
+    Sprite: {fileID: 21300000, guid: bc392c1595d987141bbe3eb582bd25d3, type: 3}
+  - Name: Clover
+    Path: Equipment/Supplies/Other/Clover
+    Sprite: {fileID: 21300000, guid: 389024d3e676cb249ba41a7b18ff613a, type: 3}
+  - Name: Coin
+    Path: Equipment/Supplies/Currency/Coin
+    Sprite: {fileID: 21300000, guid: eeb600b527962b247b9305aa09914320, type: 3}
+  - Name: Coins
+    Path: Equipment/Supplies/Currency/Coins
+    Sprite: {fileID: 21300000, guid: cb850f55bd934b645911c12e5eb0d75e, type: 3}
+  - Name: CollegeBoy
+    Path: BodyParts/Hair/Basic/CollegeBoy
+    Sprite: {fileID: 21300000, guid: 1b4e4dbe81479e44491b94b9ef963124, type: 3}
+  - Name: CombatPistol
+    Path: Equipment/Firearm1H/Basic/CombatPistol
+    Sprite: {fileID: 21300000, guid: c02fcf0efc6a02c49b28573aaa90e072, type: 3}
+  - Name: Commando
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/Commando
+    Sprite: {fileID: 21300000, guid: 48d4576b6fc9a934f84f3877f05a72c3, type: 3}
+  - Name: Compass
+    Path: Equipment/Supplies/Other/Compass
+    Sprite: {fileID: 21300000, guid: 0665bb73f33aa1646a8fbc606cddba0c, type: 3}
+  - Name: ConquerorSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/ConquerorSword
+    Sprite: {fileID: 21300000, guid: d3e0e6a338dc6db439ecca5cba611001, type: 3}
+  - Name: Copper
+    Path: Equipment/Supplies/Mineral/Copper
+    Sprite: {fileID: 21300000, guid: c921cff699cd7bf4aaa92b2ef9ad2aa9, type: 3}
+  - Name: CopperOre
+    Path: Equipment/Supplies/Mineral/CopperOre
+    Sprite: {fileID: 21300000, guid: 87b3c9e5b4da4e046b3bfaefd1aa8425, type: 3}
+  - Name: Corn
+    Path: Equipment/Supplies/Food/Corn
+    Sprite: {fileID: 21300000, guid: ae2b56a9f24619247a01d030a6a81ff8, type: 3}
+  - Name: CreepySmile
+    Path: BodyParts/Mouth/Basic/CreepySmile
+    Sprite: {fileID: 21300000, guid: 7b3734d05dda17740a4fc6488db8406e, type: 3}
+  - Name: CrescentBow
+    Path: Equipment/Bow/Basic/CrescentBow
+    Sprite: {fileID: 21300000, guid: 5d4cfdff070b5f3469c5a1b4d5a1f5d2, type: 3}
+  - Name: CrescentBow.Arrow
+    Path: Equipment/Arrow/Basic/CrescentBow.Arrow
+    Sprite: {fileID: 21300000, guid: 48db65f6ff2ae304492dd05f0adf4218, type: 3}
+  - Name: CrescentBow.Quiver
+    Path: Equipment/Quiver/Basic/CrescentBow.Quiver
+    Sprite: {fileID: 21300000, guid: a8a4b1bc45ee96a45adfcfbfd28de540, type: 3}
+  - Name: CrusaderChainmail
+    Path: Equipment/Armor/Basic/CrusaderChainmail
+    Sprite: {fileID: 21300000, guid: 093e40d88d3790d47be1a030f15ab6dc, type: 3}
+  - Name: CrusaderChainmail.Helmet
+    Path: Equipment/Helmet/Basic/CrusaderChainmail.Helmet
+    Sprite: {fileID: 21300000, guid: 95ad267c92f5c1341803a8b2b9809d46, type: 3}
+  - Name: CrusaderShield
+    Path: Equipment/Shield/Basic/CrusaderShield
+    Sprite: {fileID: 21300000, guid: 45a13f436952a9a43b5e33a6363fda66, type: 3}
+  - Name: Cucumber
+    Path: Equipment/Supplies/Food/Cucumber
+    Sprite: {fileID: 21300000, guid: e0f59068571f3534e84c5b9af070c3a5, type: 3}
+  - Name: CupOfCoffee
+    Path: Equipment/Supplies/Food/CupOfCoffee
+    Sprite: {fileID: 21300000, guid: bec987eb47119cf44b3c2f12d42da266, type: 3}
+  - Name: CursedTreeBow
+    Path: Equipment/Bow/Basic/CursedTreeBow
+    Sprite: {fileID: 21300000, guid: eaeff0e9fd1f9e0438af1406f1bb7d54, type: 3}
+  - Name: CursedTreeBow.Arrow
+    Path: Equipment/Arrow/Basic/CursedTreeBow.Arrow
+    Sprite: {fileID: 21300000, guid: 9635e75718561f6409234ec017f8954f, type: 3}
+  - Name: CursedTreeBow.Quiver
+    Path: Equipment/Quiver/Basic/CursedTreeBow.Quiver
+    Sprite: {fileID: 21300000, guid: 440c5ed0d0b461343b6b993ec4a5644e, type: 3}
+  - Name: CurvedDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/CurvedDagger
+    Sprite: {fileID: 21300000, guid: da1b533b1f37a94448a46cae89bb5786, type: 3}
+  - Name: CurvedShortBow
+    Path: Equipment/Bow/Basic/CurvedShortBow
+    Sprite: {fileID: 21300000, guid: 97946dbaca1defe43922ae7c4aeb9fad, type: 3}
+  - Name: CurvedShortBow.Arrow
+    Path: Equipment/Arrow/Basic/CurvedShortBow.Arrow
+    Sprite: {fileID: 21300000, guid: d9a9ac5b2e9f3694d94b5677a1af75f1, type: 3}
+  - Name: CurvedShortBow.Quiver
+    Path: Equipment/Quiver/Basic/CurvedShortBow.Quiver
+    Sprite: {fileID: 21300000, guid: 13a302a60fc0cef47a8696e7497043d1, type: 3}
+  - Name: Cutlus
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Cutlus
+    Sprite: {fileID: 21300000, guid: dc1eb20920c67394e8c0206727ecf44e, type: 3}
+  - Name: Dagger
+    Path: Equipment/Supplies/Recipe/Dagger
+    Sprite: {fileID: 21300000, guid: c6fe42d148a165644984a2fc13db8be9, type: 3}
+  - Name: DarkLordArmor
+    Path: Equipment/Armor/Epic/DarkLordArmor
+    Sprite: {fileID: 21300000, guid: 537210f3344cd644daf8ba31c40bbbaa, type: 3}
+  - Name: DarkLordArmor.Helmet
+    Path: Equipment/Helmet/Basic/DarkLordArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 5b5234f037f4d95408df38e6f69d5324, type: 3}
+  - Name: DarkLordArmor.Helmet
+    Path: Equipment/Helmet/Epic/DarkLordArmor.Helmet
+    Sprite: {fileID: 21300000, guid: caa290e5f1991df4e910f648c5679b8f, type: 3}
+  - Name: DarkLordSword
+    Path: Equipment/MeleeWeapon2H/Epic/Sword/DarkLordSword
+    Sprite: {fileID: 21300000, guid: 1d6c1ff9614a61b4ea2816c846ebab05, type: 3}
+  - Name: DarknessBeastSkin
+    Path: Equipment/Supplies/Material/DarknessBeastSkin
+    Sprite: {fileID: 21300000, guid: dddba3f527a541447b72aa610a620bb7, type: 3}
+  - Name: DarkSteelKatana
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/DarkSteelKatana
+    Sprite: {fileID: 21300000, guid: 1a6848b0ff545c648b04bcf5b10cbd71, type: 3}
+  - Name: DarkStoneHammer
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/DarkStoneHammer
+    Sprite: {fileID: 21300000, guid: c92a0eb9d467af14ab1ea736ff1f6a3d, type: 3}
+  - Name: Dead
+    Path: BodyParts/Eyes/Goblin/Dead
+    Sprite: {fileID: 21300000, guid: d0c2a319f48f3da4da12acdcf8e9ef91, type: 3}
+  - Name: Dead1
+    Path: BodyParts/Mouth/Goblin/Dead1
+    Sprite: {fileID: 21300000, guid: 153ebf1da95f55445b1ba174a0ca0dd4, type: 3}
+  - Name: Dead2
+    Path: BodyParts/Mouth/Goblin/Dead2
+    Sprite: {fileID: 21300000, guid: 4b6be4976ddc0304a937f72bb8edc453, type: 3}
+  - Name: DeadEyebrowns1
+    Path: BodyParts/Eyebrows/Emoji/DeadEyebrowns1
+    Sprite: {fileID: 21300000, guid: cf746d4b9bbd58949978e5e2a90dbc3e, type: 3}
+  - Name: DeadEyebrowns2
+    Path: BodyParts/Eyebrows/Emoji/DeadEyebrowns2
+    Sprite: {fileID: 21300000, guid: bb6cbb5d18abba141818fdff16a8c640, type: 3}
+  - Name: DeadEyes1
+    Path: BodyParts/Eyes/Emoji/DeadEyes1
+    Sprite: {fileID: 21300000, guid: 6923fd146d0d9ff468f46c4dcf1ed546, type: 3}
+  - Name: DeadEyes2
+    Path: BodyParts/Eyes/Emoji/DeadEyes2
+    Sprite: {fileID: 21300000, guid: 049edac12fb9ba44285b9e889a43d91f, type: 3}
+  - Name: DeadEyes3
+    Path: BodyParts/Eyes/Emoji/DeadEyes3
+    Sprite: {fileID: 21300000, guid: 5ae2c4a28d78956459c440d24e3d92ad, type: 3}
+  - Name: DeadEyes4
+    Path: BodyParts/Eyes/Emoji/DeadEyes4
+    Sprite: {fileID: 21300000, guid: d5d687b123387634080f0a5bf9b109ec, type: 3}
+  - Name: DeadEyes5
+    Path: BodyParts/Eyes/Emoji/DeadEyes5
+    Sprite: {fileID: 21300000, guid: 4555275df1d13ec46abdd34a12a47fbe, type: 3}
+  - Name: DeadMouth1
+    Path: BodyParts/Mouth/Emoji/DeadMouth1
+    Sprite: {fileID: 21300000, guid: 1ee5af61b666206489aae123c6764435, type: 3}
+  - Name: DeadMouth2
+    Path: BodyParts/Mouth/Emoji/DeadMouth2
+    Sprite: {fileID: 21300000, guid: 650ea0e116257c247add887ff34677e3, type: 3}
+  - Name: DeadMouth3
+    Path: BodyParts/Mouth/Emoji/DeadMouth3
+    Sprite: {fileID: 21300000, guid: d68c25fe05bc5274abcae210be5142f1, type: 3}
+  - Name: DeadMouth4
+    Path: BodyParts/Mouth/Emoji/DeadMouth4
+    Sprite: {fileID: 21300000, guid: c9b9dbe7f3247c44cae902644deeec79, type: 3}
+  - Name: Default
+    Path: BodyParts/Eyebrows/Basic/Default
+    Sprite: {fileID: 21300000, guid: c5f8410ce1fdd824394d29db9b33224b, type: 3}
+  - Name: Default
+    Path: BodyParts/Hair/Basic/Default
+    Sprite: {fileID: 21300000, guid: 895cd79635dba924188e32a8d64a34e3, type: 3}
+  - Name: Default
+    Path: BodyParts/Mouth/Basic/Default
+    Sprite: {fileID: 21300000, guid: 170bceb34bca17c429b5dd5f5c689047, type: 3}
+  - Name: Defender
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/Defender
+    Sprite: {fileID: 21300000, guid: c7362aa252a24c54abda047ebe653a6c, type: 3}
+  - Name: Destroyer
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/Destroyer
+    Sprite: {fileID: 21300000, guid: 4d0c802376c5add439c6401fa39f4a30, type: 3}
+  - Name: DestroyerGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/DestroyerGreataxe
+    Sprite: {fileID: 21300000, guid: 752febd0170852b47b3625d6b76bcda5, type: 3}
+  - Name: Dice
+    Path: Equipment/Supplies/Other/Dice
+    Sprite: {fileID: 21300000, guid: 63b9f48eda4f57c40b3b59757105fff2, type: 3}
+  - Name: DiscountCoupon
+    Path: Equipment/Supplies/Other/DiscountCoupon
+    Sprite: {fileID: 21300000, guid: 2480ffc0e96f8ba4987a7b3d478866e0, type: 3}
+  - Name: DivineArmor
+    Path: Equipment/Armor/Epic/DivineArmor
+    Sprite: {fileID: 21300000, guid: 3839be2b0040aa34b863f4d18dde7248, type: 3}
+  - Name: DivineArmor.Helmet
+    Path: Equipment/Helmet/Basic/DivineArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 50d626de8df521548ac3bc8e2cfc5810, type: 3}
+  - Name: DivineArmor.Helmet
+    Path: Equipment/Helmet/Epic/DivineArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 8f4f7002898731e40a6707ab60756023, type: 3}
+  - Name: DivineSword
+    Path: Equipment/MeleeWeapon2H/Epic/Sword/DivineSword
+    Sprite: {fileID: 21300000, guid: 22360f9dd5db50a42bfae58538cd8341, type: 3}
+  - Name: Doner
+    Path: Equipment/Supplies/Food/Doner
+    Sprite: {fileID: 21300000, guid: aa51f32a9ac5d414a8c753b5c5c9af66, type: 3}
+  - Name: Doner
+    Path: Equipment/Supplies/Recipe/Doner
+    Sprite: {fileID: 21300000, guid: 348722d58ecd8c9429473980252a463d, type: 3}
+  - Name: Donut
+    Path: Equipment/Supplies/Food/Donut
+    Sprite: {fileID: 21300000, guid: 340343d0104c01e4dbb523a76ced24e0, type: 3}
+  - Name: DoomWing
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/DoomWing
+    Sprite: {fileID: 21300000, guid: 2e05d58b590d73f448d86c76d39b1749, type: 3}
+  - Name: Dot
+    Path: BodyParts/Mouth/Basic/Dot
+    Sprite: {fileID: 21300000, guid: c724498be462d68408ece1d20e4f67ff, type: 3}
+  - Name: DotEyes
+    Path: BodyParts/Eyes/Emoji/DotEyes
+    Sprite: {fileID: 21300000, guid: cbbe81bb72ba3d34c9747009dff6d219, type: 3}
+  - Name: DoubleBarrelledPistol
+    Path: Equipment/Firearm1H/Basic/DoubleBarrelledPistol
+    Sprite: {fileID: 21300000, guid: f1a331cf2efe9ab4e9309d4739a60a58, type: 3}
+  - Name: DoubleBarrelledShotgun
+    Path: Equipment/Firearm1H/Basic/DoubleBarrelledShotgun
+    Sprite: {fileID: 21300000, guid: 1559239f5c6be7f4faa290aaf1e57d32, type: 3}
+  - Name: DragonBoneBow
+    Path: Equipment/Bow/Basic/DragonBoneBow
+    Sprite: {fileID: 21300000, guid: 258c87e7c0dd14d4398903cb1e030377, type: 3}
+  - Name: DragonBoneBow.Arrow
+    Path: Equipment/Arrow/Basic/DragonBoneBow.Arrow
+    Sprite: {fileID: 21300000, guid: 847daf8d0e7efeb4880fd4c6b84f5a99, type: 3}
+  - Name: DragonBoneBow.Quiver
+    Path: Equipment/Quiver/Basic/DragonBoneBow.Quiver
+    Sprite: {fileID: 21300000, guid: 433fbece48370a541b38020b7e749789, type: 3}
+  - Name: Dragonite
+    Path: Equipment/Supplies/Mineral/Dragonite
+    Sprite: {fileID: 21300000, guid: b1bfe6dd2b62225438f968bedaa1dcdf, type: 3}
+  - Name: DragoniteGreatsword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/DragoniteGreatsword
+    Sprite: {fileID: 21300000, guid: 18e6d66e15a27324fb69f1d08f4e8041, type: 3}
+  - Name: DreadCleaver
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/DreadCleaver
+    Sprite: {fileID: 21300000, guid: 5342ce91f3a37da4f9a2142e74d85e81, type: 3}
+  - Name: DreadEyeWings
+    Path: Equipment/Supplies/Material/DreadEyeWings
+    Sprite: {fileID: 21300000, guid: fb46f8b7f22b3c347979b132d12794bb, type: 3}
+  - Name: Drum
+    Path: Equipment/Shield/Basic/Drum
+    Sprite: {fileID: 21300000, guid: 2f76a7c0852ef664eb5887ba83168f1f, type: 3}
+  - Name: EagleWing
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/EagleWing
+    Sprite: {fileID: 21300000, guid: dcda7696e514fa84bb2f61c0e67b391b, type: 3}
+  - Name: EdgyBladeAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/EdgyBladeAxe
+    Sprite: {fileID: 21300000, guid: 68e6c4d85f13c084caecef8d332d3530, type: 3}
+  - Name: Egg
+    Path: Equipment/Supplies/Food/Egg
+    Sprite: {fileID: 21300000, guid: d2de41c9d4d815549a18c189310a96b0, type: 3}
+  - Name: Eggnog
+    Path: Equipment/Supplies/Food/Eggnog
+    Sprite: {fileID: 21300000, guid: 1c1cc1adf3c171e4d95a62fb126812dd, type: 3}
+  - Name: Eggplant
+    Path: Equipment/Supplies/Food/Eggplant
+    Sprite: {fileID: 21300000, guid: 864fabe857b73714ba2546ae6fd2a5fb, type: 3}
+  - Name: ElegantShield
+    Path: Equipment/Shield/Basic/ElegantShield
+    Sprite: {fileID: 21300000, guid: a49aaa1c654d6774fba6ce9d799e4d3d, type: 3}
+  - Name: Elf
+    Path: BodyParts/Ears/Basic/Elf
+    Sprite: {fileID: 21300000, guid: 50bdf0c52dca63a4daccd6637411a0b7, type: 3}
+  - Name: ElfCostume [ShowEars] [FullHair]
+    Path: Equipment/Armor/Basic/ElfCostume [ShowEars] [FullHair]
+    Sprite: {fileID: 21300000, guid: b5f9714ea7e50364385c60c0408b1ae7, type: 3}
+  - Name: ElfCostume [ShowEars] [FullHair].Helmet
+    Path: Equipment/Helmet/Basic/ElfCostume [ShowEars] [FullHair].Helmet
+    Sprite: {fileID: 21300000, guid: 7e1e67b073db95b46abc68f9cf8afa72, type: 3}
+  - Name: ElfMask
+    Path: Equipment/Mask/Basic/ElfMask
+    Sprite: {fileID: 21300000, guid: 141d9c3002ecb0a4aa29d507392b479f, type: 3}
+  - Name: EliteFangBow.Arrow
+    Path: Equipment/Arrow/Basic/EliteFangBow.Arrow
+    Sprite: {fileID: 21300000, guid: 1957591b2f29f014ea10048e5bdbbb24, type: 3}
+  - Name: EliteFangBow.Quiver
+    Path: Equipment/Quiver/Basic/EliteFangBow.Quiver
+    Sprite: {fileID: 21300000, guid: e51d30bfa5f642149b67f51d03cd6276, type: 3}
+  - Name: EliteKnightArmor
+    Path: Equipment/Armor/Basic/EliteKnightArmor
+    Sprite: {fileID: 21300000, guid: 533841a3f6ac46640a312f33b1baf550, type: 3}
+  - Name: EliteKnightArmor.Helmet
+    Path: Equipment/Helmet/Basic/EliteKnightArmor.Helmet
+    Sprite: {fileID: 21300000, guid: cf862557a44bb914f9ac67438ba1414e, type: 3}
+  - Name: EliteLongsword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/EliteLongsword
+    Sprite: {fileID: 21300000, guid: df49fbb99f8243e45875dbe080c37f96, type: 3}
+  - Name: EliteShortBow
+    Path: Equipment/Bow/Basic/EliteShortBow
+    Sprite: {fileID: 21300000, guid: 122adbd8057353d438a51e139af76b21, type: 3}
+  - Name: EliteShortBow.Arrow
+    Path: Equipment/Arrow/Basic/EliteShortBow.Arrow
+    Sprite: {fileID: 21300000, guid: c1423f2a58d0d1b4baa5146611fa741a, type: 3}
+  - Name: EliteShortBow.Quiver
+    Path: Equipment/Quiver/Basic/EliteShortBow.Quiver
+    Sprite: {fileID: 21300000, guid: bc7d220dac3be86419c651de799c109c, type: 3}
+  - Name: EliteSkullcrusher
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/EliteSkullcrusher
+    Sprite: {fileID: 21300000, guid: 79cc9b15506b66946bfc12d1833bdbf2, type: 3}
+  - Name: Ember
+    Path: Equipment/Supplies/Other/Ember
+    Sprite: {fileID: 21300000, guid: eeff9f640e9eea649a1a4868086844fb, type: 3}
+  - Name: Empty
+    Path: Empty
+    Sprite: {fileID: 21300000, guid: 2592d89d825e18e40bbd0df315004167, type: 3}
+  - Name: EmptyCan
+    Path: Equipment/Supplies/Food/EmptyCan
+    Sprite: {fileID: 21300000, guid: d45fc24286b3af64fb82c9666693b772, type: 3}
+  - Name: EmptyCan
+    Path: Equipment/Supplies/Material/EmptyCan
+    Sprite: {fileID: 21300000, guid: 5a4841f85bc468d4faa21c57b6c0d06c, type: 3}
+  - Name: EnhancedDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/EnhancedDagger
+    Sprite: {fileID: 21300000, guid: fa61fff55860746468c636e62079be66, type: 3}
+  - Name: Envelope
+    Path: Equipment/Supplies/Other/Envelope
+    Sprite: {fileID: 21300000, guid: bd8d368c8170063428395b8483ff516a, type: 3}
+  - Name: Evil
+    Path: BodyParts/Eyes/Basic/Evil
+    Sprite: {fileID: 21300000, guid: 0953e8ff5b6360f42a221ad0a6a9faf1, type: 3}
+  - Name: EvilEye
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/EvilEye
+    Sprite: {fileID: 21300000, guid: bf6a1d5d598c34b4faa074cc7d23cecc, type: 3}
+  - Name: EvilEyeWings
+    Path: Equipment/Supplies/Material/EvilEyeWings
+    Sprite: {fileID: 21300000, guid: bdf0dd3742a7af647b936b3c1f3f0b44, type: 3}
+  - Name: EvilHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/EvilHammer
+    Sprite: {fileID: 21300000, guid: 17d69327c38bed048b6376d05af8d755, type: 3}
+  - Name: Example
+    Path: Equipment/Makeup/Goblin/Example
+    Sprite: {fileID: 21300000, guid: fd109b4c031250148800824bccfd7f19, type: 3}
+  - Name: ExoticLance
+    Path: Equipment/MeleeWeapon2H/Basic/Lance/ExoticLance
+    Sprite: {fileID: 21300000, guid: e98d6fbbad1bad8498331edf40449b92, type: 3}
+  - Name: ExoticSiegeAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/ExoticSiegeAxe
+    Sprite: {fileID: 21300000, guid: 90d4df61b4c6b764fb1777c1520daf33, type: 3}
+  - Name: Exp
+    Path: Equipment/Supplies/Other/Exp
+    Sprite: {fileID: 21300000, guid: a947f24b9db7ba0478f9474690293319, type: 3}
+  - Name: ExpertBowmanVest [ShowEars]
+    Path: Equipment/Armor/Basic/ExpertBowmanVest [ShowEars]
+    Sprite: {fileID: 21300000, guid: 82cb3dd52d3c3f041a639d19321150b8, type: 3}
+  - Name: ExpertBowmanVest [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/ExpertBowmanVest [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 8bb9890104c799a4daa01b16dca11345, type: 3}
+  - Name: ExpertHunterVest [ShowEars]
+    Path: Equipment/Armor/Basic/ExpertHunterVest [ShowEars]
+    Sprite: {fileID: 21300000, guid: 0a79f84de7964c241b65642a05048862, type: 3}
+  - Name: ExpertHunterVest [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/ExpertHunterVest [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: e580abbe8748b5840a7be157da505d32, type: 3}
+  - Name: ExpertSoup
+    Path: Equipment/Supplies/Food/ExpertSoup
+    Sprite: {fileID: 21300000, guid: 846488fb815271f43835fef1d318563b, type: 3}
+  - Name: ExtremeSoup
+    Path: Equipment/Supplies/Food/ExtremeSoup
+    Sprite: {fileID: 21300000, guid: 31bd760966e3e5349969603a0cc5bd24, type: 3}
+  - Name: Eyebrows1
+    Path: BodyParts/Eyebrows/Basic/Eyebrows1
+    Sprite: {fileID: 21300000, guid: 7c0c9ab6cc471c74691999c40fd18762, type: 3}
+  - Name: Eyebrows2
+    Path: BodyParts/Eyebrows/Basic/Eyebrows2
+    Sprite: {fileID: 21300000, guid: b19e1af166e845d4e8b4f3fcfa1f56de, type: 3}
+  - Name: Eyebrows3
+    Path: BodyParts/Eyebrows/Basic/Eyebrows3
+    Sprite: {fileID: 21300000, guid: 7d6bbb5a0f7c3954eb71001d7cbcb51c, type: 3}
+  - Name: Eyebrows4
+    Path: BodyParts/Eyebrows/Basic/Eyebrows4
+    Sprite: {fileID: 21300000, guid: f22787d19be248745a6276056aa05ab3, type: 3}
+  - Name: Eyebrows5
+    Path: BodyParts/Eyebrows/Basic/Eyebrows5
+    Sprite: {fileID: 21300000, guid: fdd54346c1caeb540b5f9f1ea0d08ff7, type: 3}
+  - Name: Eyebrows6
+    Path: BodyParts/Eyebrows/Basic/Eyebrows6
+    Sprite: {fileID: 21300000, guid: dc419ffac7bc48a45aa04cbe7a92817f, type: 3}
+  - Name: Eyebrows7
+    Path: BodyParts/Eyebrows/Basic/Eyebrows7
+    Sprite: {fileID: 21300000, guid: 930767e4dc662c54e98a181aa659b10f, type: 3}
+  - Name: FalconBow
+    Path: Equipment/Bow/Basic/FalconBow
+    Sprite: {fileID: 21300000, guid: 0b9b4f1f0e203474c94d2434c144229f, type: 3}
+  - Name: FalconBow.Arrow
+    Path: Equipment/Arrow/Basic/FalconBow.Arrow
+    Sprite: {fileID: 21300000, guid: 932da0ce044648248b621cacebd5a7d7, type: 3}
+  - Name: FalconBow.Quiver
+    Path: Equipment/Quiver/Basic/FalconBow.Quiver
+    Sprite: {fileID: 21300000, guid: 3a34030c1cf13c341a0f7e5dfa66de7f, type: 3}
+  - Name: FalconLightArmor
+    Path: Equipment/Armor/Basic/FalconLightArmor
+    Sprite: {fileID: 21300000, guid: 8bc22654d7d02fa4396e2e781e8b8788, type: 3}
+  - Name: FalconLightArmor.Helmet
+    Path: Equipment/Helmet/Basic/FalconLightArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 5b30f47d757736944a28384b3941fdda, type: 3}
+  - Name: FallingStarMace
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/FallingStarMace
+    Sprite: {fileID: 21300000, guid: 05138cb8ecbdfa34fb4b7aa88a32ee88, type: 3}
+  - Name: FarmerFork
+    Path: Equipment/MeleeWeapon2H/Basic/Lance/FarmerFork
+    Sprite: {fileID: 21300000, guid: ba10a3ff3a0d8834f822a5d292569c44, type: 3}
+  - Name: FarmerScythe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/FarmerScythe
+    Sprite: {fileID: 21300000, guid: 32777e326e6d54a4e807f19d3e2ed084, type: 3}
+  - Name: FathersBow
+    Path: Equipment/Bow/Basic/FathersBow
+    Sprite: {fileID: 21300000, guid: 62f576b99095f4448ae0b3ba7bdfeaba, type: 3}
+  - Name: FathersBow.Arrow
+    Path: Equipment/Arrow/Basic/FathersBow.Arrow
+    Sprite: {fileID: 21300000, guid: 7604f60e34bf2d24d9faead80ca65734, type: 3}
+  - Name: FathersBow.Quiver
+    Path: Equipment/Quiver/Basic/FathersBow.Quiver
+    Sprite: {fileID: 21300000, guid: 33883d2d5676b244cb521d820dfe09e9, type: 3}
+  - Name: FathersShield
+    Path: Equipment/Shield/Basic/FathersShield
+    Sprite: {fileID: 21300000, guid: 3ee0c131b41fa1c4eb9d873823af32bb, type: 3}
+  - Name: FathersSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/FathersSword
+    Sprite: {fileID: 21300000, guid: 89c5648f0bf45ee4da21077d77ed5a30, type: 3}
+  - Name: Feather
+    Path: Equipment/Supplies/Other/Feather
+    Sprite: {fileID: 21300000, guid: d925bcee89ebf974c8f5f9639cae4f55, type: 3}
+  - Name: FemaleUnderwearType1
+    Path: Equipment/Armor/Underwear/FemaleUnderwearType1
+    Sprite: {fileID: 21300000, guid: 9fd0337b74324164aa0efab24c6daf53, type: 3}
+  - Name: FemaleUnderwearType1.Helmet
+    Path: Equipment/Helmet/Underwear/FemaleUnderwearType1.Helmet
+    Sprite: {fileID: 21300000, guid: 0ba2d55f583262f4198c55072b7d14f8, type: 3}
+  - Name: FemaleUnderwearType2
+    Path: Equipment/Armor/Underwear/FemaleUnderwearType2
+    Sprite: {fileID: 21300000, guid: b6c72f3839ea2214cb14a6d30b6ab17c, type: 3}
+  - Name: FemaleUnderwearType2.Helmet
+    Path: Equipment/Helmet/Underwear/FemaleUnderwearType2.Helmet
+    Sprite: {fileID: 21300000, guid: 2e9523ab625339d43a1462ccda1ef0e3, type: 3}
+  - Name: FemaleUnderwearType3
+    Path: Equipment/Armor/Underwear/FemaleUnderwearType3
+    Sprite: {fileID: 21300000, guid: e4adf02f959121c43aa2f679a62ddefa, type: 3}
+  - Name: FemaleUnderwearType3.Helmet
+    Path: Equipment/Helmet/Underwear/FemaleUnderwearType3.Helmet
+    Sprite: {fileID: 21300000, guid: c3c535e695754074d973c3063d305a01, type: 3}
+  - Name: FerocityDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/FerocityDagger
+    Sprite: {fileID: 21300000, guid: 05b0e81600bd44641b4ad9a89433d1da, type: 3}
+  - Name: FestiveBow
+    Path: Equipment/Bow/Basic/FestiveBow
+    Sprite: {fileID: 21300000, guid: 2bd1e260113e10148a149749581232d3, type: 3}
+  - Name: FestiveBow.Arrow
+    Path: Equipment/Arrow/Basic/FestiveBow.Arrow
+    Sprite: {fileID: 21300000, guid: 8e0848f1f5c237647b76b31c4d6d68c5, type: 3}
+  - Name: FestiveBow.Quiver
+    Path: Equipment/Quiver/Basic/FestiveBow.Quiver
+    Sprite: {fileID: 21300000, guid: 7880f9b3b1b99de4d9c2a044fadadc04, type: 3}
+  - Name: FierceHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/FierceHammer
+    Sprite: {fileID: 21300000, guid: d16a7832bc19a984786aab5a7194af51, type: 3}
+  - Name: Firearms
+    Path: Equipment/Supplies/Recipe/Firearms
+    Sprite: {fileID: 21300000, guid: 0f8057b3e7f097041a670fc533c06213, type: 3}
+  - Name: FireKnightSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/FireKnightSword
+    Sprite: {fileID: 21300000, guid: a37b9f42e60abed43956e9a978ed8c36, type: 3}
+  - Name: FireMageWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/FireMageWand
+    Sprite: {fileID: 21300000, guid: a75bc10942fd14240b4a08919481cfbf, type: 3}
+  - Name: FireWarriorShield
+    Path: Equipment/Shield/Basic/FireWarriorShield
+    Sprite: {fileID: 21300000, guid: 250ccd8c13f78e84fa40e1317b327663, type: 3}
+  - Name: FireWizardRobe
+    Path: Equipment/Armor/Basic/FireWizardRobe
+    Sprite: {fileID: 21300000, guid: f5871165b812eb044bbd399639747d96, type: 3}
+  - Name: FireWizardRobe.Helmet
+    Path: Equipment/Helmet/Basic/FireWizardRobe.Helmet
+    Sprite: {fileID: 21300000, guid: 7ac821f3bafe28a44bdca8eca73acae1, type: 3}
+  - Name: FishSoup
+    Path: Equipment/Supplies/Food/FishSoup
+    Sprite: {fileID: 21300000, guid: b948c96536e9f0b40b854818265d5623, type: 3}
+  - Name: FlintlockPistol
+    Path: Equipment/Firearm1H/Basic/FlintlockPistol
+    Sprite: {fileID: 21300000, guid: 921db1dedae942142a0481d96c62cb79, type: 3}
+  - Name: Flute
+    Path: Equipment/Supplies/Other/Flute
+    Sprite: {fileID: 21300000, guid: 1fd51d7194df347478122b1faa8caf7c, type: 3}
+  - Name: FoldedSamuraiSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/FoldedSamuraiSword
+    Sprite: {fileID: 21300000, guid: e3b804c91ada207478c3edfe4e19982d, type: 3}
+  - Name: ForestCamouflage
+    Path: Equipment/Armor/Basic/ForestCamouflage
+    Sprite: {fileID: 21300000, guid: 5a94658c72d9cb842a94084aa9fd4bd8, type: 3}
+  - Name: ForestCamouflage.Helmet
+    Path: Equipment/Helmet/Basic/ForestCamouflage.Helmet
+    Sprite: {fileID: 21300000, guid: efdb61422f1135649bbcd75303b6ef46, type: 3}
+  - Name: ForgedBuckler
+    Path: Equipment/Shield/Basic/ForgedBuckler
+    Sprite: {fileID: 21300000, guid: ced04e58bcb345a40add362f11b5387b, type: 3}
+  - Name: Fork
+    Path: Equipment/Supplies/Other/Fork
+    Sprite: {fileID: 21300000, guid: 1858a6cceadf24d448b3c6dd7064aedc, type: 3}
+  - Name: ForkedDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/ForkedDagger
+    Sprite: {fileID: 21300000, guid: 25e813adebfc14c46b71bbd40a917818, type: 3}
+  - Name: FourBarrelledPistol
+    Path: Equipment/Firearm1H/Basic/FourBarrelledPistol
+    Sprite: {fileID: 21300000, guid: 1660eefaf07f7a245bab0d6d94eb2f21, type: 3}
+  - Name: FragBomb
+    Path: Equipment/Supplies/Bomb/FragBomb
+    Sprite: {fileID: 21300000, guid: abbac4fbb3a924247962bf5c7b534f3a, type: 3}
+  - Name: FreakPoleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/FreakPoleaxe
+    Sprite: {fileID: 21300000, guid: c2575ba1278046f4681f3fa8c64fd894, type: 3}
+  - Name: FrenchCrop
+    Path: BodyParts/Hair/Basic/FrenchCrop
+    Sprite: {fileID: 21300000, guid: 4946ff5c05fd8a8418d7511638489130, type: 3}
+  - Name: Fries
+    Path: Equipment/Supplies/Food/Fries
+    Sprite: {fileID: 21300000, guid: 1c3f8d1871e0557438d7e54ccd7ac8cf, type: 3}
+  - Name: FringeUp
+    Path: BodyParts/Hair/Basic/FringeUp
+    Sprite: {fileID: 21300000, guid: 393cdee4f9389bb4abcc97b9c21f66af, type: 3}
+  - Name: FrozenGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/FrozenGreataxe
+    Sprite: {fileID: 21300000, guid: 03ed465a2e3106e4da51b0558c1c480c, type: 3}
+  - Name: Fruitcake
+    Path: Equipment/Supplies/Food/Fruitcake
+    Sprite: {fileID: 21300000, guid: 13f593b28099bd648a0411040b617677, type: 3}
+  - Name: FurryRobe
+    Path: Equipment/Armor/Basic/FurryRobe
+    Sprite: {fileID: 21300000, guid: 9bd23ab0f2ef95546a352fafbbdb0b03, type: 3}
+  - Name: FurryRobe.Helmet
+    Path: Equipment/Helmet/Basic/FurryRobe.Helmet
+    Sprite: {fileID: 21300000, guid: cd2cea1401d5dc34d818f3598830275c, type: 3}
+  - Name: FuryLongsword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/FuryLongsword
+    Sprite: {fileID: 21300000, guid: 4585073b856180147a2cdf199a15be88, type: 3}
+  - Name: Garlic
+    Path: Equipment/Supplies/Food/Garlic
+    Sprite: {fileID: 21300000, guid: b949ea3e7cda0e343bdef3625a340059, type: 3}
+  - Name: GateCrusher
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/GateCrusher
+    Sprite: {fileID: 21300000, guid: d5280be1a368cf5408d81299091689e7, type: 3}
+  - Name: GatekeeperSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/GatekeeperSword
+    Sprite: {fileID: 21300000, guid: bf81c27ecd98017478ca1c2fe630498b, type: 3}
+  - Name: Gemstone
+    Path: Equipment/Supplies/Currency/Gemstone
+    Sprite: {fileID: 21300000, guid: 59e652a2705a04848b961908771f0a9e, type: 3}
+  - Name: GenericHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/GenericHammer
+    Sprite: {fileID: 21300000, guid: 02f3b164bff45b844abfa2c879149585, type: 3}
+  - Name: GhostSamuraiArmor
+    Path: Equipment/Armor/Epic/GhostSamuraiArmor
+    Sprite: {fileID: 21300000, guid: bddccb7fa2a5ea6419654a3a2ab27536, type: 3}
+  - Name: GhostSamuraiArmor.Helmet
+    Path: Equipment/Helmet/Epic/GhostSamuraiArmor.Helmet
+    Sprite: {fileID: 21300000, guid: f5f9122f37630694aa995e5269bd217a, type: 3}
+  - Name: GhostSamuraiSword
+    Path: Equipment/MeleeWeapon2H/Epic/Sword/GhostSamuraiSword
+    Sprite: {fileID: 21300000, guid: f898ee4ee191c9f4da99233f26be310c, type: 3}
+  - Name: GingerbreadMan
+    Path: Equipment/Supplies/Food/GingerbreadMan
+    Sprite: {fileID: 21300000, guid: 5f0b2238c4efd334ebd0583289f9ffcb, type: 3}
+  - Name: Girl
+    Path: BodyParts/Eyes/Basic/Girl
+    Sprite: {fileID: 21300000, guid: 1119647a72f20804cbaeee00c5d40f50, type: 3}
+  - Name: Girl01
+    Path: BodyParts/Eyes/Basic/Girl01
+    Sprite: {fileID: 21300000, guid: 36fab1a8d5270574ca57707f0f38c58c, type: 3}
+  - Name: Girl02
+    Path: BodyParts/Eyes/Basic/Girl02
+    Sprite: {fileID: 21300000, guid: f4adfb28fcc4f464292c8cdaa25d801e, type: 3}
+  - Name: Girl03
+    Path: BodyParts/Eyes/Basic/Girl03
+    Sprite: {fileID: 21300000, guid: 1dc87b1e802b2144195575821c3917b6, type: 3}
+  - Name: Girl04
+    Path: BodyParts/Eyes/Basic/Girl04
+    Sprite: {fileID: 21300000, guid: 83b8f55307dc5f84ba43d9d1e7e5dfbc, type: 3}
+  - Name: Girl05
+    Path: BodyParts/Eyes/Basic/Girl05
+    Sprite: {fileID: 21300000, guid: 918a1632ada3d7048af7b9e9e5398918, type: 3}
+  - Name: GladiatorArmor
+    Path: Equipment/Armor/Basic/GladiatorArmor
+    Sprite: {fileID: 21300000, guid: 62b6582ed90c83a4f80ca9b240f50a11, type: 3}
+  - Name: GladiatorArmor.Helmet
+    Path: Equipment/Helmet/Basic/GladiatorArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 62144f4f0a644674ba8c32c95efc06a6, type: 3}
+  - Name: GladiatorShield
+    Path: Equipment/Shield/Basic/GladiatorShield
+    Sprite: {fileID: 21300000, guid: e17bea86c66fd7b41b1aa553fef6449d, type: 3}
+  - Name: GladiatorSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/GladiatorSword
+    Sprite: {fileID: 21300000, guid: d2302f51cbd64c349a1bc8958bce3456, type: 3}
+  - Name: Gladius
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Gladius
+    Sprite: {fileID: 21300000, guid: c4d4b26051f40e44ab2497326da7002f, type: 3}
+  - Name: GlassOfBear
+    Path: Equipment/Supplies/Food/GlassOfBear
+    Sprite: {fileID: 21300000, guid: 8dfe159146be19843b8da82336bd7fe2, type: 3}
+  - Name: GlassOfJuice
+    Path: Equipment/Supplies/Food/GlassOfJuice
+    Sprite: {fileID: 21300000, guid: a1a34c6a580ca36449ef5958109bb4a7, type: 3}
+  - Name: GloryArmor [ShowEars]
+    Path: Equipment/Armor/Epic/GloryArmor [ShowEars]
+    Sprite: {fileID: 21300000, guid: c729268ff7206c343ae7df6e3fd05c0f, type: 3}
+  - Name: GloryArmor [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/GloryArmor [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 9921554bcaa4cfa4ab53178a05f1d888, type: 3}
+  - Name: GloryArmor [ShowEars].Helmet
+    Path: Equipment/Helmet/Epic/GloryArmor [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: f5299e322c507174a817490c3b4b116c, type: 3}
+  - Name: GlorySword
+    Path: Equipment/MeleeWeapon2H/Epic/Sword/GlorySword
+    Sprite: {fileID: 21300000, guid: aae426d5010d4f941baefa34a5c26487, type: 3}
+  - Name: Goblet
+    Path: Equipment/Supplies/Other/Goblet
+    Sprite: {fileID: 21300000, guid: 549dfa3b80f96234584eb966ba5e9436, type: 3}
+  - Name: GoblinAmulet
+    Path: Equipment/Supplies/Other/GoblinAmulet
+    Sprite: {fileID: 21300000, guid: 5964b172fde862f449ff6f1bdd199279, type: 3}
+  - Name: GoblinAsymmetric1
+    Path: BodyParts/Ears/Reference/GoblinAsymmetric1
+    Sprite: {fileID: 21300000, guid: 5b17092e9ddf6d94ca2440ce779806ed, type: 3}
+  - Name: GoblinAsymmetric2
+    Path: BodyParts/Ears/Reference/GoblinAsymmetric2
+    Sprite: {fileID: 21300000, guid: f2936dbaeaace8c4b855fcaab698c005, type: 3}
+  - Name: GoblinAsymmetric3
+    Path: BodyParts/Ears/Reference/GoblinAsymmetric3
+    Sprite: {fileID: 21300000, guid: 12a669cfed0c2f841a2854dafa0af97e, type: 3}
+  - Name: GoblinBerserker [ShowEars]
+    Path: Equipment/Armor/Goblin/GoblinBerserker [ShowEars]
+    Sprite: {fileID: 21300000, guid: 7a95cbff74f966949b0cd96b1814f276, type: 3}
+  - Name: GoblinBerserker [ShowEars].Helmet
+    Path: Equipment/Helmet/Goblin/GoblinBerserker [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: babcdd2ad4f992144b90108829408cdb, type: 3}
+  - Name: GoblinCaptain [ShowEars]
+    Path: Equipment/Armor/Goblin/GoblinCaptain [ShowEars]
+    Sprite: {fileID: 21300000, guid: 6f1e9fb5db61bc94f8bbe8b8ae3bfb38, type: 3}
+  - Name: GoblinCaptain [ShowEars].Helmet
+    Path: Equipment/Helmet/Goblin/GoblinCaptain [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: dfcaac63f1e00314ea37f631e49f3041, type: 3}
+  - Name: GoblinDweller [ShowEars]
+    Path: Equipment/Armor/Goblin/GoblinDweller [ShowEars]
+    Sprite: {fileID: 21300000, guid: 0ace2ed7915d28240a3a73b43cea0f52, type: 3}
+  - Name: GoblinDweller [ShowEars].Helmet
+    Path: Equipment/Helmet/Goblin/GoblinDweller [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 1e9e70426a18ba048b7ff301970d8a2a, type: 3}
+  - Name: GoblinElder [ShowEars]
+    Path: Equipment/Armor/Goblin/GoblinElder [ShowEars]
+    Sprite: {fileID: 21300000, guid: 86f95ac9f66f8604eb767524e97c477e, type: 3}
+  - Name: GoblinElder [ShowEars].Helmet
+    Path: Equipment/Helmet/Goblin/GoblinElder [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: abf42fd79f3e3474ba695792a6f06159, type: 3}
+  - Name: GoblinRecruit [ShowEars]
+    Path: Equipment/Armor/Goblin/GoblinRecruit [ShowEars]
+    Sprite: {fileID: 21300000, guid: 6df099c1888a5d443bc4291b900b2a99, type: 3}
+  - Name: GoblinRecruit [ShowEars].Helmet
+    Path: Equipment/Helmet/Goblin/GoblinRecruit [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 84e80b290d4921d4fa4ecd53ac92827b, type: 3}
+  - Name: GoblinScout
+    Path: Equipment/Armor/Goblin/GoblinScout
+    Sprite: {fileID: 21300000, guid: 3860eac54959d7b40afa482bda425a56, type: 3}
+  - Name: GoblinScout.Helmet
+    Path: Equipment/Helmet/Goblin/GoblinScout.Helmet
+    Sprite: {fileID: 21300000, guid: 41fc8e5425ad43846a3c7327494ae138, type: 3}
+  - Name: GoblinShaman [ShowEars]
+    Path: Equipment/Armor/Goblin/GoblinShaman [ShowEars]
+    Sprite: {fileID: 21300000, guid: f1ba364a3a3587140aa11ca938820faf, type: 3}
+  - Name: GoblinShaman [ShowEars].Helmet
+    Path: Equipment/Helmet/Goblin/GoblinShaman [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: b17ea8815d7f993449f3112c299305b0, type: 3}
+  - Name: GoldenFender
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/GoldenFender
+    Sprite: {fileID: 21300000, guid: 3ee2f288e21948649ad67dc2ae50e029, type: 3}
+  - Name: GoldenHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/GoldenHammer
+    Sprite: {fileID: 21300000, guid: 8c1a226cedeed3f4e871238a6739f97c, type: 3}
+  - Name: GoldenKey
+    Path: Equipment/Supplies/Other/GoldenKey
+    Sprite: {fileID: 21300000, guid: 73d4836ef60037349a911b3e1794ac79, type: 3}
+  - Name: GoldenKnightArmor
+    Path: Equipment/Armor/Basic/GoldenKnightArmor
+    Sprite: {fileID: 21300000, guid: 4607dc084d9bf014a8c9936e5d4621ff, type: 3}
+  - Name: GoldenKnightArmor.Helmet
+    Path: Equipment/Helmet/Basic/GoldenKnightArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 3c26d8dd03007124ea6bcf7511d193ed, type: 3}
+  - Name: GoldenRing
+    Path: Equipment/Supplies/Other/GoldenRing
+    Sprite: {fileID: 21300000, guid: 7b34170511de78844aad0bad1a0b8910, type: 3}
+  - Name: GoldenWings
+    Path: Equipment/Bow/Basic/GoldenWings
+    Sprite: {fileID: 21300000, guid: 37bf49ff8d179184c9a3863053d33af6, type: 3}
+  - Name: GoldenWings.Arrow
+    Path: Equipment/Arrow/Basic/GoldenWings.Arrow
+    Sprite: {fileID: 21300000, guid: 284a37389c0e08c4fb880c320cb747a4, type: 3}
+  - Name: GoldenWings.Quiver
+    Path: Equipment/Quiver/Basic/GoldenWings.Quiver
+    Sprite: {fileID: 21300000, guid: 4b247b29e71f7444d85e126e3880bf07, type: 3}
+  - Name: GoldenWingsDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/GoldenWingsDagger
+    Sprite: {fileID: 21300000, guid: 5d44705440c6c1943b9b01ff7a27451f, type: 3}
+  - Name: GoldOre
+    Path: Equipment/Supplies/Mineral/GoldOre
+    Sprite: {fileID: 21300000, guid: 38a59a6ed51a955498a02a6b2b17651f, type: 3}
+  - Name: GraceMace
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/GraceMace
+    Sprite: {fileID: 21300000, guid: f7d30541bdab80e489b55a3227c9888f, type: 3}
+  - Name: GrandeeDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/GrandeeDagger
+    Sprite: {fileID: 21300000, guid: f73c7268bfc2eb94483409414772002e, type: 3}
+  - Name: Grapes
+    Path: Equipment/Supplies/Food/Grapes
+    Sprite: {fileID: 21300000, guid: 015a980dfaf70de489246ecef1950a71, type: 3}
+  - Name: GraveyardClothes
+    Path: Equipment/Armor/Basic/GraveyardClothes
+    Sprite: {fileID: 21300000, guid: cb8b8d62a838b854fa5d593664ceb15c, type: 3}
+  - Name: GraveyardClothes.Helmet
+    Path: Equipment/Helmet/Basic/GraveyardClothes.Helmet
+    Sprite: {fileID: 21300000, guid: 598f0965c404a2046883017097105b41, type: 3}
+  - Name: GreatShield
+    Path: Equipment/Shield/Basic/GreatShield
+    Sprite: {fileID: 21300000, guid: 8a4d9499ee9314a4ab8ea3aa17f34c35, type: 3}
+  - Name: GreenApple
+    Path: Equipment/Supplies/Food/GreenApple
+    Sprite: {fileID: 21300000, guid: 81fce844fc8cdf5498f6106309ff2ad0, type: 3}
+  - Name: GreenGemstone
+    Path: Equipment/Supplies/Currency/GreenGemstone
+    Sprite: {fileID: 21300000, guid: 2db76dd1497f4d8438e1d7c9f3608ad1, type: 3}
+  - Name: GreenPotionL
+    Path: Equipment/Supplies/Potion/GreenPotionL
+    Sprite: {fileID: 21300000, guid: fc32da1b84b4c9a4d88e5e8e37c9ff71, type: 3}
+  - Name: GreenPotionM
+    Path: Equipment/Supplies/Potion/GreenPotionM
+    Sprite: {fileID: 21300000, guid: effa4a3ea23f35446b3300ccccb4546b, type: 3}
+  - Name: GreenPotionS
+    Path: Equipment/Supplies/Potion/GreenPotionS
+    Sprite: {fileID: 21300000, guid: 13df7122ead8be84c96c4049c006ed7a, type: 3}
+  - Name: GreenwoodBow
+    Path: Equipment/Bow/Basic/GreenwoodBow
+    Sprite: {fileID: 21300000, guid: b1ab0b7d21ba5b14fafad9fc0a86daff, type: 3}
+  - Name: GreenwoodBow.Arrow
+    Path: Equipment/Arrow/Basic/GreenwoodBow.Arrow
+    Sprite: {fileID: 21300000, guid: c71b962310b6c924c92c5e1b9dde31af, type: 3}
+  - Name: GreenwoodBow.Quiver
+    Path: Equipment/Quiver/Basic/GreenwoodBow.Quiver
+    Sprite: {fileID: 21300000, guid: 9b58a548105428948abe11b738589f66, type: 3}
+  - Name: GuardArmor
+    Path: Equipment/Armor/Basic/GuardArmor
+    Sprite: {fileID: 21300000, guid: ddf97c218a0828046bba74c906efe2b1, type: 3}
+  - Name: GuardArmor.Helmet
+    Path: Equipment/Helmet/Basic/GuardArmor.Helmet
+    Sprite: {fileID: 21300000, guid: ea089522d28320246aca504ce7fc0b55, type: 3}
+  - Name: GuardShield
+    Path: Equipment/Shield/Basic/GuardShield
+    Sprite: {fileID: 21300000, guid: e462780839c44274793796edcab70709, type: 3}
+  - Name: GunpowderA
+    Path: Equipment/Supplies/Container/GunpowderA
+    Sprite: {fileID: 21300000, guid: f0af33ca4d1c5054790c1d2707422dd8, type: 3}
+  - Name: GunpowderB
+    Path: Equipment/Supplies/Container/GunpowderB
+    Sprite: {fileID: 21300000, guid: 3b56e08010576164f9aadbaf7cd5e56a, type: 3}
+  - Name: GunpowderC
+    Path: Equipment/Supplies/Container/GunpowderC
+    Sprite: {fileID: 21300000, guid: 29313f670b2ead441957605b67166054, type: 3}
+  - Name: GunpowderD
+    Path: Equipment/Supplies/Container/GunpowderD
+    Sprite: {fileID: 21300000, guid: 8d442f2f841f88b44b08ea4abd3cc756, type: 3}
+  - Name: GunpowderE
+    Path: Equipment/Supplies/Container/GunpowderE
+    Sprite: {fileID: 21300000, guid: 3f8969f5fb85a9940b8ea37aed5b7013, type: 3}
+  - Name: GunpowderF
+    Path: Equipment/Supplies/Container/GunpowderF
+    Sprite: {fileID: 21300000, guid: 53a8bf60452087340b4dbfea4f0616a9, type: 3}
+  - Name: GunpowderG
+    Path: Equipment/Supplies/Container/GunpowderG
+    Sprite: {fileID: 21300000, guid: b849aa980fc8bbc43883e83311f36dc6, type: 3}
+  - Name: GustHammer
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/GustHammer
+    Sprite: {fileID: 21300000, guid: 607383a983510dc4d93dd5f5dcef57a6, type: 3}
+  - Name: Halberd
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/Halberd
+    Sprite: {fileID: 21300000, guid: bc5dd3ee96c47054e93eb2afd76d470e, type: 3}
+  - Name: Hammer
+    Path: Equipment/Supplies/Other/Hammer
+    Sprite: {fileID: 21300000, guid: 0a356fa2afc9cfd4897ddb6585915696, type: 3}
+  - Name: Hammer
+    Path: Equipment/Supplies/Recipe/Hammer
+    Sprite: {fileID: 21300000, guid: 9b4371fc3290ee74491df3b732f901d4, type: 3}
+  - Name: HappyEyes
+    Path: BodyParts/Eyes/Emoji/HappyEyes
+    Sprite: {fileID: 21300000, guid: 640e53dca4991e248a1f366e7fbbe005, type: 3}
+  - Name: HardBone
+    Path: Equipment/Supplies/Material/HardBone
+    Sprite: {fileID: 21300000, guid: 8b271d9ea7d9ab540847f30c1f0206c3, type: 3}
+  - Name: HardEdge
+    Path: BodyParts/Eyes/Basic/HardEdge
+    Sprite: {fileID: 21300000, guid: 0eac1e07ff225584087cc502bed0ea24, type: 3}
+  - Name: HardLeather
+    Path: Equipment/Supplies/Material/HardLeather
+    Sprite: {fileID: 21300000, guid: 34814c102cb3bb44db0b11cdbbf1ab66, type: 3}
+  - Name: HardLeatherArmor
+    Path: Equipment/Armor/Basic/HardLeatherArmor
+    Sprite: {fileID: 21300000, guid: 038ede5e673648c498a172d83c293a35, type: 3}
+  - Name: HardLeatherArmor.Helmet
+    Path: Equipment/Helmet/Basic/HardLeatherArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 418de79d7fcaeb747bb8aa01ec0c5da2, type: 3}
+  - Name: HardwoodWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/HardwoodWand
+    Sprite: {fileID: 21300000, guid: 6630ca1379e30434d8d8cfb4d03c1b6f, type: 3}
+  - Name: Harpoon
+    Path: Equipment/MeleeWeapon1H/Basic/Spear/Harpoon
+    Sprite: {fileID: 21300000, guid: 10990ee98739dea419776656b8b7f98c, type: 3}
+  - Name: HarpoonGun
+    Path: Equipment/Firearm1H/Basic/HarpoonGun
+    Sprite: {fileID: 21300000, guid: 40c46b449fd7b2f4a897123710158079, type: 3}
+  - Name: HawkVest [ShowEars]
+    Path: Equipment/Armor/Basic/HawkVest [ShowEars]
+    Sprite: {fileID: 21300000, guid: b472717519fb34b4e9bfdc2f780fbdab, type: 3}
+  - Name: HawkVest [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/HawkVest [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: d64c68fca58e55c4f81dbbf6ab4c6ab6, type: 3}
+  - Name: HealerWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/HealerWand
+    Sprite: {fileID: 21300000, guid: cdf2a7b121504eb4fa75185d6624352b, type: 3}
+  - Name: HeartEyes
+    Path: BodyParts/Eyes/Emoji/HeartEyes
+    Sprite: {fileID: 21300000, guid: f0c8750735ca2ac42b3ed22b9f4f6beb, type: 3}
+  - Name: HeavenGuardian
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/HeavenGuardian
+    Sprite: {fileID: 21300000, guid: 22460d91906256f4fbebeb7852ba080d, type: 3}
+  - Name: HeavyBrassArmor
+    Path: Equipment/Armor/Basic/HeavyBrassArmor
+    Sprite: {fileID: 21300000, guid: ea79f73c74dc9564793b89e356319373, type: 3}
+  - Name: HeavyBrassArmor.Helmet
+    Path: Equipment/Helmet/Basic/HeavyBrassArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 1b46bb6b592d50d40bd03c73869605aa, type: 3}
+  - Name: HeavyClub
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/HeavyClub
+    Sprite: {fileID: 21300000, guid: 0e597158bdf330c4cbda9593aaad41cb, type: 3}
+  - Name: HeavyCrossbow
+    Path: Equipment/Crossbow/Basic/HeavyCrossbow
+    Sprite: {fileID: 21300000, guid: 61ebce8529eaff84f9b7ed521172ea0d, type: 3}
+  - Name: HeavyCrossbow.Bolt
+    Path: Equipment/Bolt/Basic/HeavyCrossbow.Bolt
+    Sprite: {fileID: 21300000, guid: fdd9d4e8b2678f24ea4c074c0153694e, type: 3}
+  - Name: HeavyCrossbow.Quiver
+    Path: Equipment/Quiver/Basic/HeavyCrossbow.Quiver
+    Sprite: {fileID: 21300000, guid: fcb2902bc7f961845bc28fde6d0251f0, type: 3}
+  - Name: HeavyHunterArmor
+    Path: Equipment/Armor/Basic/HeavyHunterArmor
+    Sprite: {fileID: 21300000, guid: 39e75ed155171f940a1d50db38aa54dd, type: 3}
+  - Name: HeavyMace
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/HeavyMace
+    Sprite: {fileID: 21300000, guid: ac6dbf9b80901b7439cf11dab0ebd752, type: 3}
+  - Name: HeavyPoleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/HeavyPoleaxe
+    Sprite: {fileID: 21300000, guid: 5e58822239679d34d838f6cd4b52b94d, type: 3}
+  - Name: HeavySamuraiArmor
+    Path: Equipment/Armor/Basic/HeavySamuraiArmor
+    Sprite: {fileID: 21300000, guid: b7aebf88c961d4b49997f0417934f6cd, type: 3}
+  - Name: HeavySamuraiArmor.Helmet
+    Path: Equipment/Helmet/Basic/HeavySamuraiArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 58416bb066ad94e4c9e2b7913e7476c8, type: 3}
+  - Name: HeavySteelCuirass
+    Path: Equipment/Armor/Basic/HeavySteelCuirass
+    Sprite: {fileID: 21300000, guid: 304ea4d78b202614b92f993b6394f598, type: 3}
+  - Name: HeavySteelCuirass.Helmet
+    Path: Equipment/Helmet/Basic/HeavySteelCuirass.Helmet
+    Sprite: {fileID: 21300000, guid: e421dce2dee93a84fb92ad0b048a585a, type: 3}
+  - Name: Helmet
+    Path: Equipment/Supplies/Recipe/Helmet
+    Sprite: {fileID: 21300000, guid: 7ea1b0fe547c8ac4fa7cc9dd6761b98f, type: 3}
+  - Name: HermitWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/HermitWand
+    Sprite: {fileID: 21300000, guid: 990f309d3e70aef478ec3264cbefead5, type: 3}
+  - Name: HexWoodenShield
+    Path: Equipment/Shield/Basic/HexWoodenShield
+    Sprite: {fileID: 21300000, guid: 4de27cd30f1d315458cb891f707936b4, type: 3}
+  - Name: HighCrusaderArmor
+    Path: Equipment/Armor/Basic/HighCrusaderArmor
+    Sprite: {fileID: 21300000, guid: 129a606bb058e604eb3d55b1a4139489, type: 3}
+  - Name: HighCrusaderArmor.Helmet
+    Path: Equipment/Helmet/Basic/HighCrusaderArmor.Helmet
+    Sprite: {fileID: 21300000, guid: c96f159ecf6164843b22d4c0fa3edd4a, type: 3}
+  - Name: HighCrusaderShield
+    Path: Equipment/Shield/Basic/HighCrusaderShield
+    Sprite: {fileID: 21300000, guid: d26828a87b6513842af557882388c7a0, type: 3}
+  - Name: HighGuardianShield
+    Path: Equipment/Shield/Basic/HighGuardianShield
+    Sprite: {fileID: 21300000, guid: 97e235a2fd1d04745b1a60b8fc6f2128, type: 3}
+  - Name: HoleyLightSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/HoleyLightSword
+    Sprite: {fileID: 21300000, guid: 587fe63123518c24a9ba57fa5f79350c, type: 3}
+  - Name: HollowAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/HollowAxe
+    Sprite: {fileID: 21300000, guid: 77ab48edeef3f354eb780923c8837570, type: 3}
+  - Name: HolyHandGrenade
+    Path: Equipment/Supplies/Bomb/HolyHandGrenade
+    Sprite: {fileID: 21300000, guid: 5bd72e6164088154ab4356f9b71fa7e0, type: 3}
+  - Name: HomemadeWickPistol
+    Path: Equipment/Firearm1H/Basic/HomemadeWickPistol
+    Sprite: {fileID: 21300000, guid: ab6bea856d0339042b9a4085035e02b3, type: 3}
+  - Name: Honey
+    Path: Equipment/Supplies/Food/Honey
+    Sprite: {fileID: 21300000, guid: fd6737f46018ff341834e7595ca2e31e, type: 3}
+  - Name: HoneyPot
+    Path: Equipment/Supplies/Other/HoneyPot
+    Sprite: {fileID: 21300000, guid: 6db1e59c3e2625c40a8b5b2e29d9485f, type: 3}
+  - Name: Hourglass
+    Path: Equipment/Supplies/Other/Hourglass
+    Sprite: {fileID: 21300000, guid: ea306d5aafc12a547a5811c16e3d3f21, type: 3}
+  - Name: Human
+    Path: BodyParts/Ears/Basic/Human
+    Sprite: {fileID: 21300000, guid: 20172465a22f9c846ae8d26b25d4877f, type: 3}
+  - Name: HumanAsymmetric
+    Path: BodyParts/Ears/Reference/HumanAsymmetric
+    Sprite: {fileID: 21300000, guid: d547e548a41199e4782af8cdf727fa5b, type: 3}
+  - Name: HunterBow
+    Path: Equipment/Bow/Basic/HunterBow
+    Sprite: {fileID: 21300000, guid: f9f3823d740b7ed42839bda4e14ed6fc, type: 3}
+  - Name: HunterBow.Arrow
+    Path: Equipment/Arrow/Basic/HunterBow.Arrow
+    Sprite: {fileID: 21300000, guid: e8e3ddb82c52df04290b8f8dbf66c32a, type: 3}
+  - Name: HunterBow.Quiver
+    Path: Equipment/Quiver/Basic/HunterBow.Quiver
+    Sprite: {fileID: 21300000, guid: 077f91e24c996b848b32d1c75906a8bb, type: 3}
+  - Name: HunterClothes
+    Path: Equipment/Armor/Basic/HunterClothes
+    Sprite: {fileID: 21300000, guid: b947c0c2f123e694094ac8dc3e9494e7, type: 3}
+  - Name: HunterClothes.Helmet
+    Path: Equipment/Helmet/Basic/HunterClothes.Helmet
+    Sprite: {fileID: 21300000, guid: a5e2ec4ceb4936b4fb5c4d2a6c7e588a, type: 3}
+  - Name: HunterKnife
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/HunterKnife
+    Sprite: {fileID: 21300000, guid: 80b83e2132253b148910d50aa1ad9d07, type: 3}
+  - Name: HunterLightArmor [ShowEars]
+    Path: Equipment/Armor/Basic/HunterLightArmor [ShowEars]
+    Sprite: {fileID: 21300000, guid: 2e070d69ff9ce9847bf86938284e1e7e, type: 3}
+  - Name: HunterLightArmor [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/HunterLightArmor [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: d8207cabc5aabec4a9bbf3fd4e3f5d79, type: 3}
+  - Name: HurricaneBow
+    Path: Equipment/Bow/Basic/HurricaneBow
+    Sprite: {fileID: 21300000, guid: 61be9ae47ed0ec34eb4e395deac6567d, type: 3}
+  - Name: HurricaneBow.Arrow
+    Path: Equipment/Arrow/Basic/HurricaneBow.Arrow
+    Sprite: {fileID: 21300000, guid: f8f2dcf23fa605842a6b5fa3644e9254, type: 3}
+  - Name: HurricaneBow.Quiver
+    Path: Equipment/Quiver/Basic/HurricaneBow.Quiver
+    Sprite: {fileID: 21300000, guid: f63cf54f805af3e42b9ebfd22384fa9f, type: 3}
+  - Name: Icecream
+    Path: Equipment/Supplies/Food/Icecream
+    Sprite: {fileID: 21300000, guid: f26497e1fd2d810458735cdb79747895, type: 3}
+  - Name: ImmuneSoup
+    Path: Equipment/Supplies/Food/ImmuneSoup
+    Sprite: {fileID: 21300000, guid: 4f68612f7d4570646861fc2df2b9b9ae, type: 3}
+  - Name: ImperialGuardArmor
+    Path: Equipment/Armor/Basic/ImperialGuardArmor
+    Sprite: {fileID: 21300000, guid: 04691a714e6699e4d8b12738f38c0b29, type: 3}
+  - Name: ImperialGuardArmor.Helmet
+    Path: Equipment/Helmet/Basic/ImperialGuardArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 0788a816749780e41889d0e3abc2cc7a, type: 3}
+  - Name: ImperialGuardShield
+    Path: Equipment/Shield/Basic/ImperialGuardShield
+    Sprite: {fileID: 21300000, guid: 5e412eabcd0833546a8c6d935d323b74, type: 3}
+  - Name: ImperialGuardSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/ImperialGuardSword
+    Sprite: {fileID: 21300000, guid: 5d2e44e451c8cf24b99ef4c919532a75, type: 3}
+  - Name: ImperialLongsword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/ImperialLongsword
+    Sprite: {fileID: 21300000, guid: ac3153e54bf66cd48b4f067b2d9e44f6, type: 3}
+  - Name: ImperialSamuraiSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/ImperialSamuraiSword
+    Sprite: {fileID: 21300000, guid: a41299f0e1e35b441b9c35cd4325c756, type: 3}
+  - Name: InquisitorShotgun
+    Path: Equipment/Firearm1H/Basic/InquisitorShotgun
+    Sprite: {fileID: 21300000, guid: fa756590a7e626c419a455efd17d5508, type: 3}
+  - Name: InsectWings
+    Path: Equipment/Supplies/Material/InsectWings
+    Sprite: {fileID: 21300000, guid: 4782abf7b309d4147ba98881764c22c6, type: 3}
+  - Name: InterrogatorSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/InterrogatorSword
+    Sprite: {fileID: 21300000, guid: 6d84f1f1f2a83ac48b07c88db6dbbeca, type: 3}
+  - Name: Iron
+    Path: Equipment/Supplies/Mineral/Iron
+    Sprite: {fileID: 21300000, guid: 18fd463a10fefe34bbce6d8bbe4ec551, type: 3}
+  - Name: IronArmor
+    Path: Equipment/Armor/Basic/IronArmor
+    Sprite: {fileID: 21300000, guid: 9777ba187b0d18a4691494b83a88c5cf, type: 3}
+  - Name: IronArmor.Helmet
+    Path: Equipment/Helmet/Basic/IronArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 2ff1cee2e04694b49a40ce0ca07b6d42, type: 3}
+  - Name: IronAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/IronAxe
+    Sprite: {fileID: 21300000, guid: afacef54c33116748af85489e62eae62, type: 3}
+  - Name: IronBow
+    Path: Equipment/Bow/Basic/IronBow
+    Sprite: {fileID: 21300000, guid: 87f3d50219233ef419b6988b666141da, type: 3}
+  - Name: IronBow.Arrow
+    Path: Equipment/Arrow/Basic/IronBow.Arrow
+    Sprite: {fileID: 21300000, guid: 4179e5ac42f67884e81382e422b17681, type: 3}
+  - Name: IronBow.Quiver
+    Path: Equipment/Quiver/Basic/IronBow.Quiver
+    Sprite: {fileID: 21300000, guid: d528708802443334a955d282510b7812, type: 3}
+  - Name: IronBuckler
+    Path: Equipment/Shield/Basic/IronBuckler
+    Sprite: {fileID: 21300000, guid: 6003c08b193b1ed48935a6044a36fa15, type: 3}
+  - Name: IronMace
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/IronMace
+    Sprite: {fileID: 21300000, guid: 92f3fbb329e7f1945b503302ae142410, type: 3}
+  - Name: IronMallet
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/IronMallet
+    Sprite: {fileID: 21300000, guid: 84bcee6d566d0ab448706547ba35024d, type: 3}
+  - Name: IronOre
+    Path: Equipment/Supplies/Mineral/IronOre
+    Sprite: {fileID: 21300000, guid: 98661df68990d634eb896fc2dd67262f, type: 3}
+  - Name: IronPickaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/IronPickaxe
+    Sprite: {fileID: 21300000, guid: 5d93137087f493341b5aa093878fdf29, type: 3}
+  - Name: IronSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/IronSword
+    Sprite: {fileID: 21300000, guid: d1babf2cefd48724ea060e6054f29541, type: 3}
+  - Name: Ivy
+    Path: Equipment/Supplies/Material/Ivy
+    Sprite: {fileID: 21300000, guid: 174ca0ce8e79dc940bbd13f7ef151be4, type: 3}
+  - Name: Jamon
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/Jamon
+    Sprite: {fileID: 21300000, guid: d25af12ec26922f46b99a528adb9ac22, type: 3}
+  - Name: JeweledKatar
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/JeweledKatar
+    Sprite: {fileID: 21300000, guid: 092b66d3626632d47ab2eee23a3c9d1f, type: 3}
+  - Name: JudgementMace
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/JudgementMace
+    Sprite: {fileID: 21300000, guid: 4bee61c2e96d3d745a3353c1191ca4e9, type: 3}
+  - Name: JusticeBlade
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/JusticeBlade
+    Sprite: {fileID: 21300000, guid: 324e35defa8ef914d97df5b6c40dabf5, type: 3}
+  - Name: Katana
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Katana
+    Sprite: {fileID: 21300000, guid: 4c60bed9744e8844a86dccd746c273d5, type: 3}
+  - Name: KissOfDeath
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/KissOfDeath
+    Sprite: {fileID: 21300000, guid: 95ac37c42f2c6474a81aece047b95bd9, type: 3}
+  - Name: KnightArmor
+    Path: Equipment/Armor/Basic/KnightArmor
+    Sprite: {fileID: 21300000, guid: 5674638ed8cffa243b0b125f78b1d6f9, type: 3}
+  - Name: KnightArmor.Helmet
+    Path: Equipment/Helmet/Basic/KnightArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 95bd7b7a8c2b05146a95dfa9493464e8, type: 3}
+  - Name: KnightHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/KnightHammer
+    Sprite: {fileID: 21300000, guid: 02d2d02c266604a4aa455d81eefa9793, type: 3}
+  - Name: KnightMace
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/KnightMace
+    Sprite: {fileID: 21300000, guid: 1a2a78f2428a0cd40a55419198c7100b, type: 3}
+  - Name: KnightSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/KnightSword
+    Sprite: {fileID: 21300000, guid: d494b32df69653f48835abaa91a5f293, type: 3}
+  - Name: Kunai
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/Kunai
+    Sprite: {fileID: 21300000, guid: 7025d2210ca45d248af9cfc15c0ec6d6, type: 3}
+  - Name: LadiesPocketFlintlock
+    Path: Equipment/Firearm1H/Basic/LadiesPocketFlintlock
+    Sprite: {fileID: 21300000, guid: 40f5ec62d8f3e33489c251ae6ae16bf2, type: 3}
+  - Name: LargeBomb
+    Path: Equipment/Supplies/Bomb/LargeBomb
+    Sprite: {fileID: 21300000, guid: 809fd7051e2bbf643b17339c07b6f032, type: 3}
+  - Name: Leather
+    Path: Equipment/Supplies/Material/Leather
+    Sprite: {fileID: 21300000, guid: efab16b331d0fac4a8b24753201263dd, type: 3}
+  - Name: LeatherTunic
+    Path: Equipment/Armor/Basic/LeatherTunic
+    Sprite: {fileID: 21300000, guid: c323ca70c97843f4097d8289829d4961, type: 3}
+  - Name: LeatherTunic.Helmet
+    Path: Equipment/Helmet/Basic/LeatherTunic.Helmet
+    Sprite: {fileID: 21300000, guid: ce2e0ef412e8d794aaae0067e24e3655, type: 3}
+  - Name: LeatherVest
+    Path: Equipment/Armor/Basic/LeatherVest
+    Sprite: {fileID: 21300000, guid: e4f16728e1b0b7b498e98dbfee3aea07, type: 3}
+  - Name: LeatherVest.Helmet
+    Path: Equipment/Helmet/Basic/LeatherVest.Helmet
+    Sprite: {fileID: 21300000, guid: 6766ada740268fb4fa9c3ceb5e7c668f, type: 3}
+  - Name: Lemon
+    Path: Equipment/Supplies/Food/Lemon
+    Sprite: {fileID: 21300000, guid: 388a7f0725ca9244aa6138190e99e79a, type: 3}
+  - Name: LightCrossbow
+    Path: Equipment/Crossbow/Basic/LightCrossbow
+    Sprite: {fileID: 21300000, guid: 1fdef14be51e2b4459bec452efbdd672, type: 3}
+  - Name: LightCrossbow.Bolt
+    Path: Equipment/Bolt/Basic/LightCrossbow.Bolt
+    Sprite: {fileID: 21300000, guid: 421c4485b7a595843821eb9f09f4d8e0, type: 3}
+  - Name: LightCrossbow.Quiver
+    Path: Equipment/Quiver/Basic/LightCrossbow.Quiver
+    Sprite: {fileID: 21300000, guid: 20fdae758412d0946ac44630bbdd3995, type: 3}
+  - Name: LightKeeperArmor
+    Path: Equipment/Armor/Basic/LightKeeperArmor
+    Sprite: {fileID: 21300000, guid: 698d33dd57c03394b87a90193d270353, type: 3}
+  - Name: LightKeeperArmor.Helmet
+    Path: Equipment/Helmet/Basic/LightKeeperArmor.Helmet
+    Sprite: {fileID: 21300000, guid: afc5118151118ed48938d67b1a232d56, type: 3}
+  - Name: LightKeeperShield
+    Path: Equipment/Shield/Basic/LightKeeperShield
+    Sprite: {fileID: 21300000, guid: f05fbcd6541ea2b42b545ba57f56f8e2, type: 3}
+  - Name: Limestone
+    Path: Equipment/Supplies/Mineral/Limestone
+    Sprite: {fileID: 21300000, guid: d59e928b341301b40ba01ad82ceae0a8, type: 3}
+  - Name: LionShield
+    Path: Equipment/Shield/Basic/LionShield
+    Sprite: {fileID: 21300000, guid: 4ad07a17a15b010438771f97106eeab6, type: 3}
+  - Name: LizardCrystal
+    Path: Equipment/Supplies/Material/LizardCrystal
+    Sprite: {fileID: 21300000, guid: 79336f3a0e6e6414ca62af59e28a1ce2, type: 3}
+  - Name: Lolipop
+    Path: Equipment/Supplies/Food/Lolipop
+    Sprite: {fileID: 21300000, guid: 3c9d099f3f9fe8d488fb47b3c250e6a9, type: 3}
+  - Name: LongBarreledPistol
+    Path: Equipment/Firearm1H/Basic/LongBarreledPistol
+    Sprite: {fileID: 21300000, guid: 0af603c720e07e9488758c3897859405, type: 3}
+  - Name: LongBow
+    Path: Equipment/Bow/Basic/LongBow
+    Sprite: {fileID: 21300000, guid: bb36b375e4549924691e87f6ff844bd7, type: 3}
+  - Name: LongBow.Arrow
+    Path: Equipment/Arrow/Basic/LongBow.Arrow
+    Sprite: {fileID: 21300000, guid: c66f4a771a8d28a44ae6f7beb3937526, type: 3}
+  - Name: LongBow.Quiver
+    Path: Equipment/Quiver/Basic/LongBow.Quiver
+    Sprite: {fileID: 21300000, guid: bc9fe362eb693e445885d215aebe42a4, type: 3}
+  - Name: LongKatana
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/LongKatana
+    Sprite: {fileID: 21300000, guid: 6332026c8427d8b4cb84b829fae66649, type: 3}
+  - Name: LongWillowBow
+    Path: Equipment/Bow/Basic/LongWillowBow
+    Sprite: {fileID: 21300000, guid: 97ae6c50afbd7474b88b02336372d6eb, type: 3}
+  - Name: LongWillowBow.Arrow
+    Path: Equipment/Arrow/Basic/LongWillowBow.Arrow
+    Sprite: {fileID: 21300000, guid: 43405a3e7e5100e48b96b09e568d0982, type: 3}
+  - Name: LongWillowBow.Quiver
+    Path: Equipment/Quiver/Basic/LongWillowBow.Quiver
+    Sprite: {fileID: 21300000, guid: f37dba580457a30448bcf036eb589933, type: 3}
+  - Name: LoyalGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/LoyalGreataxe
+    Sprite: {fileID: 21300000, guid: a2e86e86acc24024e97fb89bfa98816a, type: 3}
+  - Name: Lute
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/Lute
+    Sprite: {fileID: 21300000, guid: 2a959bfdefe70854b962e4beb3904466, type: 3}
+  - Name: Machete
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Machete
+    Sprite: {fileID: 21300000, guid: 15b1c631e43b3eb4bb7fb91c60d01bc6, type: 3}
+  - Name: MadGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/MadGreataxe
+    Sprite: {fileID: 21300000, guid: 13a5818f22d8cdc4dbe20caf468360a8, type: 3}
+  - Name: MagicianRobe [ShowEars]
+    Path: Equipment/Armor/Basic/MagicianRobe [ShowEars]
+    Sprite: {fileID: 21300000, guid: f6b00c6db4feb6c429470b460db63f1c, type: 3}
+  - Name: MagicianRobe [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/MagicianRobe [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 1f3c7aebce215204ebda3e7ccc0b44f2, type: 3}
+  - Name: MagicSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/MagicSword
+    Sprite: {fileID: 21300000, guid: cf6ddb97ee79aa844a1a72c7512e8b0c, type: 3}
+  - Name: MaleUnderwear
+    Path: Equipment/Armor/Underwear/MaleUnderwear
+    Sprite: {fileID: 21300000, guid: 7154e82efe9c97e4c92eae5dd307a2b3, type: 3}
+  - Name: MaleUnderwear.Helmet
+    Path: Equipment/Helmet/Underwear/MaleUnderwear.Helmet
+    Sprite: {fileID: 21300000, guid: 1cfab41803cf426468cf3b94c096aca8, type: 3}
+  - Name: MaliciousAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/MaliciousAxe
+    Sprite: {fileID: 21300000, guid: 6a9f0e83b23d49a4580c14ae02ec21fa, type: 3}
+  - Name: Man
+    Path: BodyParts/Eyes/Basic/Man
+    Sprite: {fileID: 21300000, guid: 9429d4f69d015da49aa9b25e8603a272, type: 3}
+  - Name: Manticore
+    Path: Equipment/Supplies/Material/Manticore
+    Sprite: {fileID: 21300000, guid: 8246dabf04d9cc444868281dd5bde085, type: 3}
+  - Name: ManticoreBow
+    Path: Equipment/Bow/Basic/ManticoreBow
+    Sprite: {fileID: 21300000, guid: 9b8f7254cadc0b3458b1ed3a2ade4dea, type: 3}
+  - Name: ManticoreBow.Arrow
+    Path: Equipment/Arrow/Basic/ManticoreBow.Arrow
+    Sprite: {fileID: 21300000, guid: edcd2448dff90cd4aab23a720ec8cc2f, type: 3}
+  - Name: ManticoreBow.Quiver
+    Path: Equipment/Quiver/Basic/ManticoreBow.Quiver
+    Sprite: {fileID: 21300000, guid: 0bfbe6566e38faa4b8bf07b0600f1a41, type: 3}
+  - Name: Maple
+    Path: Equipment/Supplies/Material/Maple
+    Sprite: {fileID: 21300000, guid: e7ac5ff3c5610884cb99c28ad39ddd26, type: 3}
+  - Name: MarauderBow
+    Path: Equipment/Bow/Basic/MarauderBow
+    Sprite: {fileID: 21300000, guid: 76955355cc193884795604fea2c951fa, type: 3}
+  - Name: MarauderBow.Arrow
+    Path: Equipment/Arrow/Basic/MarauderBow.Arrow
+    Sprite: {fileID: 21300000, guid: 40c05bc103e6f50499d6e6055df39133, type: 3}
+  - Name: MarauderBow.Quiver
+    Path: Equipment/Quiver/Basic/MarauderBow.Quiver
+    Sprite: {fileID: 21300000, guid: 8b9b1dc6f86ad4344814efa1313f94c4, type: 3}
+  - Name: MarauderOutfit
+    Path: Equipment/Armor/Basic/MarauderOutfit
+    Sprite: {fileID: 21300000, guid: dce31e7b5b6fc46488f701ac3f238f09, type: 3}
+  - Name: MarauderOutfit.Helmet
+    Path: Equipment/Helmet/Basic/MarauderOutfit.Helmet
+    Sprite: {fileID: 21300000, guid: ab13c88098f44d740b031daf06553d83, type: 3}
+  - Name: MasterRapier
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/MasterRapier
+    Sprite: {fileID: 21300000, guid: 4a3f8f7ec81faef41b134a2b7bed5a65, type: 3}
+  - Name: MeatSoup
+    Path: Equipment/Supplies/Food/MeatSoup
+    Sprite: {fileID: 21300000, guid: 0c9279007e1fc9b43ab950a7d2f1a39e, type: 3}
+  - Name: MechanizedPistol
+    Path: Equipment/Firearm1H/Basic/MechanizedPistol
+    Sprite: {fileID: 21300000, guid: 586411c1e4d4fae45ad71b2fa465f1b9, type: 3}
+  - Name: MercenaryArmor
+    Path: Equipment/Armor/Basic/MercenaryArmor
+    Sprite: {fileID: 21300000, guid: 5dc0fbba9c080d24db11b19263a988c0, type: 3}
+  - Name: MercenaryArmor.Helmet
+    Path: Equipment/Helmet/Basic/MercenaryArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 5818cc9c1ae85d84d9ada1ca58d9dd15, type: 3}
+  - Name: MercenarySword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/MercenarySword
+    Sprite: {fileID: 21300000, guid: ac3f0807d6fc62f44b0d61edad3d3905, type: 3}
+  - Name: MessyMedium
+    Path: BodyParts/Hair/Basic/MessyMedium
+    Sprite: {fileID: 21300000, guid: cff0a06eb9581b04e8b6ab986767b579, type: 3}
+  - Name: Meteorite
+    Path: Equipment/Supplies/Mineral/Meteorite
+    Sprite: {fileID: 21300000, guid: 6a0f9cf91f27eca408f9b2010a4a882f, type: 3}
+  - Name: MiddleBow
+    Path: Equipment/Bow/Basic/MiddleBow
+    Sprite: {fileID: 21300000, guid: c082c9fc973474c47adb83394d156178, type: 3}
+  - Name: MiddleBow.Arrow
+    Path: Equipment/Arrow/Basic/MiddleBow.Arrow
+    Sprite: {fileID: 21300000, guid: 25695672e104aef4683615addbe7126c, type: 3}
+  - Name: MiddleBow.Quiver
+    Path: Equipment/Quiver/Basic/MiddleBow.Quiver
+    Sprite: {fileID: 21300000, guid: 936372cc8fcd1624b972e46e6067574f, type: 3}
+  - Name: MilitiamanOutfit
+    Path: Equipment/Armor/Basic/MilitiamanOutfit
+    Sprite: {fileID: 21300000, guid: 8d1626c5aca657043873c92454c0083d, type: 3}
+  - Name: MilitiamanOutfit.Helmet
+    Path: Equipment/Helmet/Basic/MilitiamanOutfit.Helmet
+    Sprite: {fileID: 21300000, guid: 578a3559c057c1941838f0f24aed2eb9, type: 3}
+  - Name: MilitiamanShortSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/MilitiamanShortSword
+    Sprite: {fileID: 21300000, guid: 70e11ca6794ee2744ae76e7c446d4ff3, type: 3}
+  - Name: MilkCocktail
+    Path: Equipment/Supplies/Food/MilkCocktail
+    Sprite: {fileID: 21300000, guid: 80f74d832bf602e449231f92b9dda0d9, type: 3}
+  - Name: Mithril
+    Path: Equipment/Supplies/Mineral/Mithril
+    Sprite: {fileID: 21300000, guid: d4b57e96bd9be3449ab7bc3cb8a66c7a, type: 3}
+  - Name: Mohawk
+    Path: BodyParts/Hair/Basic/Mohawk
+    Sprite: {fileID: 21300000, guid: 1e87ad2cb198ed1408df487d3847882c, type: 3}
+  - Name: Mohawk
+    Path: BodyParts/Hair/Goblin/Mohawk
+    Sprite: {fileID: 21300000, guid: dd53a78f7a9d32f49bcf014af650c8c8, type: 3}
+  - Name: MoneyPouchA
+    Path: Equipment/Supplies/Container/MoneyPouchA
+    Sprite: {fileID: 21300000, guid: 497deaa3d9608c9438c005d4d605562d, type: 3}
+  - Name: MoneyPouchB
+    Path: Equipment/Supplies/Container/MoneyPouchB
+    Sprite: {fileID: 21300000, guid: 1a26439226d61f041bf80b19ac588eb1, type: 3}
+  - Name: MoneyPouchC
+    Path: Equipment/Supplies/Container/MoneyPouchC
+    Sprite: {fileID: 21300000, guid: 150dee35fa5d9484c82350c81f7d54d9, type: 3}
+  - Name: MoneyPouchD
+    Path: Equipment/Supplies/Container/MoneyPouchD
+    Sprite: {fileID: 21300000, guid: 09c4d1ef60bc3f64eb8a6fe0d5b8cc98, type: 3}
+  - Name: MonkRobe [ShowEars]
+    Path: Equipment/Armor/Basic/MonkRobe [ShowEars]
+    Sprite: {fileID: 21300000, guid: 42f3af4138897594a9082d566b870ad7, type: 3}
+  - Name: MonkRobe [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/MonkRobe [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 378bbddebc56c3e49b0d4ace7ec06020, type: 3}
+  - Name: MonsterFang
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/MonsterFang
+    Sprite: {fileID: 21300000, guid: f4cbdbba76321034a995b39cc58c58d1, type: 3}
+  - Name: Morgenstern
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/Morgenstern
+    Sprite: {fileID: 21300000, guid: e6970f559b09727439eb87e601aa95dc, type: 3}
+  - Name: Mouth01
+    Path: BodyParts/Mouth/Basic/Mouth01
+    Sprite: {fileID: 21300000, guid: 082ae1e1c1b86bd488b00863b0941140, type: 3}
+  - Name: Mouth02
+    Path: BodyParts/Mouth/Basic/Mouth02
+    Sprite: {fileID: 21300000, guid: b48bd6f4f2175984792de87fae5e4e3c, type: 3}
+  - Name: Mouth03
+    Path: BodyParts/Mouth/Basic/Mouth03
+    Sprite: {fileID: 21300000, guid: 228868f1d001eea458695214893d63c5, type: 3}
+  - Name: Mouth04
+    Path: BodyParts/Mouth/Basic/Mouth04
+    Sprite: {fileID: 21300000, guid: 7e384b1bca364e643917105c5bc787cb, type: 3}
+  - Name: Mouth05
+    Path: BodyParts/Mouth/Basic/Mouth05
+    Sprite: {fileID: 21300000, guid: 71e0f4c848a932043b33f0b26afc40b4, type: 3}
+  - Name: Mouth06
+    Path: BodyParts/Mouth/Basic/Mouth06
+    Sprite: {fileID: 21300000, guid: d79755cf61abcb840affa0c07338cd18, type: 3}
+  - Name: Mouth07
+    Path: BodyParts/Mouth/Basic/Mouth07
+    Sprite: {fileID: 21300000, guid: a402ca2dc64a27e4ba1585525562277e, type: 3}
+  - Name: Mouth08
+    Path: BodyParts/Mouth/Basic/Mouth08
+    Sprite: {fileID: 21300000, guid: c696b5ce5383fc64096f69c710dff32a, type: 3}
+  - Name: Mouth09
+    Path: BodyParts/Mouth/Basic/Mouth09
+    Sprite: {fileID: 21300000, guid: 1fb7916ae55b34a488ccaaf01ab0b6a5, type: 3}
+  - Name: Mouth10
+    Path: BodyParts/Mouth/Basic/Mouth10
+    Sprite: {fileID: 21300000, guid: c2f5c3a2209d83f4cba6daa2ac6467be, type: 3}
+  - Name: MushroomSoup
+    Path: Equipment/Supplies/Food/MushroomSoup
+    Sprite: {fileID: 21300000, guid: 2f8da882d1afaa048bb7f99c62da7adc, type: 3}
+  - Name: Musket
+    Path: Equipment/Firearm1H/Basic/Musket
+    Sprite: {fileID: 21300000, guid: 4138dec2d03fdcd4a997b7135101f838, type: 3}
+  - Name: NativeWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/NativeWand
+    Sprite: {fileID: 21300000, guid: bbdf07a64ca11a34c956f08ff8a11b62, type: 3}
+  - Name: NeatSidePart
+    Path: BodyParts/Hair/Basic/NeatSidePart
+    Sprite: {fileID: 21300000, guid: 46198b6fa3b9b4543ba7e6e1115b5ab5, type: 3}
+  - Name: NightmareClaw
+    Path: Equipment/Supplies/Material/NightmareClaw
+    Sprite: {fileID: 21300000, guid: daaf5d9569d939e49968221436d34c08, type: 3}
+  - Name: NightmareFang
+    Path: Equipment/Supplies/Material/NightmareFang
+    Sprite: {fileID: 21300000, guid: 45c316bdc8c197f4997997b4d085e1ad, type: 3}
+  - Name: NightmareSkin
+    Path: Equipment/Supplies/Material/NightmareSkin
+    Sprite: {fileID: 21300000, guid: 8025f193ba3b9024681959f82a0f1aba, type: 3}
+  - Name: NightScoutVest
+    Path: Equipment/Armor/Basic/NightScoutVest
+    Sprite: {fileID: 21300000, guid: 630e363ccbe51744c92b34abc3d036c9, type: 3}
+  - Name: NightScoutVest.Helmet
+    Path: Equipment/Helmet/Basic/NightScoutVest.Helmet
+    Sprite: {fileID: 21300000, guid: 07e448a1d27148e4cb4f0dcaee64ddd2, type: 3}
+  - Name: Ninjato
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Ninjato
+    Sprite: {fileID: 21300000, guid: f28d606af74427842a407afdc820f7f1, type: 3}
+  - Name: NobleDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/NobleDagger
+    Sprite: {fileID: 21300000, guid: 60bb1634269a7694a8fed1c749df8a28, type: 3}
+  - Name: NobleGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/NobleGreataxe
+    Sprite: {fileID: 21300000, guid: 73814c571cc03f14481a16d067f4d05f, type: 3}
+  - Name: NoblemanDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/NoblemanDagger
+    Sprite: {fileID: 21300000, guid: b45818a6401cb7d41aa6d7f7348fbce0, type: 3}
+  - Name: NoblemanSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/NoblemanSword
+    Sprite: {fileID: 21300000, guid: cf99598545af7394bbc0befeb06723f7, type: 3}
+  - Name: NobleSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/NobleSword
+    Sprite: {fileID: 21300000, guid: a1cba10865f3cce44b17bc56678f7977, type: 3}
+  - Name: NunClothes
+    Path: Equipment/Armor/Basic/NunClothes
+    Sprite: {fileID: 21300000, guid: dd51d7d7365548148a529f3d4a500537, type: 3}
+  - Name: NunClothes.Helmet
+    Path: Equipment/Helmet/Basic/NunClothes.Helmet
+    Sprite: {fileID: 21300000, guid: 3d9ea12b606a7ad44be89cbb0f47e90d, type: 3}
+  - Name: NunScepter
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/NunScepter
+    Sprite: {fileID: 21300000, guid: bd7aadd576084f8409a2ebaa6d2c5001, type: 3}
+  - Name: "Nutcracker\u0421ostume [ShowEars]"
+    Path: "Equipment/Armor/Basic/Nutcracker\u0421ostume [ShowEars]"
+    Sprite: {fileID: 21300000, guid: d037fe0d9b64ab1479656e321c845c9a, type: 3}
+  - Name: "Nutcracker\u0421ostume [ShowEars].Helmet"
+    Path: "Equipment/Helmet/Basic/Nutcracker\u0421ostume [ShowEars].Helmet"
+    Sprite: {fileID: 21300000, guid: f83960bb9abcf0043b0f9ba6db817e66, type: 3}
+  - Name: Oak
+    Path: Equipment/Supplies/Material/Oak
+    Sprite: {fileID: 21300000, guid: f43587330a2b26b43ae43933b355d936, type: 3}
+  - Name: OakBow
+    Path: Equipment/Bow/Basic/OakBow
+    Sprite: {fileID: 21300000, guid: eb926db5da1fe0f4d84b5db923f07a8a, type: 3}
+  - Name: OakBow.Arrow
+    Path: Equipment/Arrow/Basic/OakBow.Arrow
+    Sprite: {fileID: 21300000, guid: 602059c7cd6a231499bb9639eb5480b5, type: 3}
+  - Name: OakBow.Quiver
+    Path: Equipment/Quiver/Basic/OakBow.Quiver
+    Sprite: {fileID: 21300000, guid: d7b52c0afb9957e4dbcd835bfd8b8fef, type: 3}
+  - Name: OldFlintlockPistol
+    Path: Equipment/Firearm1H/Basic/OldFlintlockPistol
+    Sprite: {fileID: 21300000, guid: 44bdf5fddfd122743ae37fbe0e6fcb7e, type: 3}
+  - Name: OldWoodenHammer
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/OldWoodenHammer
+    Sprite: {fileID: 21300000, guid: 88a89777b73164643948d77d95f12247, type: 3}
+  - Name: Onion
+    Path: Equipment/Supplies/Food/Onion
+    Sprite: {fileID: 21300000, guid: 16041a11a599be349bca50d7d0c3384b, type: 3}
+  - Name: Orange
+    Path: Equipment/Supplies/Food/Orange
+    Sprite: {fileID: 21300000, guid: 0d16ca569eeb4a44abec5a605bbcb26e, type: 3}
+  - Name: OrcPoleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/OrcPoleaxe
+    Sprite: {fileID: 21300000, guid: b638afcf3aca01c43a48aef211b28b5d, type: 3}
+  - Name: Ore
+    Path: Equipment/Supplies/Mineral/Ore
+    Sprite: {fileID: 21300000, guid: c5dd7f24bc695a54382a5f8990cd2a90, type: 3}
+  - Name: OrientalDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/OrientalDagger
+    Sprite: {fileID: 21300000, guid: e13dcb6606196c94ab22fd7f28097c88, type: 3}
+  - Name: Padlock
+    Path: Equipment/Supplies/Other/Padlock
+    Sprite: {fileID: 21300000, guid: 080149ab02784004fa589f4bff0ffa88, type: 3}
+  - Name: Pan
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/Pan
+    Sprite: {fileID: 21300000, guid: 48190e388e0d62541a1ecf73d693184b, type: 3}
+  - Name: PeacekeeperDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/PeacekeeperDagger
+    Sprite: {fileID: 21300000, guid: 3467d2ef92b2b6246a26b193b0d0eb5d, type: 3}
+  - Name: PeasantClothes
+    Path: Equipment/Armor/Basic/PeasantClothes
+    Sprite: {fileID: 21300000, guid: 466bd10b73c6b2146bef62d0882b1bf3, type: 3}
+  - Name: PeasantClothes.Helmet
+    Path: Equipment/Helmet/Basic/PeasantClothes.Helmet
+    Sprite: {fileID: 21300000, guid: 2d993013fb7886d469207fa487227b08, type: 3}
+  - Name: PeasantRags [ShowEars]
+    Path: Equipment/Armor/Basic/PeasantRags [ShowEars]
+    Sprite: {fileID: 21300000, guid: e12d8e434343a774493fe7378a943bf8, type: 3}
+  - Name: PeasantRags [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/PeasantRags [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: a733ef1c1eb9bb6479c05edc7ee1527a, type: 3}
+  - Name: Pigtail
+    Path: BodyParts/Hair/Basic/Pigtail
+    Sprite: {fileID: 21300000, guid: f7f5f4673c820334198459c7ed8af275, type: 3}
+  - Name: Pineapple
+    Path: Equipment/Supplies/Food/Pineapple
+    Sprite: {fileID: 21300000, guid: fc7ba2c6eea48ce469011d0f072769fc, type: 3}
+  - Name: PiperOutfit [ShowEars]
+    Path: Equipment/Armor/Basic/PiperOutfit [ShowEars]
+    Sprite: {fileID: 21300000, guid: d560fb774500cef41bea6daa03e071c8, type: 3}
+  - Name: PiperOutfit [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/PiperOutfit [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 2cd0b52863df2e143bb0bb3b533b33a6, type: 3}
+  - Name: PirateCostume [ShowEars]
+    Path: Equipment/Armor/Basic/PirateCostume [ShowEars]
+    Sprite: {fileID: 21300000, guid: 21a356e9ffc04134386a0ef18767caa3, type: 3}
+  - Name: PirateCostume [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/PirateCostume [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: b014da72bffb93e44a78ab3d3c509f16, type: 3}
+  - Name: Pita
+    Path: Equipment/Supplies/Food/Pita
+    Sprite: {fileID: 21300000, guid: dbb5434f2857ae64ebc6fcc9b397d958, type: 3}
+  - Name: Pizza
+    Path: Equipment/Supplies/Food/Pizza
+    Sprite: {fileID: 21300000, guid: e101b9d4846c9bf4485d104aad884bd4, type: 3}
+  - Name: PlateShield
+    Path: Equipment/Shield/Basic/PlateShield
+    Sprite: {fileID: 21300000, guid: d47a252ffa07b194c8bb97f8a565e971, type: 3}
+  - Name: PoisonedDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/PoisonedDagger
+    Sprite: {fileID: 21300000, guid: 1fe0be9c43fcca847814872472720cfd, type: 3}
+  - Name: Poleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/Poleaxe
+    Sprite: {fileID: 21300000, guid: 9b27f62f56cc22f439b5363ca8972bfb, type: 3}
+  - Name: PontifexMace
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/PontifexMace
+    Sprite: {fileID: 21300000, guid: a6216c2ab47e79a48b9b62861d67a8bb, type: 3}
+  - Name: PopStyle
+    Path: BodyParts/Hair/Basic/PopStyle
+    Sprite: {fileID: 21300000, guid: 5f55f71dcb9583e44a786d4fe9434e31, type: 3}
+  - Name: Potato
+    Path: Equipment/Supplies/Food/Potato
+    Sprite: {fileID: 21300000, guid: 0602299da310ffb4ab13e3bfca2aae08, type: 3}
+  - Name: Potion
+    Path: Equipment/Supplies/Recipe/Potion
+    Sprite: {fileID: 21300000, guid: f6aa52cb2e019c84d909e94be1e307b2, type: 3}
+  - Name: Pumpkin
+    Path: Equipment/Supplies/Food/Pumpkin
+    Sprite: {fileID: 21300000, guid: f588dea1755fc7945b39ffcf34b29f01, type: 3}
+  - Name: Punch
+    Path: Equipment/Supplies/Food/Punch
+    Sprite: {fileID: 21300000, guid: 4aa1e1a3d8f69f54b9ea932e91267385, type: 3}
+  - Name: PunishmentClub
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/PunishmentClub
+    Sprite: {fileID: 21300000, guid: e231ae4b0fba2ac4fa8fdc0cf8760688, type: 3}
+  - Name: PurpleGemstone
+    Path: Equipment/Supplies/Currency/PurpleGemstone
+    Sprite: {fileID: 21300000, guid: 019e5202401d6284e987d29f586966e7, type: 3}
+  - Name: PurplePotionS
+    Path: Equipment/Supplies/Potion/PurplePotionS
+    Sprite: {fileID: 21300000, guid: 2893e905b6e726d418b94924151c646b, type: 3}
+  - Name: PurpleScarabChitin
+    Path: Equipment/Supplies/Material/PurpleScarabChitin
+    Sprite: {fileID: 21300000, guid: 80b18a8146c5d4a42a15e3957b823b28, type: 3}
+  - Name: PurpleScarabShell
+    Path: Equipment/Supplies/Material/PurpleScarabShell
+    Sprite: {fileID: 21300000, guid: 631f29e8db0b90a41a8f7db737f44e6d, type: 3}
+  - Name: PursuerArmor
+    Path: Equipment/Armor/Basic/PursuerArmor
+    Sprite: {fileID: 21300000, guid: 9f52d16b7b789a241a13744f3ddb4e3c, type: 3}
+  - Name: PursuerArmor.Helmet
+    Path: Equipment/Helmet/Basic/PursuerArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 7c5404959e773f64d800948f3f6394fb, type: 3}
+  - Name: PursuerShield
+    Path: Equipment/Shield/Basic/PursuerShield
+    Sprite: {fileID: 21300000, guid: 9765338e47474334f8008f613a257d24, type: 3}
+  - Name: QuestionableEyebrowns
+    Path: BodyParts/Eyebrows/Emoji/QuestionableEyebrowns
+    Sprite: {fileID: 21300000, guid: 327aabd31dceca042a2047554395ddc3, type: 3}
+  - Name: RageAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/RageAxe
+    Sprite: {fileID: 21300000, guid: 014699ae341770146b15517da0e05647, type: 3}
+  - Name: Rags [ShowEars]
+    Path: Equipment/Armor/Basic/Rags [ShowEars]
+    Sprite: {fileID: 21300000, guid: 7fefa4a014127c347a6f879c3aca5764, type: 3}
+  - Name: Rags [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/Rags [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 4fb3ce8c0dedfce4facda371e14fd674, type: 3}
+  - Name: RamHead
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/RamHead
+    Sprite: {fileID: 21300000, guid: 09890500afcaa1c4abb4ed729edee00a, type: 3}
+  - Name: RangerBow
+    Path: Equipment/Bow/Basic/RangerBow
+    Sprite: {fileID: 21300000, guid: b06c4fc9ce1e3574d820cf4cbaa3cced, type: 3}
+  - Name: RangerBow.Arrow
+    Path: Equipment/Arrow/Basic/RangerBow.Arrow
+    Sprite: {fileID: 21300000, guid: c1d717e853a98bb459e1d983dbdf3c55, type: 3}
+  - Name: RangerBow.Quiver
+    Path: Equipment/Quiver/Basic/RangerBow.Quiver
+    Sprite: {fileID: 21300000, guid: 7bfac8de1d135444b80c1a8419d91f63, type: 3}
+  - Name: RangerTunic [ShowEars]
+    Path: Equipment/Armor/Basic/RangerTunic [ShowEars]
+    Sprite: {fileID: 21300000, guid: c4e806e382efa9a4285f7c837c59de88, type: 3}
+  - Name: RangerTunic [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/RangerTunic [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: c161e9bb3c3f27041a254d42fe442f66, type: 3}
+  - Name: RareAxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/RareAxe
+    Sprite: {fileID: 21300000, guid: 4cb3296c40af4864fa8dd604be4ea537, type: 3}
+  - Name: RareHammer
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/RareHammer
+    Sprite: {fileID: 21300000, guid: 1f7f7c2659b8fa8459c03529ec66f759, type: 3}
+  - Name: Raspberry
+    Path: Equipment/Supplies/Food/Raspberry
+    Sprite: {fileID: 21300000, guid: 441ae2ef606a55b49aa7a4a077641341, type: 3}
+  - Name: RatTail
+    Path: Equipment/Supplies/Material/RatTail
+    Sprite: {fileID: 21300000, guid: 6268fe059bf949640911e3afb866d688, type: 3}
+  - Name: RavagerAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/RavagerAxe
+    Sprite: {fileID: 21300000, guid: 3967d9ab37dcc7b4cbfd48e2ff4b64cb, type: 3}
+  - Name: RavenBeak
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/RavenBeak
+    Sprite: {fileID: 21300000, guid: c6a15128e094462419c206de44f3edb1, type: 3}
+  - Name: RawFish
+    Path: Equipment/Supplies/Food/RawFish
+    Sprite: {fileID: 21300000, guid: 4beb989fd1976e74985b43c13b116eb4, type: 3}
+  - Name: RawMeat
+    Path: Equipment/Supplies/Food/RawMeat
+    Sprite: {fileID: 21300000, guid: f5a122f24ee90ad41939991e6e0bb4d8, type: 3}
+  - Name: RedApple
+    Path: Equipment/Supplies/Food/RedApple
+    Sprite: {fileID: 21300000, guid: 0ca683d694afea64b85a7bb9d0e07a96, type: 3}
+  - Name: RedBook
+    Path: Equipment/Supplies/Book/RedBook
+    Sprite: {fileID: 21300000, guid: 4969e295927b815449b3edd691f17f24, type: 3}
+  - Name: RedGemstone
+    Path: Equipment/Supplies/Currency/RedGemstone
+    Sprite: {fileID: 21300000, guid: 55c590f52ca123d4abd845556cb00245, type: 3}
+  - Name: RedKatana
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/RedKatana
+    Sprite: {fileID: 21300000, guid: 9cedbc81aee1cca449ef64f05525c7b5, type: 3}
+  - Name: RedLeatherArmor
+    Path: Equipment/Armor/Basic/RedLeatherArmor
+    Sprite: {fileID: 21300000, guid: a430ad7f4a2fb0b46aac5fb4bb538a01, type: 3}
+  - Name: RedLeatherArmor.Helmet
+    Path: Equipment/Helmet/Basic/RedLeatherArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 851ec8dfdc4e32c42b283e6fa9735f18, type: 3}
+  - Name: RedLegionBow
+    Path: Equipment/Bow/Basic/RedLegionBow
+    Sprite: {fileID: 21300000, guid: b2166b02e4582df4c93ade7c79990439, type: 3}
+  - Name: RedLegionBow.Arrow
+    Path: Equipment/Arrow/Basic/RedLegionBow.Arrow
+    Sprite: {fileID: 21300000, guid: 691745dcdaf8b6945afc876f15fa5cd8, type: 3}
+  - Name: RedLegionBow.Quiver
+    Path: Equipment/Quiver/Basic/RedLegionBow.Quiver
+    Sprite: {fileID: 21300000, guid: 8ebac525d7f27d0499c3c5ce224cd38b, type: 3}
+  - Name: RedOakClub
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/RedOakClub
+    Sprite: {fileID: 21300000, guid: 00e9f655774d92c4d9144ec8ef2874f1, type: 3}
+  - Name: RedPotionM
+    Path: Equipment/Supplies/Potion/RedPotionM
+    Sprite: {fileID: 21300000, guid: f8f3cc711268e0c46bcca0528bab04a0, type: 3}
+  - Name: RedPotionS
+    Path: Equipment/Supplies/Potion/RedPotionS
+    Sprite: {fileID: 21300000, guid: d9830665969e6ee4e8f2e0970fdd5045, type: 3}
+  - Name: RedSandalwood
+    Path: Equipment/Supplies/Material/RedSandalwood
+    Sprite: {fileID: 21300000, guid: 824d54037962b2842b5677aafc871a0a, type: 3}
+  - Name: RedwoodBow
+    Path: Equipment/Bow/Basic/RedwoodBow
+    Sprite: {fileID: 21300000, guid: 2650deb6be87a0644931112bf45dbc18, type: 3}
+  - Name: RedwoodBow.Arrow
+    Path: Equipment/Arrow/Basic/RedwoodBow.Arrow
+    Sprite: {fileID: 21300000, guid: 9db048f099956f84d83f25f1b693fab3, type: 3}
+  - Name: RedwoodBow.Quiver
+    Path: Equipment/Quiver/Basic/RedwoodBow.Quiver
+    Sprite: {fileID: 21300000, guid: 0fbd60cd7381c3a4c9f1557be3f93500, type: 3}
+  - Name: ReferenceArmor
+    Path: Equipment/Armor/Reference/ReferenceArmor
+    Sprite: {fileID: 21300000, guid: afcef2074be4b0748bdf4fcff6097ba9, type: 3}
+  - Name: ReferenceArmor.Helmet
+    Path: Equipment/Helmet/Reference/ReferenceArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 6f877e3096a6f684694d40fb4a73d9f9, type: 3}
+  - Name: ReferenceArmorAsymmetric
+    Path: Equipment/Armor/Reference/ReferenceArmorAsymmetric
+    Sprite: {fileID: 21300000, guid: 7edddcc48fc754d4da215dbb67ae564d, type: 3}
+  - Name: ReferenceArmorAsymmetric.Helmet
+    Path: Equipment/Helmet/Reference/ReferenceArmorAsymmetric.Helmet
+    Sprite: {fileID: 21300000, guid: 5b54d73299483ea4db9247225f557251, type: 3}
+  - Name: ReferenceAxe
+    Path: Equipment/MeleeWeapon1H/Reference/Axe/ReferenceAxe
+    Sprite: {fileID: 21300000, guid: 4e0969c1325055841ac0d07aa8c676db, type: 3}
+  - Name: ReferenceAxe
+    Path: Equipment/MeleeWeapon2H/Reference/Axe/ReferenceAxe
+    Sprite: {fileID: 21300000, guid: a553d3bf6a371684ebd62784b44e674b, type: 3}
+  - Name: ReferenceDagger
+    Path: Equipment/MeleeWeapon1H/Reference/Dagger/ReferenceDagger
+    Sprite: {fileID: 21300000, guid: b1ec5064200423141863ac531a395fe8, type: 3}
+  - Name: ReferenceEyesAsymmetric
+    Path: BodyParts/Eyes/Reference/ReferenceEyesAsymmetric
+    Sprite: {fileID: 21300000, guid: ac530cb35cd195d4d84befafdccbcdc7, type: 3}
+  - Name: ReferenceHammer
+    Path: Equipment/MeleeWeapon1H/Reference/Hammer/ReferenceHammer
+    Sprite: {fileID: 21300000, guid: 0d5cc98638f30074789c76ff0bd4ccae, type: 3}
+  - Name: ReferenceHammer
+    Path: Equipment/MeleeWeapon2H/Reference/Hammer/ReferenceHammer
+    Sprite: {fileID: 21300000, guid: a78b7b096d4b5964e975db4e350d1397, type: 3}
+  - Name: ReferenceHeavyCrossbow
+    Path: Equipment/Crossbow/Reference/ReferenceHeavyCrossbow
+    Sprite: {fileID: 21300000, guid: 8f0530790c680f342bde763c2c318c49, type: 3}
+  - Name: ReferenceHeavyCrossbow.Bolt
+    Path: Equipment/Bolt/Reference/ReferenceHeavyCrossbow.Bolt
+    Sprite: {fileID: 21300000, guid: 32c100db5e1baeb4590dbe6f511de9d6, type: 3}
+  - Name: ReferenceHeavyCrossbow.Quiver
+    Path: Equipment/Quiver/Reference/ReferenceHeavyCrossbow.Quiver
+    Sprite: {fileID: 21300000, guid: c36ad41a0d964154f98d968287885049, type: 3}
+  - Name: ReferenceLightCrossbow
+    Path: Equipment/Crossbow/Reference/ReferenceLightCrossbow
+    Sprite: {fileID: 21300000, guid: 07491da7baba5df489727e04e11df08e, type: 3}
+  - Name: ReferenceLightCrossbow.Bolt
+    Path: Equipment/Bolt/Reference/ReferenceLightCrossbow.Bolt
+    Sprite: {fileID: 21300000, guid: b92ccc2a7b33c2440a5b18b73730f241, type: 3}
+  - Name: ReferenceLightCrossbow.Quiver
+    Path: Equipment/Quiver/Reference/ReferenceLightCrossbow.Quiver
+    Sprite: {fileID: 21300000, guid: e58e447d67e0f8046958890778bf20af, type: 3}
+  - Name: ReferenceLongBow
+    Path: Equipment/Bow/Reference/ReferenceLongBow
+    Sprite: {fileID: 21300000, guid: 84f05b3ba28050e4da1fadab7d48047d, type: 3}
+  - Name: ReferenceLongBow.Arrow
+    Path: Equipment/Arrow/Reference/ReferenceLongBow.Arrow
+    Sprite: {fileID: 21300000, guid: 9c002d35da07cbf4dbd9ef588ae6defc, type: 3}
+  - Name: ReferenceLongBow.Quiver
+    Path: Equipment/Quiver/Reference/ReferenceLongBow.Quiver
+    Sprite: {fileID: 21300000, guid: ffa793f12c9037a48aa0d81e2ea581e5, type: 3}
+  - Name: ReferenceMediumBow
+    Path: Equipment/Bow/Reference/ReferenceMediumBow
+    Sprite: {fileID: 21300000, guid: 0b3280078806f354881d53b1d84a1007, type: 3}
+  - Name: ReferenceMediumBow.Arrow
+    Path: Equipment/Arrow/Reference/ReferenceMediumBow.Arrow
+    Sprite: {fileID: 21300000, guid: e0079156a4c15e34fa880446057b51cd, type: 3}
+  - Name: ReferenceMediumBow.Quiver
+    Path: Equipment/Quiver/Reference/ReferenceMediumBow.Quiver
+    Sprite: {fileID: 21300000, guid: ab5bcbfad422aad4a952fa1afa9e0496, type: 3}
+  - Name: ReferenceShortBow
+    Path: Equipment/Bow/Reference/ReferenceShortBow
+    Sprite: {fileID: 21300000, guid: 0726289c8fa60b44589918aeee690f45, type: 3}
+  - Name: ReferenceShortBow.Arrow
+    Path: Equipment/Arrow/Reference/ReferenceShortBow.Arrow
+    Sprite: {fileID: 21300000, guid: 4ef4e2f5f19badc47b732720a7919a29, type: 3}
+  - Name: ReferenceShortBow.Quiver
+    Path: Equipment/Quiver/Reference/ReferenceShortBow.Quiver
+    Sprite: {fileID: 21300000, guid: a33ae0f4e6aeda440894280db87894b3, type: 3}
+  - Name: ReferenceSpear
+    Path: Equipment/MeleeWeapon2H/Reference/Spear/ReferenceSpear
+    Sprite: {fileID: 21300000, guid: ad9085fb5aa59734880c622dada50076, type: 3}
+  - Name: ReferenceSword
+    Path: Equipment/MeleeWeapon1H/Reference/Sword/ReferenceSword
+    Sprite: {fileID: 21300000, guid: 10d489603b5bcb6438ccd96f28f98c16, type: 3}
+  - Name: ReferenceSword
+    Path: Equipment/MeleeWeapon2H/Reference/Sword/ReferenceSword
+    Sprite: {fileID: 21300000, guid: 74674a0e59ca24f4495bcbf46cc80cab, type: 3}
+  - Name: ReferenceWand
+    Path: Equipment/MeleeWeapon1H/Reference/Wand/ReferenceWand
+    Sprite: {fileID: 21300000, guid: 8d0723e7eda571d429a35b773efb204c, type: 3}
+  - Name: ReinforcedGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/ReinforcedGreataxe
+    Sprite: {fileID: 21300000, guid: 82425bd2fb044c94e8b697ebeb87fbc9, type: 3}
+  - Name: ReinforcedMace
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/ReinforcedMace
+    Sprite: {fileID: 21300000, guid: b48714b4a5da88141acad34aa7a891d3, type: 3}
+  - Name: ReinforcedTowerShield
+    Path: Equipment/Shield/Basic/ReinforcedTowerShield
+    Sprite: {fileID: 21300000, guid: f47a9270b0765b84fbc8bdef1eb001cd, type: 3}
+  - Name: RetributionBow
+    Path: Equipment/Bow/Basic/RetributionBow
+    Sprite: {fileID: 21300000, guid: eccf30f06caf51342bbb2939608af12a, type: 3}
+  - Name: RetributionBow.Arrow
+    Path: Equipment/Arrow/Basic/RetributionBow.Arrow
+    Sprite: {fileID: 21300000, guid: 34137fb7901c7f34bb1a5fd6b602f547, type: 3}
+  - Name: RetributionBow.Quiver
+    Path: Equipment/Quiver/Basic/RetributionBow.Quiver
+    Sprite: {fileID: 21300000, guid: 0e168d352ba0fbc4db7d9a99adb31f2c, type: 3}
+  - Name: Revolver
+    Path: Equipment/Firearm1H/Basic/Revolver
+    Sprite: {fileID: 21300000, guid: a684a55cd8e3b4d4d84b00055b8c0ba9, type: 3}
+  - Name: RisenBow
+    Path: Equipment/Bow/Basic/RisenBow
+    Sprite: {fileID: 21300000, guid: c8410280f0e25a34594c46a7d20d87e4, type: 3}
+  - Name: RisenBow.Arrow
+    Path: Equipment/Arrow/Basic/RisenBow.Arrow
+    Sprite: {fileID: 21300000, guid: a46ed90a6e70cdf40a1f63d50ee63802, type: 3}
+  - Name: RisenBow.Quiver
+    Path: Equipment/Quiver/Basic/RisenBow.Quiver
+    Sprite: {fileID: 21300000, guid: b9b622b8afa7629468c422c6f765950a, type: 3}
+  - Name: RitualBow
+    Path: Equipment/Bow/Basic/RitualBow
+    Sprite: {fileID: 21300000, guid: 5767ed4e8df91414380c68af36e6a158, type: 3}
+  - Name: RitualBow.Quiver
+    Path: Equipment/Quiver/Basic/RitualBow.Quiver
+    Sprite: {fileID: 21300000, guid: 824bd473e2695da479832c1c0ac8bf1e, type: 3}
+  - Name: RitualBoww.Arrow
+    Path: Equipment/Arrow/Basic/RitualBoww.Arrow
+    Sprite: {fileID: 21300000, guid: bf3cebfb1b3914f4b91b6e41a3587be2, type: 3}
+  - Name: RoastFish
+    Path: Equipment/Supplies/Food/RoastFish
+    Sprite: {fileID: 21300000, guid: b3659fa1cd4c2d24ba8d2574def726da, type: 3}
+  - Name: RoastFish
+    Path: Equipment/Supplies/Recipe/RoastFish
+    Sprite: {fileID: 21300000, guid: 08ea9af75a15a594dad46eb30005b552, type: 3}
+  - Name: RoastMeat
+    Path: Equipment/Supplies/Food/RoastMeat
+    Sprite: {fileID: 21300000, guid: 7d078199b6f0c2d4da3cceaaad6ed5b1, type: 3}
+  - Name: RoastMeat
+    Path: Equipment/Supplies/Recipe/RoastMeat
+    Sprite: {fileID: 21300000, guid: 44ac11448bdf2ea4686d417ad6c61970, type: 3}
+  - Name: Robe
+    Path: Equipment/Armor/Basic/Robe
+    Sprite: {fileID: 21300000, guid: 2655cd9e24f3ab844834c9796c097368, type: 3}
+  - Name: Robe.Helmet
+    Path: Equipment/Helmet/Basic/Robe.Helmet
+    Sprite: {fileID: 21300000, guid: 0aa27353e7a15ee4896c07aadcd0d8dd, type: 3}
+  - Name: RottenGreatsword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/RottenGreatsword
+    Sprite: {fileID: 21300000, guid: 3164f062998ae0a4785292dbf5c8cf8c, type: 3}
+  - Name: RoughShield
+    Path: Equipment/Shield/Basic/RoughShield
+    Sprite: {fileID: 21300000, guid: 8951436fb05a5e34189a1511b3869d57, type: 3}
+  - Name: RoyalArcherTunic [ShowEars]
+    Path: Equipment/Armor/Basic/RoyalArcherTunic [ShowEars]
+    Sprite: {fileID: 21300000, guid: 3d765767f94643b4eac28c34489ad7ea, type: 3}
+  - Name: RoyalArcherTunic [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/RoyalArcherTunic [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 6302ef37c77d7124d8e721e571bfdfd4, type: 3}
+  - Name: RubyBomb
+    Path: Equipment/Supplies/Bomb/RubyBomb
+    Sprite: {fileID: 21300000, guid: 3c710ab5a64634046bd300db1b814dc0, type: 3}
+  - Name: Rum
+    Path: Equipment/Supplies/Potion/Rum
+    Sprite: {fileID: 21300000, guid: 391e906a246c3fa458dc1217180dd523, type: 3}
+  - Name: RuneStone
+    Path: Equipment/Supplies/Other/RuneStone
+    Sprite: {fileID: 21300000, guid: 81d917c0c82e2784491cef0dfe5cf7b8, type: 3}
+  - Name: RunicAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/RunicAxe
+    Sprite: {fileID: 21300000, guid: ec5f85e390061c1418e1e550adb8779b, type: 3}
+  - Name: RunicGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/RunicGreataxe
+    Sprite: {fileID: 21300000, guid: 85c81e1acad902f4c9d28d84b6827cf3, type: 3}
+  - Name: RunicSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/RunicSword
+    Sprite: {fileID: 21300000, guid: 94a70860659a62a4db6f43dded75704c, type: 3}
+  - Name: RustedCasket
+    Path: Equipment/Supplies/Container/RustedCasket
+    Sprite: {fileID: 21300000, guid: 4ea4f2944242ad44daffafcfee22475d, type: 3}
+  - Name: RustedMortair
+    Path: Equipment/Firearm1H/Basic/RustedMortair
+    Sprite: {fileID: 21300000, guid: cfdff1041ad87324bb6960415f3426d8, type: 3}
+  - Name: RustedPickaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/RustedPickaxe
+    Sprite: {fileID: 21300000, guid: acb0d33c64486c8489a65f3b0b03cbc6, type: 3}
+  - Name: RustedShotgun
+    Path: Equipment/Firearm1H/Basic/RustedShotgun
+    Sprite: {fileID: 21300000, guid: 7025fe0a67488bf4cafc2b75b8ef3263, type: 3}
+  - Name: RustyBastardSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/RustyBastardSword
+    Sprite: {fileID: 21300000, guid: 456ebafac8cae914386ed05b3f187b7a, type: 3}
+  - Name: RustyGladiatorShield
+    Path: Equipment/Shield/Basic/RustyGladiatorShield
+    Sprite: {fileID: 21300000, guid: e6e2167f372d75e4dbb630f57e5eaed9, type: 3}
+  - Name: RustyGuardianShield
+    Path: Equipment/Shield/Basic/RustyGuardianShield
+    Sprite: {fileID: 21300000, guid: 569163e9a5bb58a459db697010c182f7, type: 3}
+  - Name: RustyKey
+    Path: Equipment/Supplies/Other/RustyKey
+    Sprite: {fileID: 21300000, guid: 2129ea0e8a85779488bed52edfd8beed, type: 3}
+  - Name: RustyPaleSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/RustyPaleSword
+    Sprite: {fileID: 21300000, guid: 06b83ef942ef970498b3a3b1ec6f7e20, type: 3}
+  - Name: RustyPoleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/RustyPoleaxe
+    Sprite: {fileID: 21300000, guid: 6d2625032acd4c2448c3b87f61bf2ec2, type: 3}
+  - Name: RustySlaveSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/RustySlaveSword
+    Sprite: {fileID: 21300000, guid: 2f6a2740b4635a2419d744d485fbd91a, type: 3}
+  - Name: RustySword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/RustySword
+    Sprite: {fileID: 21300000, guid: 14bf09055191e934185a7dd39105eb91, type: 3}
+  - Name: RustyVikingAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/RustyVikingAxe
+    Sprite: {fileID: 21300000, guid: 781ffd4258fb625478dc80c60c209e2d, type: 3}
+  - Name: RustyWoodcutterAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/RustyWoodcutterAxe
+    Sprite: {fileID: 21300000, guid: 23d433be11fa30a4d815ffb18025e303, type: 3}
+  - Name: RustyWoodcutterGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/RustyWoodcutterGreataxe
+    Sprite: {fileID: 21300000, guid: e816d3443ac58ff44a2491dc375350e4, type: 3}
+  - Name: RustyWoodcutterPoleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/RustyWoodcutterPoleaxe
+    Sprite: {fileID: 21300000, guid: 859b1c955253e0b46bec1430651709f4, type: 3}
+  - Name: Sabre
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Sabre
+    Sprite: {fileID: 21300000, guid: 0c8845dcf77b8944da559e2ded9ac3ff, type: 3}
+  - Name: Sack
+    Path: Equipment/Supplies/Container/Sack
+    Sprite: {fileID: 21300000, guid: c5f926efa26e8f145acd57c4a438c3a9, type: 3}
+  - Name: SadEyebrowns
+    Path: BodyParts/Eyebrows/Emoji/SadEyebrowns
+    Sprite: {fileID: 21300000, guid: 4bf65d1005c89e54bbd27cd69578410a, type: 3}
+  - Name: Sai
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/Sai
+    Sprite: {fileID: 21300000, guid: 2d5745d7a9ca0e24182e00e1db5c3eb6, type: 3}
+  - Name: Saitama
+    Path: BodyParts/Eyes/Basic/Saitama
+    Sprite: {fileID: 21300000, guid: 590fb4986f5dd2b4b887a614d0b0708b, type: 3}
+  - Name: SalamanderBow
+    Path: Equipment/Bow/Basic/SalamanderBow
+    Sprite: {fileID: 21300000, guid: f69ecd64c96963745841ae97377aa6e2, type: 3}
+  - Name: SalamanderBow.Arrow
+    Path: Equipment/Arrow/Basic/SalamanderBow.Arrow
+    Sprite: {fileID: 21300000, guid: 0007d101fe302de499cd2932d9562a73, type: 3}
+  - Name: SalamanderBow.Quiver
+    Path: Equipment/Quiver/Basic/SalamanderBow.Quiver
+    Sprite: {fileID: 21300000, guid: 34afb3ee52375cc41b2ebbf2c46dd97d, type: 3}
+  - Name: Salt
+    Path: Equipment/Supplies/Food/Salt
+    Sprite: {fileID: 21300000, guid: b1dfad2873b4b84478704a797bf3837f, type: 3}
+  - Name: SandShooterBow
+    Path: Equipment/Bow/Basic/SandShooterBow
+    Sprite: {fileID: 21300000, guid: a8d4df198e8265a4b80e6615d1ba6fab, type: 3}
+  - Name: SandShooterBow.Arrow
+    Path: Equipment/Arrow/Basic/SandShooterBow.Arrow
+    Sprite: {fileID: 21300000, guid: 263998902f63210448638b46cfb79cbb, type: 3}
+  - Name: SandShooterBow.Quiver
+    Path: Equipment/Quiver/Basic/SandShooterBow.Quiver
+    Sprite: {fileID: 21300000, guid: ad24980eaa00a6c41a21a7462f8392f5, type: 3}
+  - Name: SandWarriorSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/SandWarriorSword
+    Sprite: {fileID: 21300000, guid: 5914a4a8938498744b81a86c3d62980d, type: 3}
+  - Name: Sandwich
+    Path: Equipment/Supplies/Food/Sandwich
+    Sprite: {fileID: 21300000, guid: fbadf477dd8ff274c982bf7cee1ad335, type: 3}
+  - Name: "SantaDeer\u0421ostume [ShowEars] [FullHair]"
+    Path: "Equipment/Armor/Basic/SantaDeer\u0421ostume [ShowEars] [FullHair]"
+    Sprite: {fileID: 21300000, guid: db97e3d76d530de489d67ab7649f3b12, type: 3}
+  - Name: "SantaDeer\u0421ostume [ShowEars] [FullHair].Helmet"
+    Path: "Equipment/Helmet/Basic/SantaDeer\u0421ostume [ShowEars] [FullHair].Helmet"
+    Sprite: {fileID: 21300000, guid: 0fd2c98e1afb61d43b71f1324c87ceec, type: 3}
+  - Name: "SantaHelper\u0421ostume [ShowEars]"
+    Path: "Equipment/Armor/Basic/SantaHelper\u0421ostume [ShowEars]"
+    Sprite: {fileID: 21300000, guid: 302908753a21343469b0842d6776eee8, type: 3}
+  - Name: "SantaHelper\u0421ostume [ShowEars].Helmet"
+    Path: "Equipment/Helmet/Basic/SantaHelper\u0421ostume [ShowEars].Helmet"
+    Sprite: {fileID: 21300000, guid: 0ac372c465ebdd840b6906c54574811d, type: 3}
+  - Name: "Santa\u0421ostume [ShowEars]"
+    Path: "Equipment/Armor/Basic/Santa\u0421ostume [ShowEars]"
+    Sprite: {fileID: 21300000, guid: fc04a460eaf9ad245986bd77ddc38ac7, type: 3}
+  - Name: "Santa\u0421ostume [ShowEars].Helmet"
+    Path: "Equipment/Helmet/Basic/Santa\u0421ostume [ShowEars].Helmet"
+    Sprite: {fileID: 21300000, guid: a4a9adb28f361eb47b381ca846e230e5, type: 3}
+  - Name: Sausage
+    Path: Equipment/Supplies/Food/Sausage
+    Sprite: {fileID: 21300000, guid: 022663086a889784a836844f5bb174bc, type: 3}
+  - Name: SawedOffShotgun
+    Path: Equipment/Firearm1H/Basic/SawedOffShotgun
+    Sprite: {fileID: 21300000, guid: a31b2c7d3533085469b8fb8182cf9708, type: 3}
+  - Name: ScarabChitin
+    Path: Equipment/Supplies/Material/ScarabChitin
+    Sprite: {fileID: 21300000, guid: 8e0f86c70a636e941b28a8c9bf216d40, type: 3}
+  - Name: ScarabShell
+    Path: Equipment/Supplies/Material/ScarabShell
+    Sprite: {fileID: 21300000, guid: caca3ea80aeba594b8bd8d6669b27729, type: 3}
+  - Name: ScaredEyes
+    Path: BodyParts/Eyes/Emoji/ScaredEyes
+    Sprite: {fileID: 21300000, guid: b085b7539ab0490408660bd2872b055e, type: 3}
+  - Name: Scavenger
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Scavenger
+    Sprite: {fileID: 21300000, guid: 5db83c9e8eddc9546b7972f1f4534031, type: 3}
+  - Name: Schnapps
+    Path: Equipment/Supplies/Potion/Schnapps
+    Sprite: {fileID: 21300000, guid: 143d5d59259bdae4486f723e8ed840b2, type: 3}
+  - Name: Scopetta
+    Path: Equipment/Firearm1H/Basic/Scopetta
+    Sprite: {fileID: 21300000, guid: 675ff67c9c30cff46ba2fa8bafc60050, type: 3}
+  - Name: ScoutKnife
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/ScoutKnife
+    Sprite: {fileID: 21300000, guid: fb3e7d6a9dfa67f4b8a117a2fb516052, type: 3}
+  - Name: ScoutLongBow
+    Path: Equipment/Bow/Basic/ScoutLongBow
+    Sprite: {fileID: 21300000, guid: 2eab89a8009108a47ad5e837c6dc0262, type: 3}
+  - Name: ScoutLongBow.Arrow
+    Path: Equipment/Arrow/Basic/ScoutLongBow.Arrow
+    Sprite: {fileID: 21300000, guid: 105a35b28fa325148b92d486f78bb309, type: 3}
+  - Name: ScoutLongBow.Quiver
+    Path: Equipment/Quiver/Basic/ScoutLongBow.Quiver
+    Sprite: {fileID: 21300000, guid: 7aa02eac8ca2d8d46a2f52ed04ed9ab1, type: 3}
+  - Name: ScoutMediumBow
+    Path: Equipment/Bow/Basic/ScoutMediumBow
+    Sprite: {fileID: 21300000, guid: 94c47af0666aeb641aee39ef0fff4551, type: 3}
+  - Name: ScoutMediumBow.Arrow
+    Path: Equipment/Arrow/Basic/ScoutMediumBow.Arrow
+    Sprite: {fileID: 21300000, guid: 268e510bc9aab5f4fb7b5c0974a1c187, type: 3}
+  - Name: ScoutMediumBow.Quiver
+    Path: Equipment/Quiver/Basic/ScoutMediumBow.Quiver
+    Sprite: {fileID: 21300000, guid: 2f55960c58fb53e43ae72fee7611108a, type: 3}
+  - Name: ScoutVestment
+    Path: Equipment/Armor/Basic/ScoutVestment
+    Sprite: {fileID: 21300000, guid: eaa846766a1f7a345bf2b529c6f6e68b, type: 3}
+  - Name: ScoutVestment.Helmet
+    Path: Equipment/Helmet/Basic/ScoutVestment.Helmet
+    Sprite: {fileID: 21300000, guid: ec79d0c72b96d9d49b5c1c84fbee1d36, type: 3}
+  - Name: ScrollA
+    Path: Equipment/Supplies/Scroll/ScrollA
+    Sprite: {fileID: 21300000, guid: c6cd82ffcee92b4429d7124bc22effda, type: 3}
+  - Name: ScrollB
+    Path: Equipment/Supplies/Scroll/ScrollB
+    Sprite: {fileID: 21300000, guid: 75db13fc2f363614497335e8d89adc1e, type: 3}
+  - Name: Scythe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/Scythe
+    Sprite: {fileID: 21300000, guid: 6e631b4b93650ca42a9476e748f4e587, type: 3}
+  - Name: ShadowFang
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/ShadowFang
+    Sprite: {fileID: 21300000, guid: 2c5d89c7a0785434daa3e1331ae4fa96, type: 3}
+  - Name: ShadowHunterOutfit [ShowEars]
+    Path: Equipment/Armor/Epic/ShadowHunterOutfit [ShowEars]
+    Sprite: {fileID: 21300000, guid: 75b6be8f315357244b0dbdedb55043b1, type: 3}
+  - Name: ShadowHunterOutfit [ShowEars].Helmet
+    Path: Equipment/Helmet/Epic/ShadowHunterOutfit [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: db4a90128c5048f49b2e17b4f045a7f4, type: 3}
+  - Name: ShadowHunterSword
+    Path: Equipment/MeleeWeapon2H/Epic/Sword/ShadowHunterSword
+    Sprite: {fileID: 21300000, guid: 71cd8c91bb87d564da1e919812e27f95, type: 3}
+  - Name: Shaggy
+    Path: BodyParts/Hair/Basic/Shaggy
+    Sprite: {fileID: 21300000, guid: 015266f3e54c19040bff06258ca992fb, type: 3}
+  - Name: ShamanClub
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/ShamanClub
+    Sprite: {fileID: 21300000, guid: baacaf3a9e8406d409bc266e154225c5, type: 3}
+  - Name: ShamanWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/ShamanWand
+    Sprite: {fileID: 21300000, guid: 419a75159bdc2414eaaf573f7dbf22a2, type: 3}
+  - Name: SharpenedNobleAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/SharpenedNobleAxe
+    Sprite: {fileID: 21300000, guid: 7050667d7d7948e40b77688b5a5a6c55, type: 3}
+  - Name: Shell
+    Path: Equipment/Supplies/Other/Shell
+    Sprite: {fileID: 21300000, guid: 8549a009309d09347b5642f32b99e170, type: 3}
+  - Name: Shestoper
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/Shestoper
+    Sprite: {fileID: 21300000, guid: f5501d4dda922e346b71ff9ff3c690fe, type: 3}
+  - Name: Shield
+    Path: Equipment/Supplies/Recipe/Shield
+    Sprite: {fileID: 21300000, guid: 50fbe39d036196548ae7e3666cdc5d08, type: 3}
+  - Name: ShortDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/ShortDagger
+    Sprite: {fileID: 21300000, guid: 2bc3e60c966813440adb6a754a44ae57, type: 3}
+  - Name: ShortFlintlockPistol
+    Path: Equipment/Firearm1H/Basic/ShortFlintlockPistol
+    Sprite: {fileID: 21300000, guid: 697894d5db130d049ad4f6633bd84c0a, type: 3}
+  - Name: ShortHair
+    Path: BodyParts/Hair/Basic/ShortHair
+    Sprite: {fileID: 21300000, guid: ab54b7a95051006449e9bf64aece94c4, type: 3}
+  - Name: ShortSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/ShortSword
+    Sprite: {fileID: 21300000, guid: 52037e0f4dac0f74b81e51b3f1172415, type: 3}
+  - Name: ShortTail
+    Path: BodyParts/Hair/Basic/ShortTail
+    Sprite: {fileID: 21300000, guid: 9ea6bdae576f8164daf5d8f8e8c22739, type: 3}
+  - Name: ShortWillowBow
+    Path: Equipment/Bow/Basic/ShortWillowBow
+    Sprite: {fileID: 21300000, guid: f3a85f761af30f342bd785d3137430c3, type: 3}
+  - Name: ShortWillowBow.Arrow
+    Path: Equipment/Arrow/Basic/ShortWillowBow.Arrow
+    Sprite: {fileID: 21300000, guid: e447e0d7c694e644e86b1dc89bf95583, type: 3}
+  - Name: ShortWillowBow.Quiver
+    Path: Equipment/Quiver/Basic/ShortWillowBow.Quiver
+    Sprite: {fileID: 21300000, guid: e9e858a184a5d334c9524c1e9a5a0e40, type: 3}
+  - Name: Shovel
+    Path: Equipment/Supplies/Other/Shovel
+    Sprite: {fileID: 21300000, guid: 7495962d0c1ae3643b8ee7903f55ec56, type: 3}
+  - Name: Showel
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/Showel
+    Sprite: {fileID: 21300000, guid: d942667e2726cc349959dc14fe38981c, type: 3}
+  - Name: Sickle
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Sickle
+    Sprite: {fileID: 21300000, guid: 753cf455c7e9a554a99fad7ab49eafff, type: 3}
+  - Name: SideBangs
+    Path: BodyParts/Hair/Basic/SideBangs
+    Sprite: {fileID: 21300000, guid: 8a898fafef0327a4d9ce2900d1a9f153, type: 3}
+  - Name: SiegeAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/SiegeAxe
+    Sprite: {fileID: 21300000, guid: 6a9ae19a42269374699c396b3fbec29e, type: 3}
+  - Name: SilverBomb
+    Path: Equipment/Supplies/Bomb/SilverBomb
+    Sprite: {fileID: 21300000, guid: 09923383776940a45b8e90e77e166dbd, type: 3}
+  - Name: SilverDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/SilverDagger
+    Sprite: {fileID: 21300000, guid: c8888c8d382267845a55cf19112ebe70, type: 3}
+  - Name: SilverKey
+    Path: Equipment/Supplies/Other/SilverKey
+    Sprite: {fileID: 21300000, guid: 0b66c863e807d2845bc0c6eed0d6e1fd, type: 3}
+  - Name: SilverKnightArmor
+    Path: Equipment/Armor/Basic/SilverKnightArmor
+    Sprite: {fileID: 21300000, guid: 090b2d9cda0610d4aa11dad11c9b4b6a, type: 3}
+  - Name: SilverKnightArmor.Helmet
+    Path: Equipment/Helmet/Basic/SilverKnightArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 1f0b1da298fc2ea4ebdfa61242a59b07, type: 3}
+  - Name: SilverMoonBow
+    Path: Equipment/Bow/Basic/SilverMoonBow
+    Sprite: {fileID: 21300000, guid: 736c51d63e0a9914dac6234c2978ab5d, type: 3}
+  - Name: SilverMoonBow.Arrow
+    Path: Equipment/Arrow/Basic/SilverMoonBow.Arrow
+    Sprite: {fileID: 21300000, guid: f14de34e76cd55349a1c1b3082d67dac, type: 3}
+  - Name: SilverMoonBow.Quiver
+    Path: Equipment/Quiver/Basic/SilverMoonBow.Quiver
+    Sprite: {fileID: 21300000, guid: 798e64709b93c3b42ad5d8f2029638e9, type: 3}
+  - Name: SilverOre
+    Path: Equipment/Supplies/Mineral/SilverOre
+    Sprite: {fileID: 21300000, guid: 0fef2b4fb6e70784b8dcbebffda69aee, type: 3}
+  - Name: SilverRing
+    Path: Equipment/Supplies/Other/SilverRing
+    Sprite: {fileID: 21300000, guid: d30d3240311cfd04c88305105905728d, type: 3}
+  - Name: Skeleton
+    Path: BodyParts/Eyes/Skeleton/Skeleton
+    Sprite: {fileID: 21300000, guid: aaa201ff6d619e44c9a9f9e8903a42b9, type: 3}
+  - Name: SkeletonArmor1
+    Path: Equipment/Armor/Skeleton/SkeletonArmor1
+    Sprite: {fileID: 21300000, guid: 535fe2c48e6a3924f95e25189210058f, type: 3}
+  - Name: SkeletonArmor1.Helmet
+    Path: Equipment/Helmet/Skeleton/SkeletonArmor1.Helmet
+    Sprite: {fileID: 21300000, guid: 062ba4e37aed6b84db045db660c13a4a, type: 3}
+  - Name: SkeletonArmor2
+    Path: Equipment/Armor/Skeleton/SkeletonArmor2
+    Sprite: {fileID: 21300000, guid: 6709150d338f7b54aa39d6645fdc7c3e, type: 3}
+  - Name: SkeletonArmor2.Helmet
+    Path: Equipment/Helmet/Skeleton/SkeletonArmor2.Helmet
+    Sprite: {fileID: 21300000, guid: dbf149d6695344247b764bf4005d21b4, type: 3}
+  - Name: SkeletonArmor3
+    Path: Equipment/Armor/Skeleton/SkeletonArmor3
+    Sprite: {fileID: 21300000, guid: 387dbc8a59edf844399ee119ecb2c021, type: 3}
+  - Name: SkeletonArmor3.Helmet
+    Path: Equipment/Helmet/Skeleton/SkeletonArmor3.Helmet
+    Sprite: {fileID: 21300000, guid: af33feaef8c28b545aaff150342877c9, type: 3}
+  - Name: SkeletonKing
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/SkeletonKing
+    Sprite: {fileID: 21300000, guid: b40ba10b92f81924fa84944dd82cff2c, type: 3}
+  - Name: SkeletonKingArmor
+    Path: Equipment/Armor/Skeleton/SkeletonKingArmor
+    Sprite: {fileID: 21300000, guid: d9765f27fa99d4c4fbed6df03512bcb1, type: 3}
+  - Name: SkeletonKingArmor.Helmet
+    Path: Equipment/Helmet/Skeleton/SkeletonKingArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 5101f2a01d3e27a428d3a0fb2e66b62f, type: 3}
+  - Name: SkeletonTeeth
+    Path: BodyParts/Mouth/Skeleton/SkeletonTeeth
+    Sprite: {fileID: 21300000, guid: 4b1d6418c2754af4a83acd0fb78786e8, type: 3}
+  - Name: SkeletonTeeth1
+    Path: BodyParts/Mouth/Skeleton/SkeletonTeeth1
+    Sprite: {fileID: 21300000, guid: 7c8b8c4924adb3744903104d6e4e2eda, type: 3}
+  - Name: SkeletonTeeth2
+    Path: BodyParts/Mouth/Skeleton/SkeletonTeeth2
+    Sprite: {fileID: 21300000, guid: 45f720f034e17e2459d7128f8b3d6166, type: 3}
+  - Name: SkeletonTeeth3
+    Path: BodyParts/Mouth/Skeleton/SkeletonTeeth3
+    Sprite: {fileID: 21300000, guid: 0bbfb0d9b98c25841b1e7a4236488884, type: 3}
+  - Name: SkeletonTeeth4
+    Path: BodyParts/Mouth/Skeleton/SkeletonTeeth4
+    Sprite: {fileID: 21300000, guid: 3b62b66af93466f4988fe9363f214c83, type: 3}
+  - Name: SkeletonTeeth5
+    Path: BodyParts/Mouth/Skeleton/SkeletonTeeth5
+    Sprite: {fileID: 21300000, guid: b517f3aea82e2744795d0494e4252dd8, type: 3}
+  - Name: Skin
+    Path: Equipment/Supplies/Recipe/Skin
+    Sprite: {fileID: 21300000, guid: 26092ea72e876bb4c967b60cd5b56043, type: 3}
+  - Name: Skull
+    Path: Equipment/Supplies/Other/Skull
+    Sprite: {fileID: 21300000, guid: cbffc9dfbf2cb244a9e04fed9accc7dd, type: 3}
+  - Name: SkullAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/SkullAxe
+    Sprite: {fileID: 21300000, guid: 18e87bff5c633984bba0459f80715149, type: 3}
+  - Name: SkullCrusher
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/SkullCrusher
+    Sprite: {fileID: 21300000, guid: f61ea72ce7f21d148bb1aee090ef90db, type: 3}
+  - Name: SkullcrusherMace
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/SkullcrusherMace
+    Sprite: {fileID: 21300000, guid: f978f86dd9bcbe84fb797c6bdf51b860, type: 3}
+  - Name: Slasher
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/Slasher
+    Sprite: {fileID: 21300000, guid: 0695fc1b8c456a14ab2b36b3b3bd10c6, type: 3}
+  - Name: SlaveRags
+    Path: Equipment/Armor/Basic/SlaveRags
+    Sprite: {fileID: 21300000, guid: 20fc0993baf526347a965edf4a18ddd5, type: 3}
+  - Name: SlaveRags.Helmet
+    Path: Equipment/Helmet/Basic/SlaveRags.Helmet
+    Sprite: {fileID: 21300000, guid: 0d4bafe5f63c91a4e8d97782cac3cfed, type: 3}
+  - Name: SlaveSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/SlaveSword
+    Sprite: {fileID: 21300000, guid: b8cd5c10f9c097f4cb725200f73e9012, type: 3}
+  - Name: SlickBack
+    Path: BodyParts/Hair/Basic/SlickBack
+    Sprite: {fileID: 21300000, guid: 48b2cf36e20ac7f42a1e739f071ab645, type: 3}
+  - Name: SmallAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/SmallAxe
+    Sprite: {fileID: 21300000, guid: edc8a25e29b007d4388bdbc261b15b9a, type: 3}
+  - Name: SmallBomb
+    Path: Equipment/Supplies/Bomb/SmallBomb
+    Sprite: {fileID: 21300000, guid: 3d7cc0454c9daea4f80fe57e3ffaaf8e, type: 3}
+  - Name: SmallCasket
+    Path: Equipment/Supplies/Container/SmallCasket
+    Sprite: {fileID: 21300000, guid: 7a1b8b130b315dc4aabf9072b3986ba3, type: 3}
+  - Name: Smallsword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Smallsword
+    Sprite: {fileID: 21300000, guid: f378b36b7452d974c8fb49aba32cbb11, type: 3}
+  - Name: SmasherHammer
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/SmasherHammer
+    Sprite: {fileID: 21300000, guid: ae1f2aeff1923ec4baa71b67fc06855b, type: 3}
+  - Name: Smile
+    Path: BodyParts/Mouth/Basic/Smile
+    Sprite: {fileID: 21300000, guid: 2e0f965e060f7df4faa1d1780959f13d, type: 3}
+  - Name: Smirk
+    Path: BodyParts/Mouth/Basic/Smirk
+    Sprite: {fileID: 21300000, guid: e9083521b4ab6304fa89f0ca241a0660, type: 3}
+  - Name: SnakeWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/SnakeWand
+    Sprite: {fileID: 21300000, guid: 9d780dfc89ce79c4797a3508d4ebde0c, type: 3}
+  - Name: SniperBow
+    Path: Equipment/Bow/Basic/SniperBow
+    Sprite: {fileID: 21300000, guid: 3f291077e65909f4f9fceec9ab1ad3c2, type: 3}
+  - Name: SniperBow.Arrow
+    Path: Equipment/Arrow/Basic/SniperBow.Arrow
+    Sprite: {fileID: 21300000, guid: 7479c43877ae546438bd9dd5413cbb06, type: 3}
+  - Name: SniperBow.Quiver
+    Path: Equipment/Quiver/Basic/SniperBow.Quiver
+    Sprite: {fileID: 21300000, guid: 514b9c8c387bb724e9531878f36e417c, type: 3}
+  - Name: SolidWoodenShield
+    Path: Equipment/Shield/Basic/SolidWoodenShield
+    Sprite: {fileID: 21300000, guid: 3b1bbc91567c8404c9522222b7b759a4, type: 3}
+  - Name: SoulReaver
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/SoulReaver
+    Sprite: {fileID: 21300000, guid: 3c67fef57fc97f447ab6ff7b5eb254f8, type: 3}
+  - Name: Soup
+    Path: Equipment/Supplies/Recipe/Soup
+    Sprite: {fileID: 21300000, guid: cb02445c3c906694ebcbf857b0b8817f, type: 3}
+  - Name: Spices
+    Path: Equipment/Supplies/Food/Spices
+    Sprite: {fileID: 21300000, guid: 3732f765027340d4ca1831026ef241e0, type: 3}
+  - Name: SpicySoup
+    Path: Equipment/Supplies/Food/SpicySoup
+    Sprite: {fileID: 21300000, guid: 539a0b0843a43b44bb658683f8660505, type: 3}
+  - Name: SpikeBomb
+    Path: Equipment/Supplies/Bomb/SpikeBomb
+    Sprite: {fileID: 21300000, guid: fbed2dc62ec300648b9edde728886e9d, type: 3}
+  - Name: SpikedBow
+    Path: Equipment/Bow/Basic/SpikedBow
+    Sprite: {fileID: 21300000, guid: 673ab794c7752704aa08b9c0f73c2998, type: 3}
+  - Name: SpikedBow.Arrow
+    Path: Equipment/Arrow/Basic/SpikedBow.Arrow
+    Sprite: {fileID: 21300000, guid: 071037c3cd81ae14fbcf76cbf181269d, type: 3}
+  - Name: SpikedBow.Quiver
+    Path: Equipment/Quiver/Basic/SpikedBow.Quiver
+    Sprite: {fileID: 21300000, guid: ba7574afc0d450a44b7ecdc27450eaae, type: 3}
+  - Name: SpikedGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/SpikedGreataxe
+    Sprite: {fileID: 21300000, guid: b5a0f02aee9d4e044b5a93c9b1b97dcf, type: 3}
+  - Name: SpikedMace
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/SpikedMace
+    Sprite: {fileID: 21300000, guid: 108bcf1e0121b5748a01a34e122b2103, type: 3}
+  - Name: SpikeShield
+    Path: Equipment/Shield/Basic/SpikeShield
+    Sprite: {fileID: 21300000, guid: aca94e91cb6ecdb499a190f905f43d03, type: 3}
+  - Name: Spiky
+    Path: BodyParts/Hair/Basic/Spiky
+    Sprite: {fileID: 21300000, guid: bcdcd4b4b20de6f4ea942f3583ddc7f3, type: 3}
+  - Name: SpikyFringeUp
+    Path: BodyParts/Hair/Basic/SpikyFringeUp
+    Sprite: {fileID: 21300000, guid: e86e25ec04ad4ed49af812b0c621782b, type: 3}
+  - Name: SpikyLayered
+    Path: BodyParts/Hair/Basic/SpikyLayered
+    Sprite: {fileID: 21300000, guid: 2f35cbd5b3f4921458e35bbeb15def09, type: 3}
+  - Name: SpineBow
+    Path: Equipment/Bow/Skeleton/SpineBow
+    Sprite: {fileID: 21300000, guid: 418fc67bd2bfb8449895bb8c40165589, type: 3}
+  - Name: SpineBow.Arrow
+    Path: Equipment/Arrow/Skeleton/SpineBow.Arrow
+    Sprite: {fileID: 21300000, guid: 03c1f00092ba4c949b189dd4f3766b57, type: 3}
+  - Name: SpineBow.Quiver
+    Path: Equipment/Quiver/Skeleton/SpineBow.Quiver
+    Sprite: {fileID: 21300000, guid: 307b118dcc3c7004fbf60de5d3e71a1c, type: 3}
+  - Name: Spoon
+    Path: Equipment/Supplies/Other/Spoon
+    Sprite: {fileID: 21300000, guid: 7414e3a1d8a3355419502ddbe6a94709, type: 3}
+  - Name: StalkerTunic
+    Path: Equipment/Armor/Basic/StalkerTunic
+    Sprite: {fileID: 21300000, guid: a27b1c413830b664980118fac8ed564c, type: 3}
+  - Name: StalkerTunic.Helmet
+    Path: Equipment/Helmet/Basic/StalkerTunic.Helmet
+    Sprite: {fileID: 21300000, guid: 12704b1636ccf894bb42879ce3514bd9, type: 3}
+  - Name: SteamPunkPistol
+    Path: Equipment/Firearm1H/Basic/SteamPunkPistol
+    Sprite: {fileID: 21300000, guid: 1c3f2d066492f4c4fae525ec6a0aceab, type: 3}
+  - Name: Steel
+    Path: Equipment/Supplies/Mineral/Steel
+    Sprite: {fileID: 21300000, guid: 367ad6538b5c44640aefb021f0689a6f, type: 3}
+  - Name: SteelBow
+    Path: Equipment/Bow/Basic/SteelBow
+    Sprite: {fileID: 21300000, guid: e3fe1e8940b9e044e975e4778971fb7d, type: 3}
+  - Name: SteelBow.Arrow
+    Path: Equipment/Arrow/Basic/SteelBow.Arrow
+    Sprite: {fileID: 21300000, guid: 857ec2dc3fbcb58419ae098655e8068a, type: 3}
+  - Name: SteelBow.Quiver
+    Path: Equipment/Quiver/Basic/SteelBow.Quiver
+    Sprite: {fileID: 21300000, guid: 7149f66ad7a9a9642b598ab6d8df2ffe, type: 3}
+  - Name: SteelDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/SteelDagger
+    Sprite: {fileID: 21300000, guid: 53bbff0539960bd4a9635fa9b6621e40, type: 3}
+  - Name: SteelGreataxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/SteelGreataxe
+    Sprite: {fileID: 21300000, guid: 6d2ce4d0ea236ce49981f138f4ee36e6, type: 3}
+  - Name: SteelPickaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/SteelPickaxe
+    Sprite: {fileID: 21300000, guid: 6b37ea43afcca524182ba3158459525c, type: 3}
+  - Name: SteelShield
+    Path: Equipment/Shield/Basic/SteelShield
+    Sprite: {fileID: 21300000, guid: efc4a139089754f46a54d48eb7cd56d3, type: 3}
+  - Name: Sting
+    Path: Equipment/Supplies/Material/Sting
+    Sprite: {fileID: 21300000, guid: a0184a47c81f91e4b8be66642b2a997a, type: 3}
+  - Name: StolenDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/StolenDagger
+    Sprite: {fileID: 21300000, guid: 7451c3d3385b20f4a80f443fedeecb22, type: 3}
+  - Name: Stone
+    Path: Equipment/Supplies/Mineral/Stone
+    Sprite: {fileID: 21300000, guid: 64497812001934e4b87465b15bdf0fbd, type: 3}
+  - Name: StoneMace
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/StoneMace
+    Sprite: {fileID: 21300000, guid: d461fb40bb9c79b438f512c5d13b3255, type: 3}
+  - Name: StoneWarAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/StoneWarAxe
+    Sprite: {fileID: 21300000, guid: c67cb03f891a3474b937c7eaeb3b3a37, type: 3}
+  - Name: StraightSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/StraightSword
+    Sprite: {fileID: 21300000, guid: 4c4730f1ed8db554f9201200c887d8f0, type: 3}
+  - Name: Strawberry
+    Path: Equipment/Supplies/Food/Strawberry
+    Sprite: {fileID: 21300000, guid: bd36293e111dc8940a795114c430a028, type: 3}
+  - Name: StrikeLance
+    Path: Equipment/MeleeWeapon2H/Basic/Lance/StrikeLance
+    Sprite: {fileID: 21300000, guid: b2c6d696009d74a4ab6dea944410f550, type: 3}
+  - Name: Sugar
+    Path: Equipment/Supplies/Food/Sugar
+    Sprite: {fileID: 21300000, guid: 148d243e66a36de4b903f1c36f21ca5b, type: 3}
+  - Name: SurprsedEyes
+    Path: BodyParts/Eyes/Emoji/SurprsedEyes
+    Sprite: {fileID: 21300000, guid: 540ef4d1805c50e4a8ca3a13a89ca0d9, type: 3}
+  - Name: Sushi
+    Path: Equipment/Supplies/Food/Sushi
+    Sprite: {fileID: 21300000, guid: 9ba076e4dc4a4f244945e6c3ff97a909, type: 3}
+  - Name: Sword
+    Path: Equipment/Supplies/Recipe/Sword
+    Sprite: {fileID: 21300000, guid: 870b833a6b4c29c4e9549ed2c02453fe, type: 3}
+  - Name: Sword1H
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/Sword1H
+    Sprite: {fileID: 21300000, guid: 9a85a9682e8a6c849bebfd323d545748, type: 3}
+  - Name: Sword2H
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/Sword2H
+    Sprite: {fileID: 21300000, guid: d59d58f8af04a214daf8f784e09ba19e, type: 3}
+  - Name: TemperedBrassHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/TemperedBrassHammer
+    Sprite: {fileID: 21300000, guid: 70538f78426985a489fc2fdd07715970, type: 3}
+  - Name: TemplarArmor
+    Path: Equipment/Armor/Basic/TemplarArmor
+    Sprite: {fileID: 21300000, guid: ef37c81d0bb06964d9a20c63a5ede396, type: 3}
+  - Name: TemplarArmor.Helmet
+    Path: Equipment/Helmet/Basic/TemplarArmor.Helmet
+    Sprite: {fileID: 21300000, guid: f3334908fe47a854a9b4ac0d6290a61f, type: 3}
+  - Name: TemplarShield
+    Path: Equipment/Shield/Basic/TemplarShield
+    Sprite: {fileID: 21300000, guid: 90fdb75394931ac4aba06182e3f08ddc, type: 3}
+  - Name: TempusWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/TempusWand
+    Sprite: {fileID: 21300000, guid: e454db5900b6cd141bbc8112003ab08a, type: 3}
+  - Name: ThiefClothes
+    Path: Equipment/Armor/Basic/ThiefClothes
+    Sprite: {fileID: 21300000, guid: 186e984bf4275c7448a981387e2065b4, type: 3}
+  - Name: ThiefClothes.Helmet
+    Path: Equipment/Helmet/Basic/ThiefClothes.Helmet
+    Sprite: {fileID: 21300000, guid: 4611e19b694168c4799a43f3629ff10b, type: 3}
+  - Name: ThiefDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/ThiefDagger
+    Sprite: {fileID: 21300000, guid: cdb68237014715642ae07a7561825996, type: 3}
+  - Name: TinOre
+    Path: Equipment/Supplies/Mineral/TinOre
+    Sprite: {fileID: 21300000, guid: 53b98e1289c56a84186a967ee0fb303a, type: 3}
+  - Name: TitanHammer
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/TitanHammer
+    Sprite: {fileID: 21300000, guid: d1db0715fa78c2340a16805bb49cc480, type: 3}
+  - Name: Tomahawk
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/Tomahawk
+    Sprite: {fileID: 21300000, guid: 1e35239788c4fb541890edad3da51b69, type: 3}
+  - Name: Tomato
+    Path: Equipment/Supplies/Food/Tomato
+    Sprite: {fileID: 21300000, guid: 082ec9605d2ccb448b2619d928596444, type: 3}
+  - Name: Torch
+    Path: Equipment/Supplies/Other/Torch
+    Sprite: {fileID: 21300000, guid: ed136a310872d4747b6543c1ee9c9ed4, type: 3}
+  - Name: TournamentArmor
+    Path: Equipment/Armor/Basic/TournamentArmor
+    Sprite: {fileID: 21300000, guid: b4b4f851a36a2674697a120c7de459a8, type: 3}
+  - Name: TournamentArmor.Helmet
+    Path: Equipment/Helmet/Basic/TournamentArmor.Helmet
+    Sprite: {fileID: 21300000, guid: fffd811078f5f1d40883f343f255b61f, type: 3}
+  - Name: TournamentHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/TournamentHammer
+    Sprite: {fileID: 21300000, guid: e1308a08b06b9c8488a6b589a99aa0f5, type: 3}
+  - Name: TournamentShield
+    Path: Equipment/Shield/Basic/TournamentShield
+    Sprite: {fileID: 21300000, guid: e1a5dab0469e7734888ba8b2486a2e1b, type: 3}
+  - Name: TournamentSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/TournamentSword
+    Sprite: {fileID: 21300000, guid: bb658dea1ac834f41b592cdbfd02a23b, type: 3}
+  - Name: TowerShield
+    Path: Equipment/Shield/Basic/TowerShield
+    Sprite: {fileID: 21300000, guid: 0f7539cea1f7d454aa1eb3ec6a989084, type: 3}
+  - Name: TrainingSword
+    Path: Equipment/MeleeWeapon1H/Basic/Sword/TrainingSword
+    Sprite: {fileID: 21300000, guid: 02b41658c33ebd04baa7973b3ca06c04, type: 3}
+  - Name: Trombone
+    Path: Equipment/Firearm1H/Basic/Trombone
+    Sprite: {fileID: 21300000, guid: 9a831b57c7375874da16c5abdfea1968, type: 3}
+  - Name: Twintales
+    Path: BodyParts/Hair/Basic/Twintales
+    Sprite: {fileID: 21300000, guid: 2584c3a311536744aa55fe5b6d5ebf8b, type: 3}
+  - Name: TwistedHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/TwistedHammer
+    Sprite: {fileID: 21300000, guid: 071b8c2db9e34bd448b71a4d22330f48, type: 3}
+  - Name: TwoHandedSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/TwoHandedSword
+    Sprite: {fileID: 21300000, guid: 867a5bca1606ef74e9269d4fb51381d0, type: 3}
+  - Name: TwoHandedVikingAxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/TwoHandedVikingAxe
+    Sprite: {fileID: 21300000, guid: 13b014893d96580408360abd1014f228, type: 3}
+  - Name: Type1
+    Path: BodyParts/Beard/Basic/Type1
+    Sprite: {fileID: 21300000, guid: 875b1858bc450b043972b9f73c3db6a3, type: 3}
+  - Name: Type1
+    Path: BodyParts/Beard/Goblin/Type1
+    Sprite: {fileID: 21300000, guid: 9c5107d3a9656ae4da976d5b0cef17a9, type: 3}
+  - Name: Type1
+    Path: BodyParts/Body/Goblin/Type1
+    Sprite: {fileID: 21300000, guid: 591ba598a2392e146b3ffc32854b3a90, type: 3}
+  - Name: Type1
+    Path: BodyParts/Ears/Goblin/Type1
+    Sprite: {fileID: 21300000, guid: 4ac5cac5576f89f42918d478db2050ce, type: 3}
+  - Name: Type1
+    Path: BodyParts/Eyes/Goblin/Type1
+    Sprite: {fileID: 21300000, guid: 6965fe0df39116e44adbe99eb886bc14, type: 3}
+  - Name: Type1
+    Path: BodyParts/Hair/Basic/Type1
+    Sprite: {fileID: 21300000, guid: f44167b6109f6474582185951e47fa16, type: 3}
+  - Name: Type1
+    Path: BodyParts/Hair/Goblin/Type1
+    Sprite: {fileID: 21300000, guid: 95cf1d957644f5f4e959ab6e48db357c, type: 3}
+  - Name: Type1
+    Path: BodyParts/Mouth/Goblin/Type1
+    Sprite: {fileID: 21300000, guid: c565b12665370ee46bc505d503f029f2, type: 3}
+  - Name: Type1
+    Path: Equipment/Earrings/Goblin/Type1
+    Sprite: {fileID: 21300000, guid: 27c791d0364d39444b597fdf9c01ebad, type: 3}
+  - Name: Type1
+    Path: Equipment/Makeup/Goblin/Type1
+    Sprite: {fileID: 21300000, guid: d0794953549807f4b8a12f0ca77f0f27, type: 3}
+  - Name: Type1
+    Path: Equipment/Mask/Goblin/Type1
+    Sprite: {fileID: 21300000, guid: 0ae9d92c61c14f9468ef7a021ade6269, type: 3}
+  - Name: Type2
+    Path: BodyParts/Beard/Basic/Type2
+    Sprite: {fileID: 21300000, guid: 09f86f365fd843043bfdac811b17467c, type: 3}
+  - Name: Type2
+    Path: BodyParts/Beard/Goblin/Type2
+    Sprite: {fileID: 21300000, guid: 3b1fbe84e42e9e8448b3b9380f43a866, type: 3}
+  - Name: Type2
+    Path: BodyParts/Body/Goblin/Type2
+    Sprite: {fileID: 21300000, guid: 051e4d281d81ad64fba85e46debfcf1d, type: 3}
+  - Name: Type2
+    Path: BodyParts/Ears/Goblin/Type2
+    Sprite: {fileID: 21300000, guid: c222c5ca0407282488d511238dcf529f, type: 3}
+  - Name: Type2
+    Path: BodyParts/Eyes/Goblin/Type2
+    Sprite: {fileID: 21300000, guid: 2ca9e34ab093f734f9a77e09e42c6339, type: 3}
+  - Name: Type2
+    Path: BodyParts/Hair/Basic/Type2
+    Sprite: {fileID: 21300000, guid: 4d2488066e244c74a9a2ddb343779f68, type: 3}
+  - Name: Type2
+    Path: BodyParts/Hair/Goblin/Type2
+    Sprite: {fileID: 21300000, guid: 546dcee8fc6254447a9ccdd7f49826c8, type: 3}
+  - Name: Type2
+    Path: BodyParts/Mouth/Goblin/Type2
+    Sprite: {fileID: 21300000, guid: 553e7cd95332be34ca32bdfb26c8aae3, type: 3}
+  - Name: Type2
+    Path: Equipment/Earrings/Goblin/Type2
+    Sprite: {fileID: 21300000, guid: 17c8a3c0a3e87e1479fbe645b5aa0f00, type: 3}
+  - Name: Type2
+    Path: Equipment/Makeup/Goblin/Type2
+    Sprite: {fileID: 21300000, guid: 08bb68962649fcc48bcc4d0a8bedbdea, type: 3}
+  - Name: Type3
+    Path: BodyParts/Beard/Goblin/Type3
+    Sprite: {fileID: 21300000, guid: 31a748da8b816834e91413653890118d, type: 3}
+  - Name: Type3
+    Path: BodyParts/Body/Goblin/Type3
+    Sprite: {fileID: 21300000, guid: b4ef7a1980c5bd94aa5d86b845fc223c, type: 3}
+  - Name: Type3
+    Path: BodyParts/Ears/Goblin/Type3
+    Sprite: {fileID: 21300000, guid: 7fcc4ac4a22cc644ca9854b662783787, type: 3}
+  - Name: Type3
+    Path: BodyParts/Eyes/Goblin/Type3
+    Sprite: {fileID: 21300000, guid: 6c9e48e956b1274408513b761c6e52c5, type: 3}
+  - Name: Type3
+    Path: BodyParts/Hair/Basic/Type3
+    Sprite: {fileID: 21300000, guid: 2efaf6e7c9f341847ab165812c85b722, type: 3}
+  - Name: Type3
+    Path: BodyParts/Hair/Goblin/Type3
+    Sprite: {fileID: 21300000, guid: 3c55d40fa72594a4890190b902dee334, type: 3}
+  - Name: Type3
+    Path: BodyParts/Mouth/Goblin/Type3
+    Sprite: {fileID: 21300000, guid: a3c7ea192f68e42459b88b1fa7cf977b, type: 3}
+  - Name: Type3
+    Path: Equipment/Earrings/Goblin/Type3
+    Sprite: {fileID: 21300000, guid: 22ebaaa55195db54ca4a7b1c4688ae0f, type: 3}
+  - Name: Type4
+    Path: BodyParts/Beard/Goblin/Type4
+    Sprite: {fileID: 21300000, guid: 786a97922f62d9b4b82c9fbe6bb1e43b, type: 3}
+  - Name: Type4
+    Path: BodyParts/Body/Goblin/Type4
+    Sprite: {fileID: 21300000, guid: 92bbb43371dc49847ba1caaa880613f6, type: 3}
+  - Name: Type4
+    Path: BodyParts/Ears/Goblin/Type4
+    Sprite: {fileID: 21300000, guid: 358df763d03a3bc4b850f73c0ed43844, type: 3}
+  - Name: Type4
+    Path: BodyParts/Eyes/Goblin/Type4
+    Sprite: {fileID: 21300000, guid: eecd30d52056c304a8b6e3a6c4fa5581, type: 3}
+  - Name: Type4
+    Path: BodyParts/Hair/Basic/Type4
+    Sprite: {fileID: 21300000, guid: 251d13cd2ffa5284191b6d082597e240, type: 3}
+  - Name: Type4
+    Path: BodyParts/Hair/Goblin/Type4
+    Sprite: {fileID: 21300000, guid: 13a8dd73b3d704c4a8aee5b48f8fc2c7, type: 3}
+  - Name: Type4
+    Path: BodyParts/Mouth/Goblin/Type4
+    Sprite: {fileID: 21300000, guid: 85f0c538e02195e40b7b764f56bb4b2b, type: 3}
+  - Name: Type5
+    Path: BodyParts/Ears/Goblin/Type5
+    Sprite: {fileID: 21300000, guid: 23ab67a6d3ccd6f4385af62241d1bf2b, type: 3}
+  - Name: Type5
+    Path: BodyParts/Hair/Basic/Type5
+    Sprite: {fileID: 21300000, guid: f8c09b557b110144d981008144868eb2, type: 3}
+  - Name: Type5
+    Path: BodyParts/Hair/Goblin/Type5
+    Sprite: {fileID: 21300000, guid: 2a158e5a8cac3c141bfa387b5906adc6, type: 3}
+  - Name: Type5
+    Path: BodyParts/Mouth/Goblin/Type5
+    Sprite: {fileID: 21300000, guid: 6e8c16aef251b3045bab55beedf38ed9, type: 3}
+  - Name: Type6
+    Path: BodyParts/Ears/Goblin/Type6
+    Sprite: {fileID: 21300000, guid: c209dc6098f92a640a3dd6cf6cd9c452, type: 3}
+  - Name: Type6
+    Path: BodyParts/Hair/Basic/Type6
+    Sprite: {fileID: 21300000, guid: c84234fb98b1e094e9f27272a74c09e1, type: 3}
+  - Name: Type6
+    Path: BodyParts/Hair/Goblin/Type6
+    Sprite: {fileID: 21300000, guid: f34e13a4a4179aa4690a5610202d449d, type: 3}
+  - Name: Type6
+    Path: BodyParts/Mouth/Goblin/Type6
+    Sprite: {fileID: 21300000, guid: b7738d7022b90174190e560248c01c7d, type: 3}
+  - Name: Type7
+    Path: BodyParts/Ears/Goblin/Type7
+    Sprite: {fileID: 21300000, guid: afeea5f7486317c41aee175b3742c427, type: 3}
+  - Name: Type7
+    Path: BodyParts/Hair/Basic/Type7
+    Sprite: {fileID: 21300000, guid: 032bf466bcd2e7c45aa492ed9d507096, type: 3}
+  - Name: Type7
+    Path: BodyParts/Hair/Goblin/Type7
+    Sprite: {fileID: 21300000, guid: 744ff1f7c9c39b340b99a67a675f2f7e, type: 3}
+  - Name: Type7
+    Path: BodyParts/Mouth/Goblin/Type7
+    Sprite: {fileID: 21300000, guid: a5d19a6529fde5b428f69d08a605d542, type: 3}
+  - Name: Type8
+    Path: BodyParts/Ears/Goblin/Type8
+    Sprite: {fileID: 21300000, guid: cd2f602433605794f9fae97c9b7eaae0, type: 3}
+  - Name: Type8
+    Path: BodyParts/Hair/Basic/Type8
+    Sprite: {fileID: 21300000, guid: 089186b388dd6a94f895f49ebe273470, type: 3}
+  - Name: Type8
+    Path: BodyParts/Hair/Goblin/Type8
+    Sprite: {fileID: 21300000, guid: bc9eff8e26908d143865f481e45774fb, type: 3}
+  - Name: Type9
+    Path: BodyParts/Hair/Basic/Type9
+    Sprite: {fileID: 21300000, guid: 9a249ce5b64c79f46b71f25512ce401a, type: 3}
+  - Name: Type9
+    Path: BodyParts/Hair/Goblin/Type9
+    Sprite: {fileID: 21300000, guid: 3808968745123fe4d9a0ba8cb6b9adda, type: 3}
+  - Name: TyrantMace
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/TyrantMace
+    Sprite: {fileID: 21300000, guid: 9394561bbaef3d145a59f6209925db9e, type: 3}
+  - Name: UndeadKing
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/UndeadKing
+    Sprite: {fileID: 21300000, guid: 328be5f9d36668d4ebb01b61128d0d64, type: 3}
+  - Name: VegetableSoup
+    Path: Equipment/Supplies/Food/VegetableSoup
+    Sprite: {fileID: 21300000, guid: d2f068cd98984194fab52d3503ea32c8, type: 3}
+  - Name: VikingArmor
+    Path: Equipment/Armor/Basic/VikingArmor
+    Sprite: {fileID: 21300000, guid: 985adb493a6eb4041bcb3ccfb01d33ba, type: 3}
+  - Name: VikingArmor.Helmet
+    Path: Equipment/Helmet/Basic/VikingArmor.Helmet
+    Sprite: {fileID: 21300000, guid: b128cb2bdcdeab14b97f1886ce8f8847, type: 3}
+  - Name: VikingAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/VikingAxe
+    Sprite: {fileID: 21300000, guid: e352b4f5e51ab0748ae01013d6eff7e6, type: 3}
+  - Name: VikingShield
+    Path: Equipment/Shield/Basic/VikingShield
+    Sprite: {fileID: 21300000, guid: 58d235ff5a8caa04cb4d29be1ce1b60f, type: 3}
+  - Name: VillagerRags
+    Path: Equipment/Armor/Basic/VillagerRags
+    Sprite: {fileID: 21300000, guid: aa7d3fb7b141c3443acdfdc939d43851, type: 3}
+  - Name: VillagerRags.Helmet
+    Path: Equipment/Helmet/Basic/VillagerRags.Helmet
+    Sprite: {fileID: 21300000, guid: 77dbedc3fbae39f479fde254c0e15c27, type: 3}
+  - Name: VineBow
+    Path: Equipment/Bow/Basic/VineBow
+    Sprite: {fileID: 21300000, guid: d1d99478530c0a843ac67f9ad0eb7bfa, type: 3}
+  - Name: VineBow.Arrow
+    Path: Equipment/Arrow/Basic/VineBow.Arrow
+    Sprite: {fileID: 21300000, guid: 73fbe9186cda44c4ba5ee1b869c195df, type: 3}
+  - Name: VineBow.Quiver
+    Path: Equipment/Quiver/Basic/VineBow.Quiver
+    Sprite: {fileID: 21300000, guid: a87d04466309c144eb7917ec4017f86a, type: 3}
+  - Name: Vinegar
+    Path: Equipment/Supplies/Potion/Vinegar
+    Sprite: {fileID: 21300000, guid: e06545abf27cc6544869495f46ccc24f, type: 3}
+  - Name: VolcanicDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/VolcanicDagger
+    Sprite: {fileID: 21300000, guid: e728dd1cd7bf63c4e9bedebe04e59348, type: 3}
+  - Name: WallKeeperArmor
+    Path: Equipment/Armor/Basic/WallKeeperArmor
+    Sprite: {fileID: 21300000, guid: 44b13311824c07644a2fe257fb59ed13, type: 3}
+  - Name: WallKeeperArmor.Helmet
+    Path: Equipment/Helmet/Basic/WallKeeperArmor.Helmet
+    Sprite: {fileID: 21300000, guid: e2b4ad59a10a61e41ad6edd4608d0424, type: 3}
+  - Name: WallKeeperShield
+    Path: Equipment/Shield/Basic/WallKeeperShield
+    Sprite: {fileID: 21300000, guid: f09c8a7e176063c43b5963f9e5f3a1b1, type: 3}
+  - Name: WarClub
+    Path: Equipment/MeleeWeapon2H/Basic/Hammer/WarClub
+    Sprite: {fileID: 21300000, guid: fd3a7585ffe308048bfa467ab3c8ce1f, type: 3}
+  - Name: WardenSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/WardenSword
+    Sprite: {fileID: 21300000, guid: a0c9f2ed6e7ec9741ad57ca827cfc5a5, type: 3}
+  - Name: WargClaw
+    Path: Equipment/Supplies/Material/WargClaw
+    Sprite: {fileID: 21300000, guid: 58771dc16c3371248b291b68bc0518f8, type: 3}
+  - Name: WargFang
+    Path: Equipment/Supplies/Material/WargFang
+    Sprite: {fileID: 21300000, guid: 823bd3c357bf3db488d9edb6050115ad, type: 3}
+  - Name: WargSkin
+    Path: Equipment/Supplies/Material/WargSkin
+    Sprite: {fileID: 21300000, guid: c5a34a02d6cdf5240b59b48e39fa9110, type: 3}
+  - Name: WarHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/WarHammer
+    Sprite: {fileID: 21300000, guid: a160f4d4e0d1ce041850a67161fce4b3, type: 3}
+  - Name: WarlockRobe
+    Path: Equipment/Armor/Basic/WarlockRobe
+    Sprite: {fileID: 21300000, guid: e5dce903606e1d44294c896c3880b6ba, type: 3}
+  - Name: WarlockRobe.Helmet
+    Path: Equipment/Helmet/Basic/WarlockRobe.Helmet
+    Sprite: {fileID: 21300000, guid: 663e7bc3eec75de41a7fa17127d6bbbf, type: 3}
+  - Name: WarlockWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/WarlockWand
+    Sprite: {fileID: 21300000, guid: 20a9647f29dde1946a5469df12bc1d85, type: 3}
+  - Name: WarriorArmor
+    Path: Equipment/Armor/Basic/WarriorArmor
+    Sprite: {fileID: 21300000, guid: 4a8664c7467de2b40b9ce4d837cd6b27, type: 3}
+  - Name: WarriorArmor.Helmet
+    Path: Equipment/Helmet/Basic/WarriorArmor.Helmet
+    Sprite: {fileID: 21300000, guid: 41345a2e8acf9074abb22854878070aa, type: 3}
+  - Name: WarriorGreatsword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/WarriorGreatsword
+    Sprite: {fileID: 21300000, guid: b98f4fb4c5fa17a49991e23f6945b8c3, type: 3}
+  - Name: WarShield
+    Path: Equipment/Shield/Basic/WarShield
+    Sprite: {fileID: 21300000, guid: 2459786189bbece47a66f0d4467874e9, type: 3}
+  - Name: WatchdogCollar
+    Path: Equipment/Supplies/Material/WatchdogCollar
+    Sprite: {fileID: 21300000, guid: 2c693ec360a6b29468fef0a723ebf3bf, type: 3}
+  - Name: Whetstone
+    Path: Equipment/Supplies/Mineral/Whetstone
+    Sprite: {fileID: 21300000, guid: 1462cd94c76b9dc4cacd4484efb3a11a, type: 3}
+  - Name: WhiteWolfSkin
+    Path: Equipment/Supplies/Material/WhiteWolfSkin
+    Sprite: {fileID: 21300000, guid: d92d81aa3a86cc84fa290a5ad8d09979, type: 3}
+  - Name: WickPistol
+    Path: Equipment/Firearm1H/Basic/WickPistol
+    Sprite: {fileID: 21300000, guid: 53a3824d9ac6e604e885e3d0f4d2d855, type: 3}
+  - Name: WideDagger
+    Path: Equipment/MeleeWeapon1H/Basic/Dagger/WideDagger
+    Sprite: {fileID: 21300000, guid: 7ffc3818ec750f64598e0227ae173536, type: 3}
+  - Name: Willow
+    Path: Equipment/Supplies/Material/Willow
+    Sprite: {fileID: 21300000, guid: 07909bec12510384a901c89e927a4d43, type: 3}
+  - Name: Wine
+    Path: Equipment/Supplies/Potion/Wine
+    Sprite: {fileID: 21300000, guid: b6515ff17f3a5e84fbe6f5e894be2b82, type: 3}
+  - Name: WolfBow
+    Path: Equipment/Bow/Basic/WolfBow
+    Sprite: {fileID: 21300000, guid: d56c8f8bc7e62974f865c21ebae3aa61, type: 3}
+  - Name: WolfBow.Arrow
+    Path: Equipment/Arrow/Basic/WolfBow.Arrow
+    Sprite: {fileID: 21300000, guid: b2276023bcf2fdc4d96e3bb8fd98ede9, type: 3}
+  - Name: WolfBow.Quiver
+    Path: Equipment/Quiver/Basic/WolfBow.Quiver
+    Sprite: {fileID: 21300000, guid: f1be63535265f3a4a834f84c187a89fc, type: 3}
+  - Name: WolfClaw
+    Path: Equipment/Supplies/Material/WolfClaw
+    Sprite: {fileID: 21300000, guid: 99d34a89a0f9c86438d3659e96f8d701, type: 3}
+  - Name: WolfSkin
+    Path: Equipment/Supplies/Material/WolfSkin
+    Sprite: {fileID: 21300000, guid: 6d82280a1a75deb4c9b7b2c80c53d1e1, type: 3}
+  - Name: Wood
+    Path: Equipment/Supplies/Material/Wood
+    Sprite: {fileID: 21300000, guid: 0c6b82178d13b514fbd46a0a8180e70e, type: 3}
+  - Name: WoodcutterAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/WoodcutterAxe
+    Sprite: {fileID: 21300000, guid: f757534bffa4c0941a3a8a04e84af370, type: 3}
+  - Name: WoodcutterAxePoleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/WoodcutterAxePoleaxe
+    Sprite: {fileID: 21300000, guid: 34f48b7897208f848bb85879a96589e9, type: 3}
+  - Name: WoodcutterClothes
+    Path: Equipment/Armor/Basic/WoodcutterClothes
+    Sprite: {fileID: 21300000, guid: 066670f5744a92947b50ad5980ab45ee, type: 3}
+  - Name: WoodcutterClothes.Helmet
+    Path: Equipment/Helmet/Basic/WoodcutterClothes.Helmet
+    Sprite: {fileID: 21300000, guid: 7f86b5e2c75802c47bd6ffcea3601785, type: 3}
+  - Name: WoodcutterIronPoleaxe
+    Path: Equipment/MeleeWeapon2H/Basic/Axe/WoodcutterIronPoleaxe
+    Sprite: {fileID: 21300000, guid: 9533d75ef39112043ac5cb4c47029619, type: 3}
+  - Name: WoodenBuckler
+    Path: Equipment/Shield/Basic/WoodenBuckler
+    Sprite: {fileID: 21300000, guid: 8aecbf1af1f97804486740722583f744, type: 3}
+  - Name: WoodenHammer
+    Path: Equipment/MeleeWeapon1H/Basic/Hammer/WoodenHammer
+    Sprite: {fileID: 21300000, guid: c3883e5c901004d4da81f76bf4a33112, type: 3}
+  - Name: WoodenLongSword
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/WoodenLongSword
+    Sprite: {fileID: 21300000, guid: 145853d629f22b449822abcf2c63d852, type: 3}
+  - Name: WoodenShield
+    Path: Equipment/Shield/Basic/WoodenShield
+    Sprite: {fileID: 21300000, guid: a409fe2e157454b4993caa3b84113c47, type: 3}
+  - Name: WoodenStake
+    Path: Equipment/MeleeWeapon1H/Basic/Spear/WoodenStake
+    Sprite: {fileID: 21300000, guid: fa156c195ba5fab43bf192d3c7213eaa, type: 3}
+  - Name: WoodenStick
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/WoodenStick
+    Sprite: {fileID: 21300000, guid: a4010a94d9033d847a6f0b33a0976ef8, type: 3}
+  - Name: WoodenWand
+    Path: Equipment/MeleeWeapon1H/Basic/Wand/WoodenWand
+    Sprite: {fileID: 21300000, guid: 3fde0f9b79086954d926623c53498598, type: 3}
+  - Name: WoodmanAxe
+    Path: Equipment/MeleeWeapon1H/Basic/Axe/WoodmanAxe
+    Sprite: {fileID: 21300000, guid: 6c0fc59ca2558e44e8fc0c6762f1ace6, type: 3}
+  - Name: Woody
+    Path: Equipment/Supplies/Other/Woody
+    Sprite: {fileID: 21300000, guid: 2f78e8e3e98165944bd97452067c7737, type: 3}
+  - Name: WorkerClothes
+    Path: Equipment/Armor/Basic/WorkerClothes
+    Sprite: {fileID: 21300000, guid: 89c95820d99a0be4ba90f517b457a138, type: 3}
+  - Name: WorkerClothes.Helmet
+    Path: Equipment/Helmet/Basic/WorkerClothes.Helmet
+    Sprite: {fileID: 21300000, guid: eb275447482567944b0a559fac3b41f7, type: 3}
+  - Name: WorstKnightArmor
+    Path: Equipment/Armor/Basic/WorstKnightArmor
+    Sprite: {fileID: 21300000, guid: ce83e48139bb67e46a596e7310e8261c, type: 3}
+  - Name: WorstKnightArmor [ShowEars]
+    Path: Equipment/Armor/Basic/WorstKnightArmor [ShowEars]
+    Sprite: {fileID: 21300000, guid: 65a2abd0551c39149ada301456777bb5, type: 3}
+  - Name: WorstKnightArmor [ShowEars].Helmet
+    Path: Equipment/Helmet/Basic/WorstKnightArmor [ShowEars].Helmet
+    Sprite: {fileID: 21300000, guid: 5edcf04e045701c44afd866083df2522, type: 3}
+  - Name: WorstKnightArmor.Helmet
+    Path: Equipment/Helmet/Basic/WorstKnightArmor.Helmet
+    Sprite: {fileID: 21300000, guid: bc060c70e1142684eae2c4da49c36817, type: 3}
+  - Name: YellowGemstone
+    Path: Equipment/Supplies/Currency/YellowGemstone
+    Sprite: {fileID: 21300000, guid: e7e596de1cc6f93449b1b2a5de554c57, type: 3}
+  - Name: YellowPotionM
+    Path: Equipment/Supplies/Potion/YellowPotionM
+    Sprite: {fileID: 21300000, guid: f6aab4633b7252e44a948df984b9ffec, type: 3}
+  - Name: YellowPotionS
+    Path: Equipment/Supplies/Potion/YellowPotionS
+    Sprite: {fileID: 21300000, guid: 7332bde08611aca46b60fa34bebc581b, type: 3}
+  - Name: Yew
+    Path: Equipment/Supplies/Material/Yew
+    Sprite: {fileID: 21300000, guid: bf54942f16a5129498723857647a93c9, type: 3}
+  - Name: ZardBlade
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/ZardBlade
+    Sprite: {fileID: 21300000, guid: af9b59a90e5fa2c4a81046851039438b, type: 3}
+  - Name: ZincOre
+    Path: Equipment/Supplies/Mineral/ZincOre
+    Sprite: {fileID: 21300000, guid: 3a843c44d95330947af01273061200e2, type: 3}
+  - Name: Zweihander
+    Path: Equipment/MeleeWeapon2H/Basic/Sword/Zweihander
+    Sprite: {fileID: 21300000, guid: 6e9de0e73bbe1a840b2e1a3e972f4496, type: 3}
+  - Name: "\u0421herry"
+    Path: "Equipment/Supplies/Food/\u0421herry"
+    Sprite: {fileID: 21300000, guid: 14ec3b766ab2e90488ba80168ccf0541, type: 3}
+  DefaultItemIcon: {fileID: 21300000, guid: 2592d89d825e18e40bbd0df315004167, type: 3}
