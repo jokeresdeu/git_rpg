@@ -1,7 +1,7 @@
 namespace Player
 {
-    public class PlayeSprites
+    public class PlayerGraphic
     {
-        []
+       
     }
 }
