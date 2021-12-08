@@ -8,19 +8,22 @@ namespace PlayerCreator
         private AppearanceFeatureSprites _appearanceFeatureSprites;
         private SpriteRenderer _spriteRenderer;
         private int _index;
+
+        public int Index => _index;
+        public AppearanceFeature Feature => _appearanceFeatureSprites.AppearanceFeature;
         
         public PlayerAppearanceElementController(PlayerAppearanceElementView view,
-            AppearanceFeatureSprites featureSprites, SpriteRenderer spriteRenderer)
+            AppearanceFeatureSprites featureSprites, SpriteRenderer spriteRenderer, int index)
         {
-            _index = 1;
+            _index = index;
             _view = view;
             _appearanceFeatureSprites = featureSprites;
             _spriteRenderer = spriteRenderer;
             _view.ElementHeader.text = _appearanceFeatureSprites.AppearanceFeature.ToString();
-            _view.StyleHeader.text = "style_1";
             _appearanceFeatureSprites.Sprites.Insert(0, null);
             _view.RightArrow.onClick.AddListener(NextElement);
             _view.LeftArrow.onClick.AddListener(PreviousElement);
+            ChangeAppearanceElement();
         }
 
         private void NextElement()
