@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8f5219c91f455eac36bb0fa0c2f696, type: 3}
+  m_Name: SpecializationConfigsStorage
+  m_EditorClassIdentifier: 
+  _specializationConfigs:
+  - _specializationType: 1
+    _specializationName: Warrior
+    _specializationIcon: {fileID: 21300000, guid: ced35058c15c3da43b50b78bff9d4ded, type: 3}
+    _specializationDescription: Warriors are true fighters and experts at melee combat.
+      Preferring to mix offensive power with defensive ability, warriors prefer to
+      use a good sword or axe with a shield and shrug off attacks with heavy armor.
+      Warriors do not tire easily and are capable of repairing their own gear.
+    _startStats:
+    - _statType: 1
+      _amount: 3
+    - _statType: 2
+      _amount: 1
+    _startSkills:
+    - _skillType: 1
+      _skillName: Bash
+      _skillDescription: This is bash
+      _skillSprite: {fileID: 21300000, guid: c890dd06d4a350946ab11e4778bf47d8, type: 3}
+    - _skillType: 2
+      _skillName: ShieldBlock
+      _skillDescription: This is shield block
+      _skillSprite: {fileID: 21300000, guid: 8a96b38c76be79946a150249547b07bc, type: 3}
+  - _specializationType: 2
+    _specializationName: Assassin
+    _specializationIcon: {fileID: 21300000, guid: 07875a88a19b0dd468e774c2d0d42c5d, type: 3}
+    _specializationDescription: As long as there is light, there will always be shadows
+      for Assassins to hide in, waiting for the perfect moment to strike. They will
+      turn any fight into a dance of death, fatally poisoning those unlucky enough
+      to survive the onslaught. Never challenge an Assassin to a duel if you value
+      your life!
+    _startStats:
+    - _statType: 1
+      _amount: 1
+    - _statType: 2
+      _amount: 2
+    - _statType: 3
+      _amount: 1
+    _startSkills:
+    - _skillType: 3
+      _skillName: Shadow strike
+      _skillDescription: Thi is shadow strike
+      _skillSprite: {fileID: 21300000, guid: 0e7966e8857d9da42bd7ac9668f85ce2, type: 3}
+    - _skillType: 4
+      _skillName: Poisonous Strike
+      _skillDescription: This is poisonous Strike
+      _skillSprite: {fileID: 21300000, guid: 912f2333824ee3946814a450e92ab11a, type: 3}
+    - _skillType: 5
+      _skillName: Rapid strike
+      _skillDescription: This is rapid strike
+      _skillSprite: {fileID: 21300000, guid: 03e6f50b7a998ed46a4c3f9f8cb0855e, type: 3}
