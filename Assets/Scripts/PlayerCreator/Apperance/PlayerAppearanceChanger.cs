@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
+using ObjectPooling;
 using Serialization;
 using UnityEngine;
 
@@ -19,6 +20,7 @@ namespace PlayerCreator
         private string _savePath => Path.Combine(Application.dataPath, "Serialization/PlayerData", AppearanceFile);
         public void Start()
         {
+            Debug.LogError(ObjectPool.Instance._objectPoolTransform.name);
             Dictionary<AppearanceFeature, int> features = 
                 Serializator.Deserializate<Dictionary<AppearanceFeature, int>>(_savePath);
 

@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4666912105556769023}
-  - component: {fileID: 8554635768921745661}
   - component: {fileID: 6238974270571675680}
+  - component: {fileID: 8554635768921745661}
   m_Layer: 5
   m_Name: SkillView
   m_TagString: Untagged
@@ -40,6 +40,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 128, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6238974270571675680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421098076810552614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10861da55fee45588852d3bca4609241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _skillName: {fileID: 4992315742002964509}
+  _skillDescription: {fileID: 5128536277197673123}
+  _skillImage: {fileID: 3299344821124608141}
 --- !u!114 &8554635768921745661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,21 +81,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &6238974270571675680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421098076810552614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10861da55fee45588852d3bca4609241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _skillName: {fileID: 4992315742002964509}
-  _skillDescription: {fileID: 5128536277197673123}
-  _skillImage: {fileID: 3299344821124608141}
 --- !u!1 &917757143966340849
 GameObject:
   m_ObjectHideFlags: 0

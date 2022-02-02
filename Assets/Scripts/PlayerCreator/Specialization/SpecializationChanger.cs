@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using ObjectPooling;
 using UnityEngine;
 
 namespace PlayerCreator.Specialization
@@ -8,15 +9,17 @@ namespace PlayerCreator.Specialization
         [SerializeField] private PlayerSpecializationView _specializationView;
         [SerializeField] private SpecializationConfigsStorage _specializationConfigsStorage;
 
-        private List<GameObject> _skillViews;
-        private List<GameObject> _statViews;
-        
+        private List<SkillView> _skillViews;
+        private List<StatView> _statViews;
+        private ObjectPool _objectPool;
         private int _currentIndex = 0;
         
         private void Start()
         {
-            _skillViews = new List<GameObject>();
-            _statViews = new List<GameObject>();
+            _skillViews = new List<SkillView>();
+            _statViews = new List<StatView>();
+            _objectPool = ObjectPool.Instance;
+            Debug.LogError(_objectPool._objectPoolTransform.name);
             ChangeSpecialization();
             _specializationView.LeftArrow.onClick.AddListener(PreviousSpecialization);
             _specializationView.RightArrow.onClick.AddListener(NextSpecialization);
@@ -46,36 +49,41 @@ namespace PlayerCreator.Specialization
         {
             foreach (var skillView in _skillViews)
             {
-                Destroy(skillView);
+                skillView.ReturnToPool();
             }
             _skillViews.Clear();
 
             foreach (var statView in _statViews)
             {
-                Destroy(statView);
+               statView.ReturnToPool();
             }
-            _skillViews.Clear();
+            _statViews.Clear();
             
             SpecializationConfig config = _specializationConfigsStorage.SpecializationConfigs[_currentIndex];
             _specializationView.SpecializationIcon.sprite = config.SpecializationIcon;
             _specializationView.SpecializationName.text = config.SpecializationName;
             _specializationView.Description.text = config.SpecializationDescription;
-
+            
             foreach (var stat in config.StartStats)
             {
-                StatView statView = Instantiate(_specializationView.StatView, _specializationView.StatContainer);
+                StatView statView = _objectPool.GetObject(_specializationView.StatView);
+                statView.transform.SetParent(_specializationView.StatContainer);
+                statView.transform.localScale = Vector3.one;
                 statView.StatAmount.text = stat.Amount.ToString();
                 statView.StatType.text = stat.StatType.ToString();
-                _statViews.Add(statView.gameObject);
+                _statViews.Add(statView);
             }
 
+            Debug.LogError(config.StartSkills.Count);
             foreach (var skill in config.StartSkills)
             {
-                SkillView skillView = Instantiate(_specializationView.SkillView, _specializationView.SkillContainer);
+                SkillView skillView = _objectPool.GetObject(_specializationView.SkillView);
+                skillView.transform.SetParent(_specializationView.SkillContainer);
+                skillView.transform.localScale = Vector3.one;
                 skillView.SkillDescription.text = skill.SkillDescription;
                 skillView.SkillName.text = skill.SkillName;
                 skillView.SkillImage.sprite = skill.SkillSprite;
-                _skillViews.Add(skillView.gameObject);
+                _skillViews.Add(skillView);
             }
         }
 
