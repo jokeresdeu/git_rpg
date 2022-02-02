@@ -64,7 +64,7 @@ namespace PlayerCreator.Specialization
             foreach (var stat in config.StartStats)
             {
                 StatView statView = Instantiate(_specializationView.StatView, _specializationView.StatContainer);
-                statView.StatAmount.text = stat.Amount.ToString();
+                statView.StatAmount.text = stat.Value.ToString();
                 statView.StatType.text = stat.StatType.ToString();
                 _statViews.Add(statView.gameObject);
             }
