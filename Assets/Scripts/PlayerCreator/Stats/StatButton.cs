@@ -2,15 +2,12 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PlayerCreator.Characteristics
+namespace PlayerCreator.Stats
 {
-    public class StatButton : MonoBehaviour
+    public class StatButton : MonoBehaviour 
     {
         [SerializeField] private Image _image;
         [SerializeField] private Button _button;
-
-        public Image Image => _image;
-        public Button Button => _button;
 
         public event Action<StatButton> OnClicked;
 
@@ -22,6 +19,14 @@ namespace PlayerCreator.Characteristics
         public void Initialize()
         {
             _button.onClick.AddListener(ButtonClicked);
+        }
+
+        public void SetState(bool active)
+        {
+            if(active)
+                _image.color = Color.red;
+            else 
+                _image.color = Color.white;
         }
 
         private void ButtonClicked()

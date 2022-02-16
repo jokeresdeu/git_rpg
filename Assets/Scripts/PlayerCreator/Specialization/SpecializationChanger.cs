@@ -19,7 +19,6 @@ namespace PlayerCreator.Specialization
             _skillViews = new List<SkillView>();
             _statViews = new List<StatView>();
             _objectPool = ObjectPool.Instance;
-            Debug.LogError(_objectPool._objectPoolTransform.name);
             ChangeSpecialization();
             _specializationView.LeftArrow.onClick.AddListener(PreviousSpecialization);
             _specializationView.RightArrow.onClick.AddListener(NextSpecialization);
@@ -69,12 +68,11 @@ namespace PlayerCreator.Specialization
                 StatView statView = _objectPool.GetObject(_specializationView.StatView);
                 statView.transform.SetParent(_specializationView.StatContainer);
                 statView.transform.localScale = Vector3.one;
-                statView.StatAmount.text = stat.Amount.ToString();
+                statView.StatAmount.text = stat.Value.ToString();
                 statView.StatType.text = stat.StatType.ToString();
                 _statViews.Add(statView);
             }
-
-            Debug.LogError(config.StartSkills.Count);
+            
             foreach (var skill in config.StartSkills)
             {
                 SkillView skillView = _objectPool.GetObject(_specializationView.SkillView);

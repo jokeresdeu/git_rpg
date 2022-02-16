@@ -683,14 +683,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 279522760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7988127d1c524a5993ce68c8c88fb1af, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b9f00980e311514db24564ab32ace18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _statsViews:
+  _statViews:
   - {fileID: 130163439}
   - {fileID: 2043662839}
   - {fileID: 370726883}
-  _freeStatsValue: {fileID: 1012396898}
+  _freeStatsText: {fileID: 1012396898}
 --- !u!224 &370726882 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2958373422225188163, guid: 3f451351b12a64aecae1d9261c6aedf8, type: 3}
@@ -2213,7 +2213,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124097298}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91e3ffa56d49e6f4683dcbfd568a43b1, type: 3}
   m_Name: 
@@ -2242,13 +2242,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124097298}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: baf4bfaf1e814ca492be1da3ef31634c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _specializationView: {fileID: 0}
-  _specializationConfigsStorage: {fileID: 0}
+  _specializationView: {fileID: 2117670881}
+  _specializationConfigsStorage: {fileID: 11400000, guid: a31401521dd21ff4daa2eb0e9883dd68, type: 2}
 --- !u!1 &1311929510
 GameObject:
   m_ObjectHideFlags: 0

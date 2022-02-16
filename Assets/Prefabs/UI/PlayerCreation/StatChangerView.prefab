@@ -242,11 +242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767d393fd0ef64dca93176031e809112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characteristicButtonsContainer: {fileID: 4964844583214537108}
-  _minusButton: {fileID: 7009018629554917284}
-  _plusButton: {fileID: 603378797473736519}
-  _characteristicHeader: {fileID: 2979877845822902380}
-  _characteristicValue: {fileID: 503209721208352438}
+  _statButtonsContainer: {fileID: 4964844583214537108}
+  _decreaseButton: {fileID: 7009018629554917284}
+  _increaseButton: {fileID: 603378797473736519}
+  _statHeader: {fileID: 2979877845822902380}
+  _statValue: {fileID: 503209721208352438}
 --- !u!1 &7269370017557926517
 GameObject:
   m_ObjectHideFlags: 0
