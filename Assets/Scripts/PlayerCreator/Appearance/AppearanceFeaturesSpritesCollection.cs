@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PlayerCreator
+namespace PlayerCreator.Appearance
 {
     [CreateAssetMenu(fileName = "AppearanceSpritesCollection", menuName = "PlayerCreator/PlayerAppearance")]
     public class AppearanceFeaturesSpritesCollection : ScriptableObject

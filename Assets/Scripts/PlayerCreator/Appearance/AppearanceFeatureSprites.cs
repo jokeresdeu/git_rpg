@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PlayerCreator
+namespace PlayerCreator.Appearance
 {
     [Serializable]
     public class AppearanceFeatureSprites

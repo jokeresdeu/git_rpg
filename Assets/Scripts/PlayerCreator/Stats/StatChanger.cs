@@ -1,38 +1,44 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using GamePlay;
-using TMPro;
 using UnityEngine;
 
 namespace PlayerCreator.Stats
 {
-    public class StatsView : MonoBehaviour //StatsView / StatsChanger
+    public class StatChanger
     {
-        [SerializeField] private List<StatView> _statViews;
-        [SerializeField] private TMP_Text _freeStatsText;
-
-        private int _freeStats;
-
+        private readonly StatsChangerView _view;
+        
         private List<StatViewData> _statViewsData;
-
-        private void Start()
+        private int _freeStats;
+        
+        public StatChanger(StatsChangerView view)
         {
+            _view = view;
+            
+        }
+
+        public void Initialize(StatsModel statsModel)
+        {
+            //List<Stat> stats = statsModel.Stats
+            //_freeStats = statsModel.FreeStats;
+            _statViewsData = new List<StatViewData>();
+            
             List<Stat> stats = new List<Stat>
                 {new Stat(StatType.Agility, 2), new Stat(StatType.Intelligence, 1), new Stat(StatType.Strength, 1)};
-            _statViewsData = new List<StatViewData>();
             _freeStats = 10;
-            _freeStatsText.text = $"Stats left : {_freeStats}";
+            
             for (int i = 0; i < stats.Count; i++)
             {
-                if (i >= _statViews.Count)
+                if (i >=_view.StatViews.Count)
                 {
                     break;
                 }
 
-                _statViews[i].Initialize(stats[i].StatType.ToString());
-                _statViews[i].OnStatViewDecreaseClicked += DecreaseStatValue;
-                _statViews[i].OnStatViewIncreaseClicked += IncreaseStatValue;
-                _statViews[i].OnStatViewValueClicked += ChangeStatValue;
-                _statViewsData.Add(new StatViewData(_statViews[i], stats[i], stats[i].Value));
+                _view.StatViews[i].Initialize(stats[i].StatType.ToString());
+                _view.StatViews[i].OnStatViewDecreaseClicked += DecreaseStatValue;
+                _view.StatViews[i].OnStatViewIncreaseClicked += IncreaseStatValue;
+                _view.StatViews[i].OnStatViewValueClicked += ChangeStatValue;
+                _statViewsData.Add(new StatViewData(_view.StatViews[i], stats[i], stats[i].Value));
             }
             UpdateStatViews();
         }
@@ -71,7 +77,7 @@ namespace PlayerCreator.Stats
 
             value = Mathf.Clamp(value, statViewData.MinValue, oldValue + _freeStats);
             _freeStats += oldValue - value;
-            _freeStatsText.text = $"Stats left : {_freeStats}";
+            _view.FreeStatsText.text = $"Stats left : {_freeStats}";
             statViewData.Stat.SetValue(value);
             UpdateStatViews();
         }

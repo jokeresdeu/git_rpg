@@ -1,9 +1,9 @@
 using System;
 using UnityEngine;
 
-namespace PlayerCreator
+namespace PlayerCreator.Appearance
 {
-    public class PlayerAppearance : MonoBehaviour
+    public class Appearance : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer _hair;
         [SerializeField] private SpriteRenderer _beard;

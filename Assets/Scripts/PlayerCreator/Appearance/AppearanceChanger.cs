@@ -1,21 +1,19 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
-using Newtonsoft.Json;
 using ObjectPooling;
 using Serialization;
 using UnityEngine;
 
-namespace PlayerCreator
+namespace PlayerCreator.Appearance
 {
-    public class PlayerAppearanceChanger : MonoBehaviour
+    public class AppearanceChanger : MonoBehaviour
     {
         private const string AppearanceFile = "PlayerAppearance.txt";
-        [SerializeField] private PlayerAppearance _playerAppearance;
-        [SerializeField] private PlayerAppearanceView _appearanceView;
+        [SerializeField] private PlayerCreator.Appearance.Appearance _appearance;
+        [SerializeField] private AppearanceView _appearanceView;
         [SerializeField] private AppearanceFeaturesSpritesCollection _spritesCollection;
 
-        private List<PlayerAppearanceElementController> _elementControllers;
+        private List<AppearanceElementController> _elementControllers;
 
         private string _savePath => Path.Combine(Application.dataPath, "Serialization/PlayerData", AppearanceFile);
         public void Start()
@@ -24,7 +22,7 @@ namespace PlayerCreator
             Dictionary<AppearanceFeature, int> features = 
                 Serializator.Deserializate<Dictionary<AppearanceFeature, int>>(_savePath);
 
-            _elementControllers = new List<PlayerAppearanceElementController>();
+            _elementControllers = new List<AppearanceElementController>();
             foreach (var featureSprite in _spritesCollection.AppearanceFeatureSprites)
             {
                 int index = 0;
@@ -32,11 +30,11 @@ namespace PlayerCreator
                 {
                     features.TryGetValue(featureSprite.AppearanceFeature, out index);
                 }
-                PlayerAppearanceElementView elementView = Instantiate(_appearanceView.PlayerAppearanceElementView,
+                AppearanceElementView elementView = Instantiate(_appearanceView.AppearanceElementView,
                     _appearanceView.ElementGrid);
-                PlayerAppearanceElementController elementController =
-                    new PlayerAppearanceElementController(elementView, featureSprite,
-                        _playerAppearance.GetFeatureSprite(featureSprite.AppearanceFeature), index);
+                AppearanceElementController elementController =
+                    new AppearanceElementController(elementView, featureSprite,
+                        _appearance.GetFeatureSprite(featureSprite.AppearanceFeature), index);
                 _elementControllers.Add(elementController);
             }
         }

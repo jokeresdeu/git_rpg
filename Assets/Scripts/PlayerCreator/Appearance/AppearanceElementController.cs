@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-namespace PlayerCreator
+namespace PlayerCreator.Appearance
 {
-    public class PlayerAppearanceElementController
+    public class AppearanceElementController
     {
-        private PlayerAppearanceElementView _view;
+        private AppearanceElementView _view;
         private AppearanceFeatureSprites _appearanceFeatureSprites;
         private SpriteRenderer _spriteRenderer;
         private int _index;
@@ -12,7 +12,7 @@ namespace PlayerCreator
         public int Index => _index;
         public AppearanceFeature Feature => _appearanceFeatureSprites.AppearanceFeature;
         
-        public PlayerAppearanceElementController(PlayerAppearanceElementView view,
+        public AppearanceElementController(AppearanceElementView view,
             AppearanceFeatureSprites featureSprites, SpriteRenderer spriteRenderer, int index)
         {
             _index = index;

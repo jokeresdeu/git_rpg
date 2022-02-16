@@ -6,7 +6,7 @@ namespace PlayerCreator.Specialization
 {
     public class SpecializationChanger : MonoBehaviour
     {
-        [SerializeField] private PlayerSpecializationView _specializationView;
+        [SerializeField] private SpecializationView _specializationView;
         [SerializeField] private SpecializationConfigsStorage _specializationConfigsStorage;
 
         private List<SkillView> _skillViews;

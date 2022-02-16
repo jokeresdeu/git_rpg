@@ -1,4 +1,4 @@
-﻿namespace PlayerCreator
+﻿namespace PlayerCreator.Appearance
 {
     public enum AppearanceFeature
     {

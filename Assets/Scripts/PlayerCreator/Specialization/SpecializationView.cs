@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace PlayerCreator.Specialization
 {
-    public class PlayerSpecializationView : MonoBehaviour
+    public class SpecializationView : MonoBehaviour
     {
         [Header("Header")]
         [SerializeField] private Image _specializationIcon;
