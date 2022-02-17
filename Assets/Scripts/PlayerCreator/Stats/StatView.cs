@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace PlayerCreator.Stats
 {
-    public class StatView : MonoBehaviour
+    public class StatView : MonoBehaviour //1. View-controller
     {
         [SerializeField] private Transform _statButtonsContainer;
         [SerializeField] private Button _decreaseButton;
@@ -32,6 +32,16 @@ namespace PlayerCreator.Stats
             {
                 statButton.Initialize();
                 statButton.OnClicked += OnStatButtonClicked;
+            }
+        }
+
+        public void Dispose()
+        {
+            _decreaseButton.onClick.RemoveListener(OnDecreaseButtonClicked);
+            _increaseButton.onClick.RemoveListener(OnIncreaseButtonClicked);
+            foreach (var statButton in _statsButtons)
+            {
+                statButton.OnClicked -= OnStatButtonClicked;
             }
         }
 

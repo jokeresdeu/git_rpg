@@ -1,10 +1,11 @@
+using CoreUI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace PlayerCreator.Specialization
 {
-    public class SpecializationView : MonoBehaviour
+    public class SpecializationView : BaseView
     {
         [Header("Header")]
         [SerializeField] private Image _specializationIcon;

@@ -8,6 +8,7 @@ namespace PlayerCreator.Stats
     {
         [SerializeField] private Image _image;
         [SerializeField] private Button _button;
+        private bool _isInitialized;
 
         public event Action<StatButton> OnClicked;
 
@@ -18,6 +19,11 @@ namespace PlayerCreator.Stats
         
         public void Initialize()
         {
+            if (_isInitialized)
+            {
+                return;
+            }
+            _isInitialized = true;
             _button.onClick.AddListener(ButtonClicked);
         }
 

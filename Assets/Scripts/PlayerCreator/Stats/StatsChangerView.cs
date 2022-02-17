@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using CoreUI;
 using TMPro;
 using UnityEngine;
 
 namespace PlayerCreator.Stats
 {
-    public class StatsChangerView : MonoBehaviour //StatsView / StatsChanger
+    public class StatsChangerView : BaseView
     {
         [SerializeField] private List<StatView> _statViews;
         [SerializeField] private TMP_Text _freeStatsText;

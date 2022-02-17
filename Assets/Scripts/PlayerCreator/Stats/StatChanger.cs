@@ -1,48 +1,71 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using CoreUI;
 using GamePlay;
+using PlayerCreator.Specialization;
 using UnityEngine;
 
 namespace PlayerCreator.Stats
 {
-    public class StatChanger
+    public class StatChanger : IViewController
     {
-        private readonly StatsChangerView _view;
-        
+        private readonly StatsChangerView _changerView;
         private List<StatViewData> _statViewsData;
+
         private int _freeStats;
-        
-        public StatChanger(StatsChangerView view)
+
+        public StatChanger(StatsChangerView changerView)
         {
-            _view = view;
-            
+            _changerView = changerView;
         }
 
-        public void Initialize(StatsModel statsModel)
+        public void Initialize(params object[] args)
         {
-            //List<Stat> stats = statsModel.Stats
-            //_freeStats = statsModel.FreeStats;
-            _statViewsData = new List<StatViewData>();
-            
-            List<Stat> stats = new List<Stat>
-                {new Stat(StatType.Agility, 2), new Stat(StatType.Intelligence, 1), new Stat(StatType.Strength, 1)};
-            _freeStats = 10;
-            
-            for (int i = 0; i < stats.Count; i++)
+            if (args == null || args.Length < 1 || !args.Any(arg => arg is StatsModel))
             {
-                if (i >=_view.StatViews.Count)
+                throw new NullReferenceException($"There is no args for {nameof(StatChanger)}");
+            }
+
+            object model = args.First(arg => arg is StatsModel);
+            StatsModel statsModel = model as StatsModel;
+
+            _statViewsData = new List<StatViewData>();
+
+            _freeStats = statsModel.FreeStats;
+            _changerView.FreeStatsText.text = $"Stats left : {_freeStats}";
+
+            for (int i = 0; i < statsModel.Stats.Count; i++)
+            {
+                if (i >= _changerView.StatViews.Count)
                 {
                     break;
                 }
 
-                _view.StatViews[i].Initialize(stats[i].StatType.ToString());
-                _view.StatViews[i].OnStatViewDecreaseClicked += DecreaseStatValue;
-                _view.StatViews[i].OnStatViewIncreaseClicked += IncreaseStatValue;
-                _view.StatViews[i].OnStatViewValueClicked += ChangeStatValue;
-                _statViewsData.Add(new StatViewData(_view.StatViews[i], stats[i], stats[i].Value));
+                _changerView.StatViews[i].Initialize(statsModel.Stats[i].StatType.ToString());
+                _changerView.StatViews[i].OnStatViewDecreaseClicked += DecreaseStatValue;
+                _changerView.StatViews[i].OnStatViewIncreaseClicked += IncreaseStatValue;
+                _changerView.StatViews[i].OnStatViewValueClicked += ChangeStatValue;
+                _statViewsData.Add(new StatViewData(_changerView.StatViews[i], statsModel.Stats[i],
+                    statsModel.Stats[i].Value));
             }
+
             UpdateStatViews();
+            _changerView.Show();
         }
-        
+
+        public void Complete()
+        {
+            foreach (var statViewData in _statViewsData)
+            {
+                statViewData.StatView.Dispose();
+                statViewData.StatView.OnStatViewDecreaseClicked -= DecreaseStatValue;
+                statViewData.StatView.OnStatViewIncreaseClicked -= IncreaseStatValue;
+                statViewData.StatView.OnStatViewValueClicked -= ChangeStatValue;
+            }
+
+            _changerView.Hide();
+        }
 
         private void IncreaseStatValue(StatView statView)
         {
@@ -77,7 +100,7 @@ namespace PlayerCreator.Stats
 
             value = Mathf.Clamp(value, statViewData.MinValue, oldValue + _freeStats);
             _freeStats += oldValue - value;
-            _view.FreeStatsText.text = $"Stats left : {_freeStats}";
+            _changerView.FreeStatsText.text = $"Stats left : {_freeStats}";
             statViewData.Stat.SetValue(value);
             UpdateStatViews();
         }

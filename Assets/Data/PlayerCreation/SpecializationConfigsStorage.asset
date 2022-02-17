@@ -22,9 +22,9 @@ MonoBehaviour:
       Warriors do not tire easily and are capable of repairing their own gear.
     _startStats:
     - _statType: 1
-      _amount: 3
+      _value: 0
     - _statType: 2
-      _amount: 1
+      _value: 0
     _startSkills:
     - _skillType: 1
       _skillName: Bash
@@ -44,11 +44,11 @@ MonoBehaviour:
       your life!
     _startStats:
     - _statType: 1
-      _amount: 1
+      _value: 2
     - _statType: 2
-      _amount: 2
+      _value: 1
     - _statType: 3
-      _amount: 1
+      _value: 1
     _startSkills:
     - _skillType: 3
       _skillName: Shadow strike

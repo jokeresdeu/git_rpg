@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using GamePlay;
+using Player;
 using UnityEngine;
 
 namespace PlayerCreator.Specialization

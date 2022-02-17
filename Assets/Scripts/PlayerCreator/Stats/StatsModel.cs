@@ -12,5 +12,11 @@ namespace PlayerCreator.Stats
 
         public List<Stat> Stats => _stats;
         public int FreeStats => _freeStats;
+
+        public StatsModel(List<Stat> stats, int freeStats)
+        {
+            _stats = stats;
+            _freeStats = freeStats;
+        }
     }
 }
