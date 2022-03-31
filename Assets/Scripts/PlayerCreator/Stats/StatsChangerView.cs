@@ -7,10 +7,12 @@ namespace PlayerCreator.Stats
 {
     public class StatsChangerView : BaseView
     {
-        [SerializeField] private List<StatView> _statViews;
+        [SerializeField] private StatView _statView;
+        [SerializeField] private Transform _statViewContainer;
         [SerializeField] private TMP_Text _freeStatsText;
 
-        public List<StatView> StatViews => _statViews;
+        public StatView StatView => _statView;
+        public Transform StatViewContainer => _statViewContainer;
         public TMP_Text FreeStatsText => _freeStatsText;
     }
 }

@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ObjectPooling;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace PlayerCreator.Stats
 {
-    public class StatView : MonoBehaviour //1. View-controller
+    public class StatView : MonoBehaviour, IPoolable 
     {
         [SerializeField] private Transform _statButtonsContainer;
         [SerializeField] private Button _decreaseButton;
@@ -15,70 +16,70 @@ namespace PlayerCreator.Stats
         [SerializeField] private TMP_Text _statHeader;
         [SerializeField] private TMP_Text _statValue;
 
-        private List<StatButton> _statsButtons;
+        public Transform Transform => transform;
+        public GameObject GameObject => gameObject;
+        
+        public List<StatButton> StatsButtons { get; private set; }
+        public event Action OnDecreased;
+        public event Action OnIncreased;
+        public event Action<int> OnStatValueChanged;
 
-        public event Action<StatView> OnStatViewIncreaseClicked;
-        public event Action<StatView> OnStatViewDecreaseClicked;
-        public event Action<StatView, int> OnStatViewValueClicked;
-
-        public int MaxValue => _statsButtons.Count;
-        public void Initialize(string statText)
+        public event Action<IPoolable> OnReturnToPool;
+        public void ReturnToPool()
         {
-            _statsButtons = _statButtonsContainer.GetComponentsInChildren<StatButton>().ToList();
-            _statHeader.text = statText;
-            _decreaseButton.onClick.AddListener(OnDecreaseButtonClicked);
-            _increaseButton.onClick.AddListener(OnIncreaseButtonClicked);
-            foreach (var statButton in _statsButtons)
+            throw new NotImplementedException();
+        }
+        
+        private void Awake()
+        {
+            StatsButtons = _statButtonsContainer.GetComponentsInChildren<StatButton>().ToList();
+            _decreaseButton.onClick.AddListener(Decreased);
+            _increaseButton.onClick.AddListener(Increased);
+            foreach (var statButton in StatsButtons)
             {
                 statButton.Initialize();
-                statButton.OnClicked += OnStatButtonClicked;
+                statButton.OnClicked += StatValueChanged;
             }
         }
 
-        public void Dispose()
+        protected void OnDestroy()
         {
-            _decreaseButton.onClick.RemoveListener(OnDecreaseButtonClicked);
-            _increaseButton.onClick.RemoveListener(OnIncreaseButtonClicked);
-            foreach (var statButton in _statsButtons)
+            _decreaseButton.onClick.RemoveListener(Decreased);
+            _increaseButton.onClick.RemoveListener(Increased);
+            foreach (var statButton in StatsButtons)
             {
-                statButton.OnClicked -= OnStatButtonClicked;
+                statButton.OnClicked -= StatValueChanged;
             }
         }
 
-        private void SetButtonsState(int value)
+        public void SetHeader(string value)
         {
-            foreach (var statButton in _statsButtons)
-            {
-                statButton.SetState(_statsButtons.IndexOf(statButton) < value);
-            }
+            _statHeader.text = value;
         }
 
-        private void OnIncreaseButtonClicked()
+        public void SetValue(int value)
         {
-            OnStatViewIncreaseClicked?.Invoke(this);
+            _statValue.text = value.ToString();
         }
 
-        private void OnDecreaseButtonClicked()
+        public void SetDecreaseStatus(bool status)
         {
-           OnStatViewDecreaseClicked?.Invoke(this);
+            _decreaseButton.enabled = status;
+        }
+        
+        private void Increased()
+        {
+            OnIncreased?.Invoke();
         }
 
-        private void OnStatButtonClicked(StatButton statButton)
+        private void Decreased()
         {
-            OnStatViewValueClicked?.Invoke(this, _statsButtons.IndexOf(statButton));
+           OnDecreased?.Invoke();
         }
 
-        public void UpdateView(bool canIncrease, bool canDecrease, int value)
+        private void StatValueChanged(StatButton statButton)
         {
-            _decreaseButton.enabled = canDecrease;
-            _increaseButton.enabled = canIncrease;
-            ChangeStat(value);
-        }
-
-        private void ChangeStat(int statValue)
-        {
-            _statValue.text = statValue.ToString();
-            SetButtonsState(statValue);
+            OnStatValueChanged?.Invoke(StatsButtons.IndexOf(statButton));
         }
     }
 }

@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using CoreUI;
-using GamePlay;
-using PlayerCreator.Specialization;
+using ObjectPooling;
 using UnityEngine;
 
 namespace PlayerCreator.Stats
 {
     public class StatChanger : IViewController
     {
+        private const int MaxStatValue = 10;
         private readonly StatsChangerView _changerView;
-        private List<StatViewData> _statViewsData;
+        private List<StatControllerData> _statControllerViewsData;
 
         private int _freeStats;
 
@@ -30,23 +30,21 @@ namespace PlayerCreator.Stats
             object model = args.First(arg => arg is StatsModel);
             StatsModel statsModel = model as StatsModel;
 
-            _statViewsData = new List<StatViewData>();
+            _statControllerViewsData = new List<StatControllerData>();
 
             _freeStats = statsModel.FreeStats;
             _changerView.FreeStatsText.text = $"Stats left : {_freeStats}";
 
             for (int i = 0; i < statsModel.Stats.Count; i++)
             {
-                if (i >= _changerView.StatViews.Count)
-                {
-                    break;
-                }
-
-                _changerView.StatViews[i].Initialize(statsModel.Stats[i].StatType.ToString());
-                _changerView.StatViews[i].OnStatViewDecreaseClicked += DecreaseStatValue;
-                _changerView.StatViews[i].OnStatViewIncreaseClicked += IncreaseStatValue;
-                _changerView.StatViews[i].OnStatViewValueClicked += ChangeStatValue;
-                _statViewsData.Add(new StatViewData(_changerView.StatViews[i], statsModel.Stats[i],
+                StatView view = ObjectPool.Instance.GetObject(_changerView.StatView);
+                view.Transform.parent = _changerView.StatViewContainer;
+                view.Transform.localScale = Vector3.one;
+                StatController statController = new StatController(view, statsModel.Stats[i].StatType.ToString());
+                statController.OnStatDecreased += DecreaseStatValue;
+                statController.OnStatIncreased += IncreaseStatValue;
+                statController.OnStatValueChanged += ChangeStatValue;
+                _statControllerViewsData.Add(new StatControllerData(statController, statsModel.Stats[i],
                     statsModel.Stats[i].Value));
             }
 
@@ -56,61 +54,61 @@ namespace PlayerCreator.Stats
 
         public void Complete()
         {
-            foreach (var statViewData in _statViewsData)
+            foreach (var statViewData in _statControllerViewsData)
             {
-                statViewData.StatView.Dispose();
-                statViewData.StatView.OnStatViewDecreaseClicked -= DecreaseStatValue;
-                statViewData.StatView.OnStatViewIncreaseClicked -= IncreaseStatValue;
-                statViewData.StatView.OnStatViewValueClicked -= ChangeStatValue;
+                statViewData.StatController.Dispose();
+                statViewData.StatController.OnStatDecreased += DecreaseStatValue;
+                statViewData.StatController.OnStatIncreased += IncreaseStatValue;
+                statViewData.StatController.OnStatValueChanged += ChangeStatValue;
             }
 
             _changerView.Hide();
         }
 
-        private void IncreaseStatValue(StatView statView)
+        private void IncreaseStatValue(StatController statController)
         {
-            StatViewData statViewData = _statViewsData.Find(data => data.StatView == statView);
-            ChangeStat(statViewData, statViewData.Stat.Value + 1);
+            StatControllerData statControllerData = _statControllerViewsData.Find(data => data.StatController == statController);
+            ChangeStat(statControllerData, statControllerData.Stat.Value + 1);
         }
 
-        private void DecreaseStatValue(StatView statView)
+        private void DecreaseStatValue(StatController statController)
         {
-            StatViewData statViewData = _statViewsData.Find(data => data.StatView == statView);
-            ChangeStat(statViewData, statViewData.Stat.Value - 1);
+            StatControllerData statControllerData = _statControllerViewsData.Find(data => data.StatController == statController);
+            ChangeStat(statControllerData, statControllerData.Stat.Value - 1);
         }
 
-        private void ChangeStatValue(StatView statView, int value)
+        private void ChangeStatValue(StatController statController, int value)
         {
-            StatViewData statViewData = _statViewsData.Find(data => data.StatView == statView);
-            ChangeStat(statViewData, value);
+            StatControllerData statControllerData = _statControllerViewsData.Find(data => data.StatController == statController);
+            ChangeStat(statControllerData, value);
         }
 
-        private void ChangeStat(StatViewData statViewData, int value)
+        private void ChangeStat(StatControllerData statControllerData, int value)
         {
-            int oldValue = statViewData.Stat.Value;
+            int oldValue = statControllerData.Stat.Value;
             if (_freeStats < 0 && value > oldValue)
             {
                 return;
             }
 
-            if (value < statViewData.MinValue)
+            if (value < statControllerData.MinValue)
             {
                 return;
             }
 
-            value = Mathf.Clamp(value, statViewData.MinValue, oldValue + _freeStats);
+            value = Mathf.Clamp(value, statControllerData.MinValue, oldValue + _freeStats);
             _freeStats += oldValue - value;
             _changerView.FreeStatsText.text = $"Stats left : {_freeStats}";
-            statViewData.Stat.SetValue(value);
+            statControllerData.Stat.SetValue(value);
             UpdateStatViews();
         }
 
         private void UpdateStatViews()
         {
-            foreach (var statViewData in _statViewsData)
+            foreach (var statViewData in _statControllerViewsData)
             {
                 int value = statViewData.Stat.Value;
-                statViewData.StatView.UpdateView(_freeStats > 0 && value < statViewData.StatView.MaxValue,
+                statViewData.StatController.UpdateView(_freeStats > 0 && value < MaxStatValue,
                     value > statViewData.MinValue, value);
             }
         }
