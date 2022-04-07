@@ -7,22 +7,12 @@ namespace PlayerCreator.Specialization
     public class SpecializationModel
     {
         public List<Stat> Stats { get;  }
+        public SpecializationType SpecializationType { get; }
 
-        public SpecializationType SpecializationType { get; private set; }
-
-        public SpecializationModel(List<Stat> stats)
+        public SpecializationModel(SpecializationType specializationType, List<Stat> stats)
         {
             Stats = stats;
-        }
-
-        public void ChangeSpecialization(SpecializationType specializationType, List<Stat> stats)
-        {
             SpecializationType = specializationType;
-            Stats.Clear();
-            foreach (var stat in stats)
-            {
-                Stats.Add(new Stat(stat.StatType, stat.Value));
-            }
         }
     }
 }

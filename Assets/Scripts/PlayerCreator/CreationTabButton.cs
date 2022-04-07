@@ -1,4 +1,5 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,18 +8,25 @@ namespace PlayerCreator
     public class CreationTabButton : MonoBehaviour
     {
         [SerializeField] private Button _button;
-        [SerializeField] private СreationTab _creationTab;
+        [SerializeField] private TMP_Text _buttonText;
+        
+        public event Action<CreationTabButton> OnButtonClicked;
 
-        public event Action<СreationTab> OnButtonClicked;
-
-        public void Initialize()
+        public void Initialize(string text)
         {
+            _buttonText.text = text;
             _button.onClick.AddListener(ButtonClicked);
         }
 
+        public void ChangeState(bool selected)
+        {
+            _button.interactable = !selected;
+        }
+        
+
         private void ButtonClicked()
         {
-            OnButtonClicked?.Invoke(_creationTab);
+            OnButtonClicked?.Invoke(this);
         }
 
         private void OnDestroy()

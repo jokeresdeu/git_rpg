@@ -22,9 +22,9 @@ MonoBehaviour:
       Warriors do not tire easily and are capable of repairing their own gear.
     _startStats:
     - _statType: 1
-      _value: 0
+      _value: 3
     - _statType: 2
-      _value: 0
+      _value: 1
     _startSkills:
     - _skillType: 1
       _skillName: Bash

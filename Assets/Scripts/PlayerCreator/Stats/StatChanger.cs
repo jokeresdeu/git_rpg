@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using CoreUI;
-using GamePlay;
-using PlayerCreator.Specialization;
 using UnityEngine;
 
 namespace PlayerCreator.Stats

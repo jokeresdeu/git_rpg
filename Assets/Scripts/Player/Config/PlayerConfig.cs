@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using GamePlay;
+using PlayerCreator;
 using UnityEngine;
 
 namespace Player.Config
@@ -7,12 +8,12 @@ namespace Player.Config
     public class PlayerConfig
     {
         public int Id { get; }
-        public string Name { get; }
+        public string Name { get; private set; }
         public List<Stat> Stats { get; }
         public SpecializationType SpecializationType { get; private set; }
         public List<AppearanceFeatureSprite> AppearanceFeatureSprites { get; }
         
-        public PlayerConfig()
+        public PlayerConfig(string playerName, List<Stat> stats, SpecializationType specializationType, List<AppearanceFeatureSprite> appearanceFeatureSprites)
         {
             if (!PlayerPrefs.HasKey("CharacterCount"))
             {
@@ -21,14 +22,12 @@ namespace Player.Config
             int characterCount = PlayerPrefs.GetInt("CharacterCount");
             
             characterCount++;
+            PlayerPrefs.SetInt("CharacterCount", characterCount);
             Id = characterCount;
-            Stats = new List<Stat>();
-            AppearanceFeatureSprites = new List<AppearanceFeatureSprite>();
-        }
-
-        public void SetSpecialization(SpecializationType specializationType)
-        {
+            Name = playerName;
             SpecializationType = specializationType;
+            AppearanceFeatureSprites = appearanceFeatureSprites;
+
         }
     }
 }
