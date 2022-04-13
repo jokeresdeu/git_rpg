@@ -25,9 +25,9 @@ namespace PlayerCreator.Stats
         public event Action<int> OnStatValueChanged;
 
         public event Action<IPoolable> OnReturnToPool;
-        public void ReturnToPool()
+        public void Reset()
         {
-            throw new NotImplementedException();
+            OnReturnToPool?.Invoke(this);
         }
         
         private void Awake()

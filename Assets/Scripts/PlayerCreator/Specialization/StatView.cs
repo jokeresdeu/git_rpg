@@ -15,7 +15,7 @@ namespace PlayerCreator.Specialization
         public Transform Transform => transform;
         public GameObject GameObject => gameObject;
         public event Action<IPoolable> OnReturnToPool;
-        public void ReturnToPool()
+        public void Reset()
         {
             OnReturnToPool?.Invoke(this);
         }

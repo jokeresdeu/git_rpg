@@ -105,13 +105,13 @@ namespace PlayerCreator.Specialization
         {
             foreach (var skillView in _skillViews)
             {
-                skillView.ReturnToPool();
+                skillView.Reset();
             }
             _skillViews.Clear();
 
             foreach (var statView in _statViews)
             {
-                statView.ReturnToPool();
+                statView.Reset();
             }
             _statViews.Clear();
 

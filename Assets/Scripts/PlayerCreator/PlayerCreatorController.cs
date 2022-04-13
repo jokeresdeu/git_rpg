@@ -1,4 +1,8 @@
-﻿using CoreUI;
+﻿using System.Collections.Generic;
+using System.IO;
+using CoreUI;
+using GamePlay;
+using Player;
 using Player.Config;
 using PlayerCreator.Specialization;
 using PlayerCreator.Stats;
@@ -7,45 +11,68 @@ using UnityEngine;
 
 namespace PlayerCreator
 {
-    public class PlayerCreatorController : MonoBehaviour //3 - PlayerCreationController + PlayerConfig
-                                                         //4 - PlayerCreationController + SpecializationChanger
-    //5 - PlayerCreationController + StatsChanger(SpecializationChanger)
-    //6 - PlayerCreationController + Serialization
-    //7 - PlayerCreationController + AppearanceChanger
+    public class PlayerCreatorController : MonoBehaviour
     {
         [SerializeField] private PlayerCreatorView _creatorView;
 
         private StatChanger _statChanger;
         private StatsModel _statsModel;
-        
+
         private SpecializationChanger _specializationChanger;
         private SpecializationModel _specializationModel;
-        
-        private PlayerConfig _playerConfig;
 
         private IViewController _currentController;
-        
+
+        private Dictionary<CreationTabSwitcher, СreationTab> _availableTabsSwitchers;
+        private CreationTabSwitcher _selectedSwitcher;
+
+        private string _playerName;
+
+        private List<Stat> _stats;
+
         private void Start()
         {
-            _playerConfig = new PlayerConfig();
-            
-            _statsModel = new StatsModel(_playerConfig.Stats, 10);
-            _specializationModel = new SpecializationModel(_playerConfig.Stats);
-            
+            List<СreationTab> availableTabs = new List<СreationTab> {СreationTab.Specialization, СreationTab.Stats};
+            СreationTab defaultTab = СreationTab.Specialization;
+            _creatorView.Initialize();
+            _availableTabsSwitchers = new Dictionary<CreationTabSwitcher, СreationTab>();
+            foreach (var tab in availableTabs)
+            {
+                CreationTabSwitcher tabSwitcher = Instantiate(_creatorView.CreationTabSwitcher, _creatorView.SwitchersContainer);
+                tabSwitcher.Initialize(tab.ToString());
+                tabSwitcher.OnSwitcherSelected += SwitcherSelected;
+                _availableTabsSwitchers.Add(tabSwitcher, tab);
+                if (tab != defaultTab)
+                {
+                    continue;
+                }
+
+                _selectedSwitcher = tabSwitcher;
+                _selectedSwitcher.SetSelectionState(true);
+            }
+
+            _creatorView.OnNameChanged += NameChanged;
+            _creatorView.OnSaveClicked += SaveClicked;
+            _stats = new List<Stat>();
+            _statsModel = new StatsModel(_stats, 10);
+            _specializationModel = new SpecializationModel(_stats);
+
             _statChanger = new StatChanger(_creatorView.StatView);
             _specializationChanger = new SpecializationChanger(_creatorView.SpecializationView,
                 _creatorView.SpecializationConfigsStorage);
 
-            foreach (var button in _creatorView.CreationTabButtons)
-            {
-                button.Initialize();
-                button.OnButtonClicked += OnTabChanged;
-            }
-            
             _currentController = GetAndInitializeController(СreationTab.Specialization);
         }
 
-        private void OnTabChanged(СreationTab creationTab)
+        private void SwitcherSelected(CreationTabSwitcher creationTabSwitcher)
+        {
+            _selectedSwitcher.SetSelectionState(false);
+            _selectedSwitcher = creationTabSwitcher;
+            _selectedSwitcher.SetSelectionState(true);
+            ChangeTab(_availableTabsSwitchers[creationTabSwitcher]);
+        }
+
+        private void ChangeTab(СreationTab creationTab)
         {
             _currentController?.Complete();
             _currentController = GetAndInitializeController(creationTab);
@@ -66,23 +93,34 @@ namespace PlayerCreator
             }
         }
 
-        private void OnDestroy()
+        private void NameChanged(string playerName)
         {
-            foreach (var button in _creatorView.CreationTabButtons)
-            {
-                button.OnButtonClicked -= OnTabChanged;
-            }
-            _playerConfig.SetSpecialization(_specializationModel.SpecializationType);
-            Debug.LogError(_playerConfig.SpecializationType);
-            foreach (var stat in _playerConfig.Stats)
-            {
-                Debug.LogError($"{stat.StatType} = {stat.Value}");
-            }
+            _playerName = playerName;
         }
 
-        private void OnStartGameClicked()
+        private void SaveClicked()
         {
-            Serializator.Serializate(_playerConfig, "PlayerConfig");
+            if (string.IsNullOrEmpty(_playerName))
+            {
+                Debug.Log("Can`t create player without name");
+                return;
+            }
+
+            PlayerConfig playerConfig =
+                new PlayerConfig(_playerName, _stats, _specializationModel.SpecializationType, new List<AppearanceFeatureSprite>());
+            Serializator.Serializate(playerConfig, Path.Combine(Application.dataPath, "Serialization/PlayerData", $"Player_{playerConfig.Id}.json"));
+        }
+        
+        
+        private void OnDestroy()
+        {
+            foreach (var switchers in _availableTabsSwitchers.Keys)
+            {
+                switchers.OnSwitcherSelected -= SwitcherSelected;
+            }
+
+            _creatorView.OnNameChanged -= NameChanged;
+            _creatorView.OnSaveClicked -= SaveClicked;
         }
     }
 }

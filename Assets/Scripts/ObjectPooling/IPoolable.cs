@@ -8,6 +8,5 @@ namespace ObjectPooling
         Transform Transform { get; }
         GameObject GameObject { get; }
         event Action<IPoolable> OnReturnToPool;
-        void ReturnToPool();
     }
 }

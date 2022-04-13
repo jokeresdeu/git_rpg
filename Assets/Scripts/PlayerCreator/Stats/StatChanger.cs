@@ -57,9 +57,9 @@ namespace PlayerCreator.Stats
             foreach (var statViewData in _statControllerViewsData)
             {
                 statViewData.StatController.Dispose();
-                statViewData.StatController.OnStatDecreased += DecreaseStatValue;
-                statViewData.StatController.OnStatIncreased += IncreaseStatValue;
-                statViewData.StatController.OnStatValueChanged += ChangeStatValue;
+                statViewData.StatController.OnStatDecreased -= DecreaseStatValue;
+                statViewData.StatController.OnStatIncreased -= IncreaseStatValue;
+                statViewData.StatController.OnStatValueChanged -= ChangeStatValue;
             }
 
             _changerView.Hide();
