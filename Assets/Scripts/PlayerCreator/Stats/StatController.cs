@@ -25,6 +25,7 @@ namespace PlayerCreator.Stats
             _statView.OnIncreased -= IncreaseStat;
             _statView.OnDecreased -= DecreaseStat;
             _statView.OnStatValueChanged -= StatValueChanged;
+            _statView.Reset();
         }
 
         private void IncreaseStat()
