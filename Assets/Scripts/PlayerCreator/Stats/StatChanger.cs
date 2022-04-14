@@ -40,7 +40,7 @@ namespace PlayerCreator.Stats
                 StatView view = ObjectPool.Instance.GetObject(_changerView.StatView);
                 view.Transform.parent = _changerView.StatViewContainer;
                 view.Transform.localScale = Vector3.one;
-                StatController statController = new StatController(view, statsModel.Stats[i].StatType.ToString());
+                StatController statController = new StatController(view, statsModel.Stats[i].Type.ToString());
                 statController.OnStatDecreased += DecreaseStatValue;
                 statController.OnStatIncreased += IncreaseStatValue;
                 statController.OnStatValueChanged += ChangeStatValue;
