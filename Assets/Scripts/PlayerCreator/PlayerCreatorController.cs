@@ -19,7 +19,6 @@ namespace PlayerCreator
         private StatsModel _statsModel;
 
         private SpecializationChanger _specializationChanger;
-        private SpecializationModel _specializationModel;
 
         private IViewController _currentController;
 
@@ -54,12 +53,12 @@ namespace PlayerCreator
             _creatorView.OnNameChanged += NameChanged;
             _creatorView.OnSaveClicked += SaveClicked;
             _stats = new List<Stat>();
+            
             _statsModel = new StatsModel(_stats, 10);
-            _specializationModel = new SpecializationModel(_stats);
 
             _statChanger = new StatChanger(_creatorView.StatView);
             _specializationChanger = new SpecializationChanger(_creatorView.SpecializationView,
-                _creatorView.SpecializationConfigsStorage);
+                _creatorView.SpecializationConfigsStorage, _creatorView.SpecializationAppearance);
 
             _currentController = GetAndInitializeController(СreationTab.Specialization);
         }
@@ -83,7 +82,7 @@ namespace PlayerCreator
             switch (creationTab)
             {
                 case СreationTab.Specialization:
-                    _specializationChanger.Initialize(_specializationModel);
+                    _specializationChanger.Initialize();
                     return _specializationChanger;
                 case СreationTab.Stats:
                     _statChanger.Initialize(_statsModel);
@@ -107,7 +106,7 @@ namespace PlayerCreator
             }
 
             PlayerConfig playerConfig =
-                new PlayerConfig(_playerName, _stats, _specializationModel.SpecializationType, new List<AppearanceFeatureSprite>());
+                new PlayerConfig(_playerName, _stats, _specializationChanger.SpecializationModel.SpecializationType, new List<AppearanceFeatureSprite>());
             Serializator.Serializate(playerConfig, Path.Combine(Application.dataPath, "Serialization/PlayerData", $"Player_{playerConfig.Id}.json"));
         }
         

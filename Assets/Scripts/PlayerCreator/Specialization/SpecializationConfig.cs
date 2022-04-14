@@ -12,6 +12,7 @@ namespace PlayerCreator.Specialization
         [SerializeField] private SpecializationType _specializationType;
         [SerializeField] private string _specializationName;
         [SerializeField] private Sprite _specializationIcon;
+        [SerializeField] private List<EquipmentSprite> _equipmentSprites;
         [TextArea]
         [SerializeField] private string _specializationDescription;
         [SerializeField] private List<Stat> _startStats;
@@ -23,6 +24,7 @@ namespace PlayerCreator.Specialization
        public string SpecializationDescription => _specializationDescription;
        public List<Stat> StartStats => _startStats;
        public List<SkillDescriptor> StartSkills => _startSkills;
+       public List<EquipmentSprite> EquipmentSprites => _equipmentSprites;
 
     }
 }

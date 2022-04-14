@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using CoreUI;
 using ObjectPooling;
 using UnityEngine;
@@ -10,33 +8,35 @@ namespace PlayerCreator.Specialization
     public class SpecializationChanger : IViewController
     {
         private readonly SpecializationConfigsStorage _specializationConfigsStorage;
+        private readonly SpecializationAppearance _specializationAppearance;
         private readonly SpecializationView _specializationView;
+        private readonly List<SkillView> _skillViews;
+        private readonly List<StatView> _statViews;
+        private readonly ObjectPool _objectPool;
 
-        private SpecializationModel _specializationModel; 
-        private List<SkillView> _skillViews;
-        private List<StatView> _statViews;
-        private ObjectPool _objectPool;
-        private int _currentIndex = 0;
+        public SpecializationModel SpecializationModel { get; private set; }
         
-        public SpecializationChanger(SpecializationView specializationView,  SpecializationConfigsStorage specializationConfigsStorage)
+        private int _currentIndex;
+        
+        public SpecializationChanger(SpecializationView specializationView,  SpecializationConfigsStorage specializationConfigsStorage, SpecializationAppearance specializationAppearance)
         {
             _specializationView = specializationView;
             _specializationConfigsStorage = specializationConfigsStorage;
+            _specializationAppearance = specializationAppearance;
             _objectPool = ObjectPool.Instance;
             _skillViews = new List<SkillView>();
             _statViews = new List<StatView>();
+            
+            SpecializationConfig defaultConfig = _specializationConfigsStorage.SpecializationConfigs.Find(config =>
+                config.SpecializationType == _specializationConfigsStorage.DefaultSpecialization) ?? _specializationConfigsStorage.SpecializationConfigs[0];
+            _currentIndex = _specializationConfigsStorage.SpecializationConfigs.IndexOf(defaultConfig);
+            SpecializationModel = new SpecializationModel(defaultConfig.SpecializationType, defaultConfig.StartStats);
+            _specializationAppearance.SetEquipment(defaultConfig.EquipmentSprites);
         }
 
         public void Initialize(params object[] args)
         {
-            if (args == null || args.Length < 1 || !args.Any(arg => arg is SpecializationModel))
-            {
-                throw new NullReferenceException($"There is no args for {nameof(SpecializationChanger)}");
-            }
-
-            object model = args.First(arg => arg is SpecializationModel);
-            _specializationModel = model as SpecializationModel;
-            ChangeSpecialization();
+            UpdateView();
             _specializationView.LeftArrow.onClick.AddListener(PreviousSpecialization);
             _specializationView.RightArrow.onClick.AddListener(NextSpecialization);
             _specializationView.Show();
@@ -58,6 +58,7 @@ namespace PlayerCreator.Specialization
                 _currentIndex = 0;
             }
             ChangeSpecialization();
+            UpdateView();
         }
 
         private void PreviousSpecialization()
@@ -68,23 +69,22 @@ namespace PlayerCreator.Specialization
                 _currentIndex = _specializationConfigsStorage.SpecializationConfigs.Count - 1;
             }
             ChangeSpecialization();
+            UpdateView();
         }
 
-        private void ChangeSpecialization()
+        private void UpdateView()
         {
-            ClearView();
             SpecializationConfig config = _specializationConfigsStorage.SpecializationConfigs[_currentIndex];
             _specializationView.SpecializationIcon.sprite = config.SpecializationIcon;
             _specializationView.SpecializationName.text = config.SpecializationName;
             _specializationView.Description.text = config.SpecializationDescription;
-            
             foreach (var stat in config.StartStats)
             {
                 StatView statView = _objectPool.GetObject(_specializationView.StatView);
-                statView.transform.SetParent(_specializationView.StatContainer);
+                statView.transform.SetParent(_specializationView.StatContainer); //GetComponent<Transform>
                 statView.transform.localScale = Vector3.one;
                 statView.StatAmount.text = stat.Value.ToString();
-                statView.StatType.text = stat.StatType.ToString();
+                statView.StatType.text = stat.Type.ToString();
                 _statViews.Add(statView);
             }
             
@@ -98,7 +98,14 @@ namespace PlayerCreator.Specialization
                 skillView.SkillImage.sprite = skill.SkillSprite;
                 _skillViews.Add(skillView);
             }
-            _specializationModel.ChangeSpecialization(config.SpecializationType, config.StartStats);
+        }
+
+        private void ChangeSpecialization()
+        {
+            ClearView();
+            SpecializationConfig config = _specializationConfigsStorage.SpecializationConfigs[_currentIndex];
+            SpecializationModel = new SpecializationModel(config.SpecializationType, config.StartStats);
+            _specializationAppearance.SetEquipment(config.EquipmentSprites);
         }
 
         private void ClearView()

@@ -12,19 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8f5219c91f455eac36bb0fa0c2f696, type: 3}
   m_Name: SpecializationConfigsStorage
   m_EditorClassIdentifier: 
+  _defaultSpecialization: 1
   _specializationConfigs:
   - _specializationType: 1
     _specializationName: Warrior
     _specializationIcon: {fileID: 21300000, guid: ced35058c15c3da43b50b78bff9d4ded, type: 3}
+    _equipmentSprites:
+    - _sprite: {fileID: 21300028, guid: 3d91e9bb2fe824c429f5714007eae2b9, type: 3}
+      _equipment: 1
+    - _sprite: {fileID: 21300024, guid: 3d91e9bb2fe824c429f5714007eae2b9, type: 3}
+      _equipment: 2
+    - _sprite: {fileID: 21300000, guid: c1bdea57274e85a49b131c4b6e6fc779, type: 3}
+      _equipment: 5
+    - _sprite: {fileID: 21300002, guid: 1845e499193555d49bf7a7f0f3820f20, type: 3}
+      _equipment: 7
     _specializationDescription: Warriors are true fighters and experts at melee combat.
       Preferring to mix offensive power with defensive ability, warriors prefer to
       use a good sword or axe with a shield and shrug off attacks with heavy armor.
       Warriors do not tire easily and are capable of repairing their own gear.
     _startStats:
-    - _statType: 1
-      _value: 0
-    - _statType: 2
-      _value: 0
+    - _type: 1
+      _value: 3
+    - _type: 2
+      _value: 1
     _startSkills:
     - _skillType: 1
       _skillName: Bash
@@ -37,17 +47,26 @@ MonoBehaviour:
   - _specializationType: 2
     _specializationName: Assassin
     _specializationIcon: {fileID: 21300000, guid: 07875a88a19b0dd468e774c2d0d42c5d, type: 3}
+    _equipmentSprites:
+    - _sprite: {fileID: 21300028, guid: 0e7e1ba3efb99fb498b5f4a7b6d79baa, type: 3}
+      _equipment: 1
+    - _sprite: {fileID: 21300000, guid: 069510a8e932e2b4eb73d1d0c6d7b0df, type: 3}
+      _equipment: 5
+    - _sprite: {fileID: 21300024, guid: 0e7e1ba3efb99fb498b5f4a7b6d79baa, type: 3}
+      _equipment: 2
+    - _sprite: {fileID: 21300000, guid: 069510a8e932e2b4eb73d1d0c6d7b0df, type: 3}
+      _equipment: 6
     _specializationDescription: As long as there is light, there will always be shadows
       for Assassins to hide in, waiting for the perfect moment to strike. They will
       turn any fight into a dance of death, fatally poisoning those unlucky enough
       to survive the onslaught. Never challenge an Assassin to a duel if you value
       your life!
     _startStats:
-    - _statType: 1
+    - _type: 0
       _value: 2
-    - _statType: 2
+    - _type: 0
       _value: 1
-    - _statType: 3
+    - _type: 0
       _value: 1
     _startSkills:
     - _skillType: 3

@@ -17,6 +17,7 @@ namespace PlayerCreator
         [Header("Specialization")] 
         [SerializeField] private SpecializationView _specializationView;
         [SerializeField] private SpecializationConfigsStorage _specializationConfigsStorage;
+        [SerializeField] private SpecializationAppearance _specializationAppearance;
         [SerializeField] private StatsChangerView _statView;
 
         public CreationTabSwitcher CreationTabSwitcher => _creationTabSwitcher;
@@ -24,6 +25,8 @@ namespace PlayerCreator
         public StatsChangerView StatView => _statView;
         public SpecializationView SpecializationView => _specializationView;
         public SpecializationConfigsStorage SpecializationConfigsStorage => _specializationConfigsStorage;
+
+        public SpecializationAppearance SpecializationAppearance => _specializationAppearance;
 
         public event Action<string> OnNameChanged;
         public event Action OnSaveClicked;
