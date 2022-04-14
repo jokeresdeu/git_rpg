@@ -7,16 +7,16 @@ namespace PlayerCreator.Stats
     [Serializable]
     public class StatsModel
     {
-        private List<Stat> _stats;
-        private int _freeStats;
-
-        public List<Stat> Stats => _stats;
-        public int FreeStats => _freeStats;
-
-        public StatsModel(List<Stat> stats, int freeStats)
+        public int FreeStats { get; set; }
+        public List<Stat> Stats { get; }
+        public StatsModel(List<Stat> stats,  int freeStats)
         {
-            _stats = stats;
-            _freeStats = freeStats;
+            Stats = new List<Stat>();
+            foreach (var stat in stats)
+            {
+                Stats.Add(stat.Clone());
+            }
+            FreeStats = freeStats;
         }
     }
 }
