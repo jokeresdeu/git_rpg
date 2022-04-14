@@ -16,8 +16,6 @@ namespace PlayerCreator
         [SerializeField] private PlayerCreatorView _creatorView;
 
         private StatChanger _statChanger;
-        private StatsModel _statsModel;
-
         private SpecializationChanger _specializationChanger;
 
         private IViewController _currentController;
@@ -27,7 +25,7 @@ namespace PlayerCreator
 
         private string _playerName;
 
-        private List<Stat> _stats;
+        private SpecializationType _currentSpecialization;
 
         private void Start()
         {
@@ -52,14 +50,11 @@ namespace PlayerCreator
 
             _creatorView.OnNameChanged += NameChanged;
             _creatorView.OnSaveClicked += SaveClicked;
-            _stats = new List<Stat>();
-            
-            _statsModel = new StatsModel(_stats, 10);
 
-            _statChanger = new StatChanger(_creatorView.StatView);
             _specializationChanger = new SpecializationChanger(_creatorView.SpecializationView,
                 _creatorView.SpecializationConfigsStorage, _creatorView.SpecializationAppearance);
-
+            _statChanger = new StatChanger(_creatorView.StatView);
+            
             _currentController = GetAndInitializeController(СreationTab.Specialization);
         }
 
@@ -85,7 +80,10 @@ namespace PlayerCreator
                     _specializationChanger.Initialize();
                     return _specializationChanger;
                 case СreationTab.Stats:
-                    _statChanger.Initialize(_statsModel);
+                    StatsModel statsModel = _currentSpecialization == SpecializationType.None || _currentSpecialization != _specializationChanger.SpecializationModel.SpecializationType 
+                        ? new StatsModel(_specializationChanger.SpecializationModel.Stats, _specializationChanger.SpecializationModel.FreeStats) : _statChanger.StatsModel;
+                    _currentSpecialization = _specializationChanger.SpecializationModel.SpecializationType;
+                    _statChanger.Initialize(statsModel);
                     return _statChanger;
                 default:
                     return null;
@@ -105,12 +103,24 @@ namespace PlayerCreator
                 return;
             }
 
+            List<Stat> playerStats;
+            if (_statChanger.StatsModel == null || _statChanger.StatsModel.FreeStats > 0)
+            {
+                playerStats = _specializationChanger.SpecializationModel.DefaultStats;
+                Debug.Log("You have free stats, do you want to use default specialization stats");
+            }
+            else
+            {
+                playerStats = _statChanger.StatsModel.Stats;
+            }
+
             PlayerConfig playerConfig =
-                new PlayerConfig(_playerName, _stats, _specializationChanger.SpecializationModel.SpecializationType, new List<AppearanceFeatureSprite>());
+                new PlayerConfig(_playerName, playerStats, _specializationChanger.SpecializationModel.SpecializationType,
+                    new List<AppearanceFeatureSprite>());
             Serializator.Serializate(playerConfig, Path.Combine(Application.dataPath, "Serialization/PlayerData", $"Player_{playerConfig.Id}.json"));
         }
-        
-        
+
+
         private void OnDestroy()
         {
             foreach (var switchers in _availableTabsSwitchers.Keys)

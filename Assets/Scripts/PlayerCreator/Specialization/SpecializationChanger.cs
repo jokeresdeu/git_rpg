@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.Design;
 using CoreUI;
+using GamePlay;
 using ObjectPooling;
+using Player;
 using UnityEngine;
 
 namespace PlayerCreator.Specialization
@@ -18,6 +21,7 @@ namespace PlayerCreator.Specialization
         
         private int _currentIndex;
         
+        
         public SpecializationChanger(SpecializationView specializationView,  SpecializationConfigsStorage specializationConfigsStorage, SpecializationAppearance specializationAppearance)
         {
             _specializationView = specializationView;
@@ -30,7 +34,7 @@ namespace PlayerCreator.Specialization
             SpecializationConfig defaultConfig = _specializationConfigsStorage.SpecializationConfigs.Find(config =>
                 config.SpecializationType == _specializationConfigsStorage.DefaultSpecialization) ?? _specializationConfigsStorage.SpecializationConfigs[0];
             _currentIndex = _specializationConfigsStorage.SpecializationConfigs.IndexOf(defaultConfig);
-            SpecializationModel = new SpecializationModel(defaultConfig.SpecializationType, defaultConfig.StartStats);
+            SpecializationModel = new SpecializationModel(defaultConfig.SpecializationType, defaultConfig.StartStats, defaultConfig.DefaultStats, defaultConfig.FreeStats);
             _specializationAppearance.SetEquipment(defaultConfig.EquipmentSprites);
         }
 
@@ -71,6 +75,14 @@ namespace PlayerCreator.Specialization
             ChangeSpecialization();
             UpdateView();
         }
+        
+        private void ChangeSpecialization()
+        {
+            ClearView();
+            SpecializationConfig config = _specializationConfigsStorage.SpecializationConfigs[_currentIndex];
+            SpecializationModel = new SpecializationModel(config.SpecializationType, config.StartStats,config.DefaultStats, config.FreeStats);
+            _specializationAppearance.SetEquipment(config.EquipmentSprites);
+        }
 
         private void UpdateView()
         {
@@ -81,7 +93,7 @@ namespace PlayerCreator.Specialization
             foreach (var stat in config.StartStats)
             {
                 StatView statView = _objectPool.GetObject(_specializationView.StatView);
-                statView.transform.SetParent(_specializationView.StatContainer); //GetComponent<Transform>
+                statView.transform.SetParent(_specializationView.StatContainer);
                 statView.transform.localScale = Vector3.one;
                 statView.StatAmount.text = stat.Value.ToString();
                 statView.StatType.text = stat.Type.ToString();
@@ -98,14 +110,6 @@ namespace PlayerCreator.Specialization
                 skillView.SkillImage.sprite = skill.SkillSprite;
                 _skillViews.Add(skillView);
             }
-        }
-
-        private void ChangeSpecialization()
-        {
-            ClearView();
-            SpecializationConfig config = _specializationConfigsStorage.SpecializationConfigs[_currentIndex];
-            SpecializationModel = new SpecializationModel(config.SpecializationType, config.StartStats);
-            _specializationAppearance.SetEquipment(config.EquipmentSprites);
         }
 
         private void ClearView()
