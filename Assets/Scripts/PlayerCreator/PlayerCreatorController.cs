@@ -4,6 +4,8 @@ using CoreUI;
 using GamePlay;
 using Player;
 using Player.Config;
+using Player.Enum;
+using PlayerCreator.Appearance.Controller;
 using PlayerCreator.Specialization;
 using PlayerCreator.Stats;
 using Serialization;
@@ -17,11 +19,13 @@ namespace PlayerCreator
 
         private StatChanger _statChanger;
         private SpecializationChanger _specializationChanger;
+        private AppearanceChanger _appearanceChanger;
 
         private IViewController _currentController;
 
         private Dictionary<CreationTabSwitcher, СreationTab> _availableTabsSwitchers;
         private CreationTabSwitcher _selectedSwitcher;
+        
 
         private string _playerName;
 
@@ -29,7 +33,7 @@ namespace PlayerCreator
 
         private void Start()
         {
-            List<СreationTab> availableTabs = new List<СreationTab> {СreationTab.Specialization, СreationTab.Stats};
+            List<СreationTab> availableTabs = new List<СreationTab> {СreationTab.Specialization, СreationTab.Stats,  СreationTab.Appearance};
             СreationTab defaultTab = СreationTab.Specialization;
             _creatorView.Initialize();
             _availableTabsSwitchers = new Dictionary<CreationTabSwitcher, СreationTab>();
@@ -54,6 +58,7 @@ namespace PlayerCreator
             _specializationChanger = new SpecializationChanger(_creatorView.SpecializationView,
                 _creatorView.SpecializationConfigsStorage, _creatorView.SpecializationAppearance);
             _statChanger = new StatChanger(_creatorView.StatView);
+            _appearanceChanger = new AppearanceChanger(_creatorView.AppearanceChangerView, _creatorView.AppearanceView);
             
             _currentController = GetAndInitializeController(СreationTab.Specialization);
         }
@@ -85,6 +90,9 @@ namespace PlayerCreator
                     _currentSpecialization = _specializationChanger.SpecializationModel.SpecializationType;
                     _statChanger.Initialize(statsModel);
                     return _statChanger;
+                case СreationTab.Appearance:
+                    _appearanceChanger.Initialize();
+                    return _appearanceChanger;
                 default:
                     return null;
             }
@@ -114,9 +122,14 @@ namespace PlayerCreator
                 playerStats = _statChanger.StatsModel.Stats;
             }
 
+            Dictionary<AppearanceFeature, string> appearanceFeatures = new Dictionary<AppearanceFeature, string>();
+            foreach (var appearanceFeature in _appearanceChanger.AppearanceModel.AppearanceFeaturesSprites)
+            {
+                appearanceFeatures.Add(appearanceFeature.Key, appearanceFeature.Value.name);
+            }
+
             PlayerConfig playerConfig =
-                new PlayerConfig(_playerName, playerStats, _specializationChanger.SpecializationModel.SpecializationType,
-                    new List<AppearanceFeatureSprite>());
+                new PlayerConfig(_playerName, playerStats, _specializationChanger.SpecializationModel.SpecializationType, appearanceFeatures);
             Serializator.Serializate(playerConfig, Path.Combine(Application.dataPath, "Serialization/PlayerData", $"Player_{playerConfig.Id}.json"));
         }
 

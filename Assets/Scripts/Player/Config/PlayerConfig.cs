@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using GamePlay;
+using Player.Enum;
 using UnityEngine;
 
 namespace Player.Config
@@ -10,9 +11,9 @@ namespace Player.Config
         public string PlayerName { get; }
         public List<Stat> StartStats { get; }
         public SpecializationType SpecializationType { get; }
-        public List<AppearanceFeatureSprite> AppearanceFeatureSprites { get; }
-        
-        public PlayerConfig(string playerName, List<Stat> startStats, SpecializationType specializationType, List<AppearanceFeatureSprite> featureSprites)
+        public Dictionary<AppearanceFeature, string> AppearanceFeatures { get; }
+
+        public PlayerConfig(string playerName, List<Stat> startStats, SpecializationType specializationType, Dictionary<AppearanceFeature, string> appearanceFeatures)
         {
             if (!PlayerPrefs.HasKey("CharacterCount"))
             {
@@ -23,9 +24,9 @@ namespace Player.Config
             PlayerPrefs.SetInt("CharacterCount", Id+1);
 
             PlayerName = playerName;
-            this.StartStats = startStats;
+            StartStats = startStats;
             SpecializationType = specializationType;
-            AppearanceFeatureSprites = featureSprites;
+            AppearanceFeatures = appearanceFeatures;
         }
     }
 }
