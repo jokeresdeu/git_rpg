@@ -1,4 +1,5 @@
 ﻿using System;
+using PlayerCreator.Appearance.View;
 using PlayerCreator.Specialization;
 using PlayerCreator.Stats;
 using TMPro;
@@ -18,16 +19,23 @@ namespace PlayerCreator
         [SerializeField] private SpecializationView _specializationView;
         [SerializeField] private SpecializationConfigsStorage _specializationConfigsStorage;
         [SerializeField] private SpecializationAppearance _specializationAppearance;
+        
+        [Header("Stats")]
         [SerializeField] private StatsChangerView _statView;
+
+        [Header("Appearance")] 
+        [SerializeField] private AppearanceView _appearanceView;
+        [SerializeField] private AppearanceChangerView _appearanceChangerView;
 
         public CreationTabSwitcher CreationTabSwitcher => _creationTabSwitcher;
         public Transform SwitchersContainer => _switchersContainer;
         public StatsChangerView StatView => _statView;
         public SpecializationView SpecializationView => _specializationView;
         public SpecializationConfigsStorage SpecializationConfigsStorage => _specializationConfigsStorage;
-
         public SpecializationAppearance SpecializationAppearance => _specializationAppearance;
-
+        public AppearanceView AppearanceView => _appearanceView;
+        public AppearanceChangerView AppearanceChangerView => _appearanceChangerView;
+        
         public event Action<string> OnNameChanged;
         public event Action OnSaveClicked;
 

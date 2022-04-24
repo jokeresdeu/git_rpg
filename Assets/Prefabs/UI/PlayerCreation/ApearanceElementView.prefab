@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2446019635617752619}
   - component: {fileID: 2446019635617753044}
-  - component: {fileID: 4233621443314727802}
+  - component: {fileID: 2779542937594877034}
   m_Layer: 5
   m_Name: ApearanceElementView
   m_TagString: Untagged
@@ -182,7 +182,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2446019635617752618}
   m_CullTransparentMesh: 1
---- !u!114 &4233621443314727802
+--- !u!114 &2779542937594877034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2446019635617752618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e92fb354bf96c48b07709fabefae09, type: 3}
+  m_Script: {fileID: 11500000, guid: 814dcebce67a4836b7537858d49f1f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _elementHeader: {fileID: 8866405600087326534}

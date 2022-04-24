@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66ea245ec87b44d3b0ea847a0a293de7, type: 3}
+  m_Name: AppearanceFeaturesSpritesStorage
+  m_EditorClassIdentifier: 
+  _appearanceFeaturesSpritesCollections:
+  - _appearanceFeature: 1
+    _directionalSpritesCollection:
+    - {fileID: 11400000, guid: c6753c97ba092402cb68c5a62af234c3, type: 2}
+    - {fileID: 11400000, guid: 372f66ac9ff27413391e3799ac1232f4, type: 2}
+    - {fileID: 11400000, guid: af6c0cbb1a98f48c7b9d6c70e9859bbd, type: 2}
+  - _appearanceFeature: 2
+    _directionalSpritesCollection:
+    - {fileID: 11400000, guid: c17cd7bf152b8407d9f198e9688b6ed1, type: 2}
+    - {fileID: 11400000, guid: db7cfad7421e94f949e2008c83338164, type: 2}
